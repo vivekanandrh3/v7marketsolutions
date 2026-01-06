@@ -11,7 +11,7 @@ const heroImage = PlaceHolderImages.find((img) => img.id === 'hero');
 function MarketCard({ market }: { market: Market }) {
   const marketImage = PlaceHolderImages.find((img) => img.id === market.imageId);
   return (
-    <Card className="flex flex-col overflow-hidden transition-transform transform hover:-translate-y-2 bg-card/50">
+    <Card className="flex flex-col overflow-hidden transition-all duration-300 transform hover:-translate-y-2 hover:scale-105 bg-card/50">
       <CardHeader className="flex flex-row items-center gap-4">
         <market.icon className="w-8 h-8 text-primary" />
         <CardTitle className="font-headline text-xl">{market.name}</CardTitle>
