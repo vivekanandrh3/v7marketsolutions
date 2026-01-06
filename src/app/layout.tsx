@@ -6,7 +6,7 @@ import { Footer } from '@/components/layout/footer';
 import { Toaster } from '@/components/ui/toaster';
 
 export const metadata: Metadata = {
-  title: 'AlphaEdge Academy',
+  title: 'V7 MARKET SOLUTIONS',
   description: 'Professional trading education by a prop firm trader and market educator.',
 };
 

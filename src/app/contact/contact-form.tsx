@@ -52,7 +52,7 @@ export function ContactForm() {
       <CardHeader>
         <CardTitle className="font-headline text-2xl">Get in Touch</CardTitle>
         <CardDescription>
-          Have questions about the material or feedback for the academy? Fill out the form below.
+          Have questions about the material or feedback for us? Fill out the form below.
         </CardDescription>
       </CardHeader>
       <CardContent>

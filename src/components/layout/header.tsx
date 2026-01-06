@@ -28,7 +28,7 @@ export function Header() {
       <div className="container flex h-16 items-center">
         <Link href="/" className="mr-6 flex items-center space-x-2">
           <Logo className="h-6 w-6" />
-          <span className="hidden font-bold sm:inline-block font-headline">AlphaEdge Academy</span>
+          <span className="hidden font-bold sm:inline-block font-headline">V7 MARKET SOLUTIONS</span>
         </Link>
         
         <nav className="hidden md:flex flex-1 items-center space-x-6 text-sm font-medium">
@@ -59,7 +59,7 @@ export function Header() {
                 <div className="flex items-center justify-between p-4 border-b">
                    <Link href="/" className="flex items-center space-x-2" onClick={() => setIsMobileMenuOpen(false)}>
                     <Logo className="h-6 w-6" />
-                    <span className="font-bold font-headline">AlphaEdge Academy</span>
+                    <span className="font-bold font-headline">V7 MARKET SOLUTIONS</span>
                   </Link>
                 </div>
                 <nav className="flex-grow px-4 py-6">
