@@ -50,21 +50,21 @@
     },
     {
       "id": "interest-rates-inflation-101",
-      "description": "A split image showing a piggy bank for savings and rising prices for goods",
-      "imageUrl": "https://images.unsplash.com/photo-1559163499-413811443ab4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxwaWdneSUyMGJhbmslMjBpbmZsYXRpb258ZW58MHx8fHwxNzA4NTYyNjYxfDA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "piggy bank"
+      "description": "Abstract representation of economic data and charts, with a subtle upward trend.",
+      "imageUrl": "https://images.unsplash.com/photo-1639322537504-6427a16b0a28?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxlY29ub21pYyUyMGRhdGElMjBjaGFydHxlbnwwfHx8fDE3MjE4MTI3ODN8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "economic data"
     },
     {
       "id": "geopolitics-and-markets",
-      "description": "A world map with interconnected lines representing global trade and relationships",
-      "imageUrl": "https://images.unsplash.com/photo-1532187643627-8935b5a2b3d3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxnbG9iYWwlMjB0cmFkZSUyMG1hcHxlbnwwfHx8fDE3MDYxOTk1NTR8MA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "global trade"
+      "description": "Flags of different nations blurred in the background with a stock chart overlayed in the foreground.",
+      "imageUrl": "https://images.unsplash.com/photo-1590283603385-17ffb3a7f29f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxzdG9jayUyMGNoYXJ0fGVufDB8fHx8fDE3MjE4MTI3ODN8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "stock chart"
     },
     {
       "id": "bond-yields-unemployment",
-      "description": "A chart showing a bond yield curve and a graphic of people representing the workforce",
-      "imageUrl": "https://images.unsplash.com/photo-1664338965609-8d772fe0f219?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxiaW5kJTIweWllbGQlMjBjdXJ2ZXxlbnwwfHx8fDE3MjE4MTIzMTR8MA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "bond curve"
+      "description": "A silhouette of a central bank building against a dawn sky, symbolizing economic oversight.",
+      "imageUrl": "https://images.unsplash.com/photo-1600456515865-b9f1ec52c595?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxjZW50cmFsJTIwYmFua3xlbnwwfHx8fDE3MjE4MTI3ODN8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "central bank"
     }
   ]
 }
