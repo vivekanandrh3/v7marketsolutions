@@ -70,7 +70,7 @@ export default function Home() {
         <div className="absolute inset-0 bg-background/80" />
         <div className="container relative">
           <h1 className="text-4xl font-extrabold tracking-tight font-headline sm:text-5xl md:text-6xl lg:text-7xl">
-            Master the Markets with a Professional Edge
+            A trader who teaches people to take informed, risk-aware market decisions.
           </h1>
           <p className="mt-6 max-w-3xl mx-auto text-lg text-foreground/80 sm:text-xl">
             Insights from a prop firm trader focused on price action, risk management, and trading psychology. Educational content, not financial advice.
