@@ -3,8 +3,7 @@ import Image from 'next/image';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
-import { markets, insights, type Market, type InsightPost } from '@/lib/data';
-import { ArrowRight } from 'lucide-react';
+import { markets, type Market } from '@/lib/data';
 
 const heroImage = PlaceHolderImages.find((img) => img.id === 'hero');
 
@@ -22,35 +21,6 @@ function MarketCard({ market }: { market: Market }) {
     </Card>
   );
 }
-
-function InsightCard({ post }: { post: InsightPost }) {
-  const postImage = PlaceHolderImages.find((img) => img.id === post.imageId);
-  return (
-    <Link href={`/insights/${post.slug}`} className="group block">
-      <Card className="overflow-hidden h-full flex flex-col bg-card/50">
-        {postImage && (
-          <div className="overflow-hidden">
-            <Image
-              src={postImage.imageUrl}
-              alt={postImage.description}
-              width={600}
-              height={400}
-              className="w-full h-48 object-cover transition-transform duration-300 group-hover:scale-105"
-              data-ai-hint={postImage.imageHint}
-            />
-          </div>
-        )}
-        <CardHeader>
-          <CardTitle className="font-headline text-lg group-hover:text-primary">{post.title}</CardTitle>
-        </CardHeader>
-        <CardContent className="flex-grow">
-          <p className="text-muted-foreground text-sm">{post.description}</p>
-        </CardContent>
-      </Card>
-    </Link>
-  );
-}
-
 
 export default function Home() {
   return (
