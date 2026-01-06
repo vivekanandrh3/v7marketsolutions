@@ -4,7 +4,7 @@ import { useState, useMemo } from 'react';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Label } from '@/components/ui/label';
 import { Input } from '@/components/ui/input';
-import { Button } from '@/components/ui/button';
+import { RadioGroup, RadioGroupItem } from '@/components/ui/radio-group';
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from '@/components/ui/table';
 import {
   ChartContainer,
@@ -19,10 +19,17 @@ interface CompoundingData {
   growth: number;
 }
 
+type Currency = 'USD' | 'INR';
+
+const USD_TO_INR_RATE = 83.5;
+
 export function CompoundingCalculator() {
   const [initialInvestment, setInitialInvestment] = useState<number>(10000);
   const [monthlyRate] = useState<number>(0.02); // 2%
   const [years] = useState<number>(5);
+  const [currency, setCurrency] = useState<Currency>('USD');
+
+  const currencySymbol = currency === 'USD' ? '$' : '₹';
 
   const compoundingData = useMemo((): CompoundingData[] => {
     const data: CompoundingData[] = [];
@@ -41,11 +48,38 @@ export function CompoundingCalculator() {
     return data;
   }, [initialInvestment, monthlyRate, years]);
 
+  const displayData = useMemo(() => {
+    if (currency === 'INR') {
+      return compoundingData.map(d => ({
+        ...d,
+        value: parseFloat((d.value * USD_TO_INR_RATE).toFixed(2)),
+        growth: parseFloat((d.growth * USD_TO_INR_RATE).toFixed(2)),
+      }));
+    }
+    return compoundingData;
+  }, [compoundingData, currency]);
+  
+  const displayInitialInvestment = currency === 'INR' ? initialInvestment * USD_TO_INR_RATE : initialInvestment;
+
   const chartConfig = {
     value: {
       label: "Portfolio Value",
       color: "hsl(var(--primary))",
     },
+  }
+  
+  const formatCurrency = (value: number) => {
+    return `${currencySymbol}${value.toLocaleString(undefined, {minimumFractionDigits: 2, maximumFractionDigits: 2})}`
+  }
+  
+  const formatYAxis = (value: number) => {
+    if (value >= 1000000) {
+      return `${currencySymbol}${(value / 1000000).toFixed(1)}M`;
+    }
+    if (value >= 1000) {
+      return `${currencySymbol}${(value / 1000)}k`;
+    }
+    return `${currencySymbol}${value}`;
   }
 
   return (
@@ -57,9 +91,9 @@ export function CompoundingCalculator() {
             Adjust the initial investment to see the power of compounding over {years} years at a {monthlyRate * 100}% monthly return.
           </CardDescription>
         </CardHeader>
-        <CardContent>
-          <div className="max-w-sm space-y-2">
-            <Label htmlFor="initial-investment">Initial Investment ($)</Label>
+        <CardContent className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div className="space-y-2">
+            <Label htmlFor="initial-investment">Initial Investment ({currency})</Label>
             <Input
               id="initial-investment"
               type="number"
@@ -67,6 +101,29 @@ export function CompoundingCalculator() {
               onChange={(e) => setInitialInvestment(Number(e.target.value))}
               placeholder="e.g., 10000"
             />
+             <p className="text-sm text-muted-foreground">
+                Currently showing: {formatCurrency(displayInitialInvestment)}
+            </p>
+          </div>
+          <div className="space-y-2">
+            <Label>Currency</Label>
+            <RadioGroup
+              value={currency}
+              onValueChange={(value: Currency) => setCurrency(value)}
+              className="flex items-center space-x-4"
+            >
+              <div className="flex items-center space-x-2">
+                <RadioGroupItem value="USD" id="usd" />
+                <Label htmlFor="usd" className="font-normal">USD ($)</Label>
+              </div>
+              <div className="flex items-center space-x-2">
+                <RadioGroupItem value="INR" id="inr" />
+                <Label htmlFor="inr" className="font-normal">INR (₹)</Label>
+              </div>
+            </RadioGroup>
+            <p className="text-sm text-muted-foreground">
+                Using conversion rate: 1 USD = {USD_TO_INR_RATE} INR
+            </p>
           </div>
         </CardContent>
       </Card>
@@ -81,7 +138,7 @@ export function CompoundingCalculator() {
         <CardContent>
            <ChartContainer config={chartConfig} className="w-full h-[400px]">
             <AreaChart
-              data={compoundingData}
+              data={displayData}
               margin={{
                 top: 5,
                 right: 20,
@@ -101,14 +158,14 @@ export function CompoundingCalculator() {
                 stroke="hsl(var(--muted-foreground))"
                 tickLine={false}
                 axisLine={false}
-                tickFormatter={(value) => `$${(value / 1000)}k`}
+                tickFormatter={formatYAxis}
                />
               <ChartTooltip
                 cursor={false}
                 content={
                   <ChartTooltipContent 
                     labelFormatter={(label) => `Month ${label}`}
-                    formatter={(value, name) => (`$${(value as number).toLocaleString(undefined, {minimumFractionDigits: 2, maximumFractionDigits: 2})}`)}
+                    formatter={(value) => formatCurrency(value as number)}
                     indicator="dot" 
                   />
                 }
@@ -156,17 +213,22 @@ export function CompoundingCalculator() {
                 const year = i + 1;
                 const startOfMonth = (year - 1) * 12;
                 const endOfMonth = year * 12 - 1;
-                const startingValue = startOfMonth === 0 ? initialInvestment : compoundingData[startOfMonth - 1].value;
-                const endingValue = compoundingData[endOfMonth].value;
+                
+                const baseStartingValue = startOfMonth === 0 ? initialInvestment : compoundingData[startOfMonth - 1].value;
+                const baseEndingValue = compoundingData[endOfMonth].value;
+
+                const startingValue = currency === 'INR' ? baseStartingValue * USD_TO_INR_RATE : baseStartingValue;
+                const endingValue = currency === 'INR' ? baseEndingValue * USD_TO_INR_RATE : baseEndingValue;
+                
                 const yearlyGain = endingValue - startingValue;
-                const totalReturn = (endingValue / initialInvestment - 1) * 100;
+                const totalReturn = (baseEndingValue / initialInvestment - 1) * 100;
                 
                 return (
                   <TableRow key={year}>
                     <TableCell className="font-medium">{year}</TableCell>
-                    <TableCell>${startingValue.toLocaleString(undefined, {minimumFractionDigits: 2, maximumFractionDigits: 2})}</TableCell>
-                    <TableCell>${endingValue.toLocaleString(undefined, {minimumFractionDigits: 2, maximumFractionDigits: 2})}</TableCell>
-                    <TableCell className="text-right text-green-400">+${yearlyGain.toLocaleString(undefined, {minimumFractionDigits: 2, maximumFractionDigits: 2})}</TableCell>
+                    <TableCell>{formatCurrency(startingValue)}</TableCell>
+                    <TableCell>{formatCurrency(endingValue)}</TableCell>
+                    <TableCell className="text-right text-green-400">+{formatCurrency(yearlyGain)}</TableCell>
                     <TableCell className="text-right">{totalReturn.toFixed(2)}%</TableCell>
                   </TableRow>
                 )
