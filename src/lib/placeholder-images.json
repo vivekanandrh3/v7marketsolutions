@@ -51,19 +51,19 @@
     {
       "id": "interest-rates-inflation-101",
       "description": "Abstract representation of economic data and charts, with a subtle upward trend.",
-      "imageUrl": "https://storage.googleapis.com/project-spark-3121516223-output/images/474139/0_0.png",
+      "imageUrl": "https://images.unsplash.com/photo-1730789701634-5386e7271462?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxlY29ub21pYyUyMGRhdGF8ZW58MHx8fHwxNzY3NzI0MzA4fDA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "economic data"
     },
     {
       "id": "geopolitics-and-markets",
       "description": "Flags of different nations blurred in the background with a stock chart overlayed in the foreground.",
-      "imageUrl": "https://storage.googleapis.com/project-spark-3121516223-output/images/474139/0_0.png",
+      "imageUrl": "https://images.unsplash.com/photo-1535320903710-d993d3d77d29?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxzdG9jayUyMGNoYXJ0fGVufDB8fHx8MTc2NzY5Mjc5NHww&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "stock chart"
     },
     {
       "id": "bond-yields-unemployment",
-      "description": "A close-up of a financial newspaper with headlines 'Jobs Report Strong' and 'Bond Yields Dip' visible, with a magnifying glass over the text, creating a focused, analytical feel. The background is a clean, modern desk.",
-      "imageUrl": "https://storage.googleapis.com/project-spark-3121516223-output/images/474139/1_0.png",
+      "description": "A close-up of a financial newspaper with headlines 'Jobs Report Strong' and 'Bond Yields Dip' visible.",
+      "imageUrl": "https://images.unsplash.com/photo-1444653614773-995cb1ef9efa?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxmaW5hbmNpYWwlMjBuZXdzcGFwZXJ8ZW58MHx8fHwxNzY3NzI0MzA4fDA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "financial newspaper"
     }
   ]
