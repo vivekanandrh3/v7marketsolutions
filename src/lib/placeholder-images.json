@@ -1,3 +1,70 @@
 {
-  "placeholderImages": []
+  "placeholderImages": [
+    {
+      "id": "hero",
+      "description": "Abstract financial chart background",
+      "imageUrl": "https://images.unsplash.com/photo-1504607798333-52a30db54a5d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8ZmluYW5jZSUyMGNoYXJ0fGVufDB8fHx8MTc2NzU5NDAzOXww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "finance chart"
+    },
+    {
+      "id": "about-me",
+      "description": "Professional headshot of a trader",
+      "imageUrl": "https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxwcm9mZXNzaW9uYWwlMjBwb3J0cmFpdHxlbnwwfHx8fDE3Njc2Mzk5NjJ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "professional portrait"
+    },
+    {
+      "id": "forex-market",
+      "description": "Diagram of forex currency pairs",
+      "imageUrl": "https://images.unsplash.com/photo-1645226880663-81561dcab0ae?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxjdXJyZW5jeSUyMGNoYXJ0fGVufDB8fHx8MTc2NzY5NDEyOXww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "currency chart"
+    },
+    {
+      "id": "commodities-market",
+      "description": "Image representing gold and oil",
+      "imageUrl": "https://images.unsplash.com/photo-1629261323437-d3369319847a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxnb2xkJTIwb2lsfGVufDB8fHx8MTc2NzY5NDEyOHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "gold oil"
+    },
+    {
+      "id": "indices-market",
+      "description": "Stock market index chart",
+      "imageUrl": "https://images.unsplash.com/photo-1614028674026-a65e31bfd27c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8c3RvY2slMjBjaGFydHxlbnwwfHx8fDE3Njc2OTI3OTR8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "stock chart"
+    },
+    {
+      "id": "stocks-market",
+      "description": "Graph showing stock price movements",
+      "imageUrl": "https://images.unsplash.com/photo-1638481826540-7710b13f7d53?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxzdG9jayUyMGdyYXBofGVufDB8fHx8MTc2NzYyMzk1MXww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "stock graph"
+    },
+    {
+      "id": "crypto-market",
+      "description": "Cryptocurrency coins and charts",
+      "imageUrl": "https://images.unsplash.com/photo-1647511256603-c2655556dcfb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxjcnlwdG9jdXJyZW5jeSUyMGNoYXJ0fGVufDB8fHx8MTc2NzY5NDEyOHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "cryptocurrency chart"
+    },
+    {
+      "id": "head-and-shoulders",
+      "description": "Annotated chart of a Head and Shoulders pattern",
+      "imageUrl": "https://images.unsplash.com/photo-1607222075643-7d24f4fb957b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxzdG9jayUyMHBhdHRlcm58ZW58MHx8fHwxNzY3Njk0MTI4fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "stock pattern"
+    },
+    {
+      "id": "support-resistance",
+      "description": "Chart showing support and resistance levels",
+      "imageUrl": "https://images.unsplash.com/photo-1634749044918-b94ad51d8567?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxzdXBwb3J0JTIwcmVzaXN0YW5jZXxlbnwwfHx8fDE3Njc2OTQxMjh8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "support resistance"
+    },
+    {
+      "id": "break-of-structure",
+      "description": "Chart illustrating a break of market structure",
+      "imageUrl": "https://images.unsplash.com/photo-1669334623720-7d8590acd43d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxtYXJrZXQlMjBzdHJ1Y3R1cmV8ZW58MHx8fHwxNzY3Njk0MTI4fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "market structure"
+    },
+    {
+      "id": "resource-guide",
+      "description": "Cover of a beginner's guide to trading PDF",
+      "imageUrl": "https://images.unsplash.com/photo-1755545730104-3cb4545282b1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxlYm9vayUyMGNvdmVyfGVufDB8fHx8MTc2NzY5NDEyOHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "ebook cover"
+    }
+  ]
 }
