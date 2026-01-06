@@ -102,34 +102,6 @@ export default function Home() {
           </div>
         </div>
       </section>
-
-      {/* Market Insights Preview */}
-      <section className="py-20 md:py-28 bg-card/20">
-        <div className="container">
-          <div className="flex justify-between items-center mb-12">
-             <div className="max-w-2xl">
-              <h2 className="text-3xl font-bold font-headline sm:text-4xl">Latest Market Insights</h2>
-              <p className="mt-4 text-muted-foreground">
-                Deep dives into trading concepts, strategies, and psychology.
-              </p>
-            </div>
-            <Button asChild variant="link" className="hidden md:flex">
-              <Link href="/insights">View All <ArrowRight className="ml-2 h-4 w-4" /></Link>
-            </Button>
-          </div>
-
-          <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
-            {insights.slice(0, 3).map((post) => (
-              <InsightCard key={post.slug} post={post} />
-            ))}
-          </div>
-           <div className="mt-12 text-center md:hidden">
-              <Button asChild variant="outline">
-                <Link href="/insights">View All Insights</Link>
-              </Button>
-            </div>
-        </div>
-      </section>
     </div>
   );
 }
