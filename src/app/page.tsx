@@ -90,12 +90,12 @@ export default function Home() {
       <section className="py-20 md:py-28 bg-background">
         <div className="container">
           <div className="text-center max-w-2xl mx-auto">
-            <h2 className="text-3xl font-bold font-headline sm:text-4xl">Markets I Trade &amp; Teach</h2>
+            <h2 className="text-3xl font-bold font-headline sm:text-4xl">Markets & Instruments Covered</h2>
             <p className="mt-4 text-muted-foreground">
               My expertise spans across a diverse range of asset classes, each with its unique characteristics and opportunities.
             </p>
           </div>
-          <div className="mt-12 grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+          <div className="mt-12 grid gap-8 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
             {markets.map((market) => (
               <MarketCard key={market.name} market={market} />
             ))}

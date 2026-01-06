@@ -6,6 +6,14 @@ import {
   Layers,
   Bitcoin,
   type LucideIcon,
+  FileText,
+  Copy,
+  ReceiptText,
+  Shield,
+  Building,
+  Handshake,
+  FileStack,
+  FolderKanban,
 } from 'lucide-react';
 
 export type Market = {
@@ -17,34 +25,70 @@ export type Market = {
 
 export const markets: Market[] = [
   {
-    name: 'Forex',
-    description: 'Trade the world\'s largest financial market, with opportunities in major, minor, and exotic currency pairs.',
-    icon: CandlestickChart,
-    imageId: 'forex-market',
-  },
-  {
-    name: 'Commodities',
-    description: 'Speculate on raw materials like Gold, Silver, and Natural Gas, driven by global supply and demand.',
-    icon: Layers,
-    imageId: 'commodities-market',
-  },
-  {
-    name: 'Indices',
-    description: 'Gain exposure to a whole economy or sector by trading baskets of top-performing stocks.',
-    icon: TrendingUp,
-    imageId: 'indices-market',
-  },
-  {
-    name: 'Stocks',
-    description: 'Invest in individual companies and participate in their growth story. Focus on price action and fundamentals.',
+    name: 'Stocks (Indian & Global)',
+    description: 'Invest in individual companies, both domestic and international, participating in their growth stories.',
     icon: Briefcase,
     imageId: 'stocks-market',
   },
   {
-    name: 'Futures & Options',
-    description: 'Utilize derivatives to manage risk or speculate on future price movements with leverage.',
+    name: 'Options',
+    description: 'Utilize derivatives to hedge positions, generate income, or speculate on price movements with defined risk.',
+    icon: FileText,
+    imageId: 'stocks-market',
+  },
+  {
+    name: 'Futures',
+    description: 'Engage in standardized contracts to buy or sell assets at a future date, for hedging or speculation.',
+    icon: Copy,
+    imageId: 'commodities-market',
+  },
+  {
+    name: 'CFDs',
+    description: 'Trade the difference in value of a financial product between the time the contract opens and closes.',
+    icon: ReceiptText,
+    imageId: 'forex-market',
+  },
+  {
+    name: 'Mutual Funds',
+    description: 'Diversify your portfolio by pooling money with other investors to invest in a collection of stocks and bonds.',
+    icon: FolderKanban,
+    imageId: 'indices-market',
+  },
+  {
+    name: 'ETFs',
+    description: 'Trade a basket of assets like stocks or bonds on an exchange, offering diversification and liquidity.',
+    icon: FileStack,
+    imageId: 'stocks-market',
+  },
+  {
+    name: 'IPOs',
+    description: 'Participate in the initial public offering of a company as it transitions from private to public ownership.',
+    icon: Building,
+    imageId: 'crypto-market',
+  },
+  {
+    name: 'Government Securities',
+    description: 'Invest in debt instruments issued by the government, considered to be low-risk investments.',
+    icon: Shield,
+    imageId: 'commodities-market',
+  },
+  {
+    name: 'Bonds',
+    description: 'Lend money to a corporation or government entity in exchange for periodic interest payments.',
     icon: Landmark,
-    imageId: 'stocks-market', // Re-using an image
+    imageId: 'forex-market',
+  },
+  {
+    name: 'Corporate Actions & Auctions',
+    description: 'Understand and navigate events like stock splits, mergers, and auctions that can impact your investments.',
+    icon: Handshake,
+    imageId: 'indices-market',
+  },
+  {
+    name: 'Forex',
+    description: 'Trade the world\'s largest financial market, with opportunities in major, minor, and exotic currency pairs.',
+    icon: CandlestickChart,
+    imageId: 'forex-market',
   },
   {
     name: 'Crypto',
@@ -98,7 +142,7 @@ export const insights: InsightPost[] = [
     imageId: 'break-of-structure',
     content: `
       &lt;h2 class="text-2xl font-headline font-bold mb-4"&gt;Identifying Market Structure&lt;/h2&gt;
-      &lt;p class="mb-4"&gt;In an uptrend, the market makes Higher Highs (HH) and Higher Lows (HL). In a downtrend, it makes Lower Lows (LL) and Lower Highs (LH). This sequence of peaks and troughs defines the current market structure.&lt;/p&gt;
+      &lt;p class="mb-4"&gt;In an uptrend, the market makes Higher Highs (HH) and Higher Lows (HL). In a downtrend, it makes Lower Lows (LL) and Lower Highs (LH). This sequence of peaks and troughs defines the current market structure.&lt;/p&glt;/p&gt;
       &lt;h2 class="text-2xl font-headline font-bold mt-6 mb-4"&gt;What is a Break of Structure?&lt;/h2&gt;
       &lt;p&gt;A Break of Structure (BOS) occurs when the price breaks through a previous structure point. In an uptrend, a BOS happens when price creates a new Higher High above the previous one. This confirms the continuation of the uptrend. A reversal is signaled when, for example, an uptrend fails to make a new Higher High and instead breaks below the last Higher Low.&lt;/p&gt;
     `,
