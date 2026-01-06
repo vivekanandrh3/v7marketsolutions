@@ -4,6 +4,7 @@ import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle }
 import Image from 'next/image';
 import Link from 'next/link';
 import { Calendar } from 'lucide-react';
+import { Badge } from '@/components/ui/badge';
 
 function InsightPostCard({ post }: { post: InsightPost }) {
   const postImage = PlaceHolderImages.find((img) => img.id === post.imageId);
@@ -23,6 +24,11 @@ function InsightPostCard({ post }: { post: InsightPost }) {
           </div>
         )}
         <CardHeader>
+          <div className="flex flex-wrap gap-2 mb-2">
+            {post.tags.map(tag => (
+              <Badge key={tag} variant="secondary">{tag}</Badge>
+            ))}
+          </div>
           <CardTitle className="font-headline text-xl group-hover:text-primary">{post.title}</CardTitle>
           <CardDescription>{post.description}</CardDescription>
         </CardHeader>
@@ -42,9 +48,9 @@ export default function InsightsPage() {
   return (
     <div className="container py-16 md:py-24">
       <div className="text-center mb-16">
-        <h1 className="text-4xl font-bold tracking-tight font-headline sm:text-5xl">Market Insights &amp; Learning Hub</h1>
+        <h1 className="text-4xl font-bold tracking-tight font-headline sm:text-5xl">Research &amp; Insights</h1>
         <p className="mt-4 max-w-3xl mx-auto text-lg text-muted-foreground">
-          A curated collection of educational posts on price action, market structure, and trading psychology.
+          Deep dives into market context, macro trends, and event breakdowns. All analysis is presented in a neutral, educational tone.
         </p>
       </div>
 

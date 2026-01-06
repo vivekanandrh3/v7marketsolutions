@@ -43,22 +43,22 @@
       "imageHint": "cryptocurrency chart"
     },
     {
-      "id": "head-and-shoulders",
-      "description": "Annotated chart of a Head and Shoulders pattern",
-      "imageUrl": "https://images.unsplash.com/photo-1607222075643-7d24f4fb957b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxzdG9jayUyMHBhdHRlcm58ZW58MHx8fHwxNzY3Njk0MTI4fDA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "stock pattern"
+      "id": "fed-event",
+      "description": "Image of the Federal Reserve building",
+      "imageUrl": "https://images.unsplash.com/photo-1593394196359-f7a9f733f140?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxmZWRlcmFsJTIwcmVzZXJ2ZXxlbnwwfHx8fDE3NjgxODg5NjR8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "federal reserve"
     },
     {
-      "id": "support-resistance",
-      "description": "Chart showing support and resistance levels",
-      "imageUrl": "https://images.unsplash.com/photo-1634749044918-b94ad51d8567?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxzdXBwb3J0JTIwcmVzaXN0YW5jZXxlbnwwfHx8fDE3Njc2OTQxMjh8MA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "support resistance"
+      "id": "cpi-data",
+      "description": "Abstract visualization of economic data and charts",
+      "imageUrl": "https://images.unsplash.com/photo-1639754388332-9b2d8339129e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxlY29ub21pYyUyMGRhdGF8ZW58MHx8fHwxNzY4MTg4OTY0fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "economic data"
     },
     {
-      "id": "break-of-structure",
-      "description": "Chart illustrating a break of market structure",
-      "imageUrl": "https://images.unsplash.com/photo-1669334623720-7d8590acd43d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxtYXJrZXQlMjBzdHJ1Y3R1cmV8ZW58MHx8fHwxNzY3Njk0MTI4fDA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "market structure"
+      "id": "rbi-event",
+      "description": "Image of the Reserve Bank of India building",
+      "imageUrl": "https://images.unsplash.com/photo-1629731252893-18e470876127?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxyZXNlcnZlJTIwYmFuayUyMG9mJTIwaW5kaWF8ZW58MHx8fHwxNzY4MTg4OTY0fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "reserve bank"
     },
     {
       "id": "resource-guide",

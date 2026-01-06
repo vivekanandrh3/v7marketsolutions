@@ -105,47 +105,51 @@ export type InsightPost = {
   date: string;
   imageId: string;
   content: string;
+  tags: string[];
 };
 
 export const insights: InsightPost[] = [
   {
-    slug: 'understanding-head-and-shoulders',
-    title: 'Mastering the Head &amp; Shoulders Pattern',
-    description: 'A deep dive into one of the most reliable trend reversal patterns in technical analysis.',
-    date: '2024-07-15',
-    imageId: 'head-and-shoulders',
+    slug: 'fed-interest-rates-impact',
+    title: 'How Fed Interest Rate Decisions Shape the Market',
+    description: "An analysis of how the Federal Reserve's monetary policy influences asset prices and market sentiment.",
+    date: '2024-07-20',
+    imageId: 'fed-event',
     content: `
-      &lt;h2 class="text-2xl font-headline font-bold mb-4"&gt;Introduction to the Pattern&lt;/h2&gt;
-      &lt;p class="mb-4"&gt;The Head and Shoulders pattern is a classic chart formation that predicts a bullish-to-bearish trend reversal. It's one of the most reliable patterns and appears across all markets and timeframes. The pattern contains three peaks, with the outer two (the shoulders) being at a similar height and the central peak (the head) being the highest.&lt;/p&gt;
-      &lt;h2 class="text-2xl font-headline font-bold mt-6 mb-4"&gt;The "Neckline"&lt;/h2&gt;
-      &lt;p&gt;The line connecting the lows of the two troughs between the three peaks is called the "neckline." A break below this neckline with significant volume is the key confirmation of the pattern, signaling that the prior uptrend has ended and a new downtrend is likely beginning.&lt;/p&gt;
+      <h2 class="text-2xl font-headline font-bold mb-4">The Fed's Dual Mandate</h2>
+      <p class="mb-4">The Federal Reserve operates under a dual mandate: to promote maximum employment and stable prices. Its primary tool for achieving this is the federal funds rate, the target interest rate at which commercial banks borrow and lend their excess reserves to each other overnight. Changes to this rate ripple through the entire economy.</p>
+      <h2 class="text-2xl font-headline font-bold mt-6 mb-4">Impact on Asset Valuation</h2>
+      <p>When the Fed raises rates, borrowing becomes more expensive. This can cool down the economy, reduce corporate earnings, and make "risk-free" assets like government bonds more attractive. Conversely, when the Fed cuts rates, it stimulates the economy, potentially boosting corporate profits and making stocks more appealing than lower-yielding bonds. Understanding this relationship is key to interpreting market context.</p>
     `,
+    tags: ['Fed', 'Macro', 'Monetary Policy'],
   },
   {
-    slug: 'support-and-resistance-basics',
-    title: 'The Foundation: Support &amp; Resistance',
-    description: 'Learn how to identify key levels where buying and selling pressure historically meet.',
-    date: '2024-07-10',
-    imageId: 'support-resistance',
+    slug: 'understanding-cpi-data',
+    title: 'Decoding CPI: What Inflation Means for Your Trades',
+    description: 'A breakdown of the Consumer Price Index (CPI) and its critical role as a market-moving economic indicator.',
+    date: '2024-07-18',
+    imageId: 'cpi-data',
     content: `
-      &lt;h2 class="text-2xl font-headline font-bold mb-4"&gt;What is Support?&lt;/h2&gt;
-      &lt;p class="mb-4"&gt;Support is a price level where a downtrend can be expected to pause due to a concentration of demand or buying interest. As the price of an asset drops, demand for the shares increases, thus forming the support line.&lt;/p&gt;
-      &lt;h2 class="text-2xl font-headline font-bold mt-6 mb-4"&gt;What is Resistance?&lt;/h2&gt;
-      &lt;p&gt;Resistance is the opposite of support. It is a price level where an uptrend can be expected to pause temporarily, due to a concentration of supply or selling interest. As the price of an asset rises, sellers become more inclined to sell, thus forming the resistance line.&lt;/p&gt;
+      <h2 class="text-2xl font-headline font-bold mb-4">What is CPI?</h2>
+      <p class="mb-4">The Consumer Price Index (CPI) measures the average change over time in the prices paid by urban consumers for a market basket of consumer goods and services. It is the most widely used measure of inflation. A rising CPI indicates that it costs more to purchase the same goods and services, eroding purchasing power.</p>
+      <h2 class="text-2xl font-headline font-bold mt-6 mb-4">Why Traders Watch CPI Closely</h2>
+      <p>CPI data is a major input for the Fed's interest rate decisions. Higher-than-expected inflation may prompt the Fed to raise rates to cool the economy, which can be bearish for stocks. Lower-than-expected inflation might allow the Fed to be more accommodative (or even cut rates), which is often bullish. The market's reaction to CPI releases can be volatile, presenting both opportunities and risks.</p>
     `,
+    tags: ['CPI', 'Inflation', 'Economics'],
   },
   {
-    slug: 'break-of-structure-explained',
-    title: 'Trading with Trend: The Break of Structure (BOS)',
-    description: 'Understand how to confirm a trend\'s continuation or reversal by identifying a Break of Structure.',
-    date: '2024-07-05',
-    imageId: 'break-of-structure',
+    slug: 'rbi-policy-and-indian-markets',
+    title: 'RBI Policy Meetings: A Guide for Indian Market Participants',
+    description: 'Exploring how the Reserve Bank of India\'s policy announcements create ripples across Indian equities and bonds.',
+    date: '2024-07-12',
+    imageId: 'rbi-event',
     content: `
-      &lt;h2 class="text-2xl font-headline font-bold mb-4"&gt;Identifying Market Structure&lt;/h2&gt;
-      &lt;p class="mb-4"&gt;In an uptrend, the market makes Higher Highs (HH) and Higher Lows (HL). In a downtrend, it makes Lower Lows (LL) and Lower Highs (LH). This sequence of peaks and troughs defines the current market structure.&lt;/p&glt;/p&gt;
-      &lt;h2 class="text-2xl font-headline font-bold mt-6 mb-4"&gt;What is a Break of Structure?&lt;/h2&gt;
-      &lt;p&gt;A Break of Structure (BOS) occurs when the price breaks through a previous structure point. In an uptrend, a BOS happens when price creates a new Higher High above the previous one. This confirms the continuation of the uptrend. A reversal is signaled when, for example, an uptrend fails to make a new Higher High and instead breaks below the last Higher Low.&lt;/p&gt;
+      <h2 class="text-2xl font-headline font-bold mb-4">The Role of the RBI</h2>
+      <p class="mb-4">Similar to the Fed, the Reserve Bank of India (RBI) is the central bank of India, responsible for the country's monetary policy. Its key objective is to maintain price stability while keeping in mind the objective of growth. The RBI's repo rate is its key policy rate, analogous to the Fed funds rate.</p>
+      <h2 class="text-2xl font-headline font-bold mt-6 mb-4">Event Breakdown: What to Watch For</h2>
+      <p>During RBI policy announcements, traders and investors scrutinize the central bank's decision on the repo rate, its future guidance (the tone of the statement), and its assessment of inflation and economic growth. A "hawkish" stance (inclined to raise rates) can be negative for rate-sensitive sectors like banking and real estate, while a "dovish" stance (inclined to cut rates) can be positive.</p>
     `,
+    tags: ['RBI', 'India', 'Macro'],
   },
 ];
 

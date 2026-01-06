@@ -13,7 +13,7 @@ import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
 const navLinks = [
   { href: '/', label: 'Home' },
   { href: '/about', label: 'About' },
-  { href: '/insights', label: 'Market Insights' },
+  { href: '/insights', label: 'Research & Insights' },
   { href: '/resources', label: 'Free Resources' },
   { href: '/compounding', label: 'Compounding' },
   { href: '/contact', label: 'Contact' },

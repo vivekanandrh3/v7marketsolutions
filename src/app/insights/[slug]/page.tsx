@@ -37,8 +37,11 @@ export default function InsightPostPage({ params }: { params: { slug: string } }
               <span>{new Date(post.date).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}</span>
             </div>
             <Separator orientation="vertical" className="h-4" />
-            <Badge variant="secondary">Price Action</Badge>
-            <Badge variant="secondary">Technical Analysis</Badge>
+            <div className="flex flex-wrap gap-2">
+              {post.tags.map(tag => (
+                <Badge key={tag} variant="secondary">{tag}</Badge>
+              ))}
+            </div>
           </div>
           <h1 className="text-3xl font-extrabold tracking-tight font-headline sm:text-4xl md:text-5xl">{post.title}</h1>
           <p className="mt-4 text-lg text-muted-foreground">{post.description}</p>
