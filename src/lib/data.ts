@@ -110,46 +110,49 @@ export type InsightPost = {
 
 export const insights: InsightPost[] = [
   {
-    slug: 'fed-interest-rates-impact',
-    title: 'How Fed Interest Rate Decisions Shape the Market',
-    description: "An analysis of how the Federal Reserve's monetary policy influences asset prices and market sentiment.",
+    slug: 'interest-rates-and-inflation-101',
+    title: "Interest Rates and Inflation: The Market's Push and Pull",
+    description: "A simple guide to understanding why everyone talks about interest rates and inflation, and how they affect the economy.",
+    date: '2024-07-22',
+    imageId: 'interest-rates-inflation-101',
+    content: `
+      <h2 class="text-2xl font-headline font-bold mb-4">What's the Big Deal?</h2>
+      <p class="mb-4">Imagine the economy is a car. Inflation is how fast it's going, and interest rates are the brakes. <strong>Inflation</strong> is the rate at which the general level of prices for goods and services is rising, and subsequently, purchasing power is falling. A little bit is normal, but too much means the car is going too fast and might crash.</p>
+      <p class="mb-4"><strong>Interest rates</strong>, set by central banks (like the Fed in the U.S. or the RBI in India), are the cost of borrowing money. When they 'hike rates', they're hitting the brakes. It becomes more expensive for people and companies to borrow money for big purchases like houses, cars, or new factories. This slows down spending, cools the economy, and helps bring inflation back under control.</p>
+      <h2 class="text-2xl font-headline font-bold mt-6 mb-4">Why Traders Care</h2>
+      <p>When interest rates go up, safer investments like government bonds become more attractive because they pay more. This can pull money out of riskier assets like stocks. When rates go down, it's the opposite: borrowing is cheap, companies can grow faster, and stocks often look more appealing. Watching these two numbers gives traders a clue about which way the economic 'car' is being steered.</p>
+    `,
+    tags: ['Interest Rates', 'Inflation', 'Economics 101'],
+  },
+  {
+    slug: 'geopolitics-and-markets',
+    title: 'From Headlines to Your Portfolio: Geopolitics Explained',
+    description: 'How events like wars, trade policies, and global tensions can send shockwaves through financial markets.',
     date: '2024-07-20',
-    imageId: 'fed-event',
+    imageId: 'geopolitics-and-markets',
     content: `
-      <h2 class="text-2xl font-headline font-bold mb-4">The Fed's Dual Mandate</h2>
-      <p class="mb-4">The Federal Reserve operates under a dual mandate: to promote maximum employment and stable prices. Its primary tool for achieving this is the federal funds rate, the target interest rate at which commercial banks borrow and lend their excess reserves to each other overnight. Changes to this rate ripple through the entire economy.</p>
-      <h2 class="text-2xl font-headline font-bold mt-6 mb-4">Impact on Asset Valuation</h2>
-      <p>When the Fed raises rates, borrowing becomes more expensive. This can cool down the economy, reduce corporate earnings, and make "risk-free" assets like government bonds more attractive. Conversely, when the Fed cuts rates, it stimulates the economy, potentially boosting corporate profits and making stocks more appealing than lower-yielding bonds. Understanding this relationship is key to interpreting market context.</p>
+      <h2 class="text-2xl font-headline font-bold mb-4">The World is Connected</h2>
+      <p class="mb-4">Financial markets don't exist in a bubble. Events happening thousands of miles away, like wars, political instability, or new trade tariffs, can have a direct impact. Why? Because these events create <strong>uncertainty</strong>, and markets hate uncertainty. This is often called <strong>Geopolitical Risk</strong>.</p>
+      <p class="mb-4">For example, a conflict in a major oil-producing region can disrupt supply, causing oil prices to skyrocket. This increases costs for everyone, from airlines to shipping companies, and can fuel inflation. Similarly, when two countries start a 'trade war' by imposing <strong>tariffs</strong> (taxes on imported goods), it can make products more expensive and hurt the profits of international companies.</p>
+      <h2 class="text-2xl font-headline font-bold mt-6 mb-4">Risk-On vs. Risk-Off</h2>
+      <p>When global tensions are high, you'll often hear the term <strong>'Risk-Off'</strong>. This means investors get scared and sell risky assets (like stocks) and rush to buy 'safe-haven' assets, such as gold, U.S. dollars, or government bonds. When tensions ease and confidence returns, it's <strong>'Risk-On'</strong>, and money flows back into those riskier assets. Understanding the global mood helps you understand why the market might be moving up or down, even if there's no company-specific news.</p>
     `,
-    tags: ['Fed', 'Macro', 'Monetary Policy'],
+    tags: ['Geopolitics', 'Risk', 'Trade Policy'],
   },
   {
-    slug: 'understanding-cpi-data',
-    title: 'Decoding CPI: What Inflation Means for Your Trades',
-    description: 'A breakdown of the Consumer Price Index (CPI) and its critical role as a market-moving economic indicator.',
+    slug: 'bond-yields-unemployment-connection',
+    title: "Bond Yields and Job Reports: The Market's Health Check",
+    description: "Learn what bond yields and unemployment numbers can tell you about the overall health of the economy.",
     date: '2024-07-18',
-    imageId: 'cpi-data',
+    imageId: 'bond-yields-unemployment',
     content: `
-      <h2 class="text-2xl font-headline font-bold mb-4">What is CPI?</h2>
-      <p class="mb-4">The Consumer Price Index (CPI) measures the average change over time in the prices paid by urban consumers for a market basket of consumer goods and services. It is the most widely used measure of inflation. A rising CPI indicates that it costs more to purchase the same goods and services, eroding purchasing power.</p>
-      <h2 class="text-2xl font-headline font-bold mt-6 mb-4">Why Traders Watch CPI Closely</h2>
-      <p>CPI data is a major input for the Fed's interest rate decisions. Higher-than-expected inflation may prompt the Fed to raise rates to cool the economy, which can be bearish for stocks. Lower-than-expected inflation might allow the Fed to be more accommodative (or even cut rates), which is often bullish. The market's reaction to CPI releases can be volatile, presenting both opportunities and risks.</p>
+      <h2 class="text-2xl font-headline font-bold mb-4">The Economy's Report Card</h2>
+      <p class="mb-4">Two key numbers that act like a health check for the economy are <strong>unemployment rates</strong> and <strong>bond yields</strong>. A low unemployment rate is generally good—it means most people have jobs and are spending money, which drives economic growth. However, if it gets too low, companies may have to pay higher wages to attract workers, which can contribute to inflation.</p>
+      <p class="mb-4">A <strong>bond yield</strong> is the return an investor gets on a government or corporate bond. Think of it as the 'interest rate' on that bond. The yield on government bonds (like the U.S. 10-Year Treasury) is often seen as a benchmark for the entire market. If investors are worried about the economy, they might rush to buy these safe bonds, which pushes the price up and the yield down. A falling yield can be a sign of economic anxiety.</p>
+      <h2 class="text-2xl font-headline font-bold mt-6 mb-4">The Inverted Yield Curve</h2>
+      <p>You might hear about an 'inverted yield curve'. Normally, long-term bonds have higher yields than short-term bonds to compensate for locking up money longer. When short-term yields become higher than long-term yields, the curve 'inverts'. This is a rare event that has historically been a reliable predictor of an upcoming recession, as it suggests investors expect rates to be lower in the future due to a weaker economy.</p>
     `,
-    tags: ['CPI', 'Inflation', 'Economics'],
-  },
-  {
-    slug: 'rbi-policy-and-indian-markets',
-    title: 'RBI Policy Meetings: A Guide for Indian Market Participants',
-    description: 'Exploring how the Reserve Bank of India\'s policy announcements create ripples across Indian equities and bonds.',
-    date: '2024-07-12',
-    imageId: 'rbi-event',
-    content: `
-      <h2 class="text-2xl font-headline font-bold mb-4">The Role of the RBI</h2>
-      <p class="mb-4">Similar to the Fed, the Reserve Bank of India (RBI) is the central bank of India, responsible for the country's monetary policy. Its key objective is to maintain price stability while keeping in mind the objective of growth. The RBI's repo rate is its key policy rate, analogous to the Fed funds rate.</p>
-      <h2 class="text-2xl font-headline font-bold mt-6 mb-4">Event Breakdown: What to Watch For</h2>
-      <p>During RBI policy announcements, traders and investors scrutinize the central bank's decision on the repo rate, its future guidance (the tone of the statement), and its assessment of inflation and economic growth. A "hawkish" stance (inclined to raise rates) can be negative for rate-sensitive sectors like banking and real estate, while a "dovish" stance (inclined to cut rates) can be positive.</p>
-    `,
-    tags: ['RBI', 'India', 'Macro'],
+    tags: ['Bond Yields', 'Unemployment', 'Recession'],
   },
 ];
 

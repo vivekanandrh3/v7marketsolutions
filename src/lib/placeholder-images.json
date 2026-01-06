@@ -43,28 +43,28 @@
       "imageHint": "cryptocurrency chart"
     },
     {
-      "id": "fed-event",
-      "description": "Stylized image of a stock market graph with a dollar sign",
-      "imageUrl": "https://images.unsplash.com/photo-1624953901718-e21ee3336345?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxmaW5hbmNlJTIwZ3JhcGh8ZW58MHx8fHwxNzY4NTAyNDM3fDA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "finance graph"
-    },
-    {
-      "id": "cpi-data",
-      "description": "A close-up shot of a financial newspaper showing market data",
-      "imageUrl": "https://images.unsplash.com/photo-1563986768609-322da13575f3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxmaW5hbmNpYWwlMjBkYXRhfGVufDB8fHx8MTc2ODUwMjQzN3ww&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "financial data"
-    },
-    {
-      "id": "rbi-event",
-      "description": "Image of the Indian Parliament building, representing government and policy",
-      "imageUrl": "https://images.unsplash.com/photo-1628744449853-3d4ca7c92a9b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxpbmRpYW4lMjBwYXJsaWFtZW50fGVufDB8fHx8MTc2ODUwMjQzN3ww&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "indian parliament"
-    },
-    {
       "id": "resource-guide",
       "description": "Cover of a beginner's guide to trading PDF",
       "imageUrl": "https://images.unsplash.com/photo-1755545730104-3cb4545282b1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxlYm9vayUyMGNvdmVyfGVufDB8fHx8MTc2NzY5NDEyOHww&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "ebook cover"
+    },
+    {
+      "id": "interest-rates-inflation-101",
+      "description": "A split image showing a piggy bank for savings and rising prices for goods",
+      "imageUrl": "https://images.unsplash.com/photo-1559163499-413811443ab4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxwaWdneSUyMGJhbmslMjBpbmZsYXRpb258ZW58MHx8fHwxNzA4NTYyNjYxfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "piggy bank"
+    },
+    {
+      "id": "geopolitics-and-markets",
+      "description": "A world map with interconnected lines representing global trade and relationships",
+      "imageUrl": "https://images.unsplash.com/photo-1532187643627-8935b5a2b3d3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxnbG9iYWwlMjB0cmFkZSUyMG1hcHxlbnwwfHx8fDE3MDYxOTk1NTR8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "global trade"
+    },
+    {
+      "id": "bond-yields-unemployment",
+      "description": "A chart showing a bond yield curve and a graphic of people representing the workforce",
+      "imageUrl": "https://images.unsplash.com/photo-1664338965609-8d772fe0f219?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxiaW5kJTIweWllbGQlMjBjdXJ2ZXxlbnwwfHx8fDE3MjE4MTIzMTR8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "bond curve"
     }
   ]
 }
