@@ -4,7 +4,7 @@ export default function AboutPage() {
   return (
     <div className="container py-16 md:py-24">
       <div className="text-center">
-        <h1 className="text-4xl font-bold tracking-tight font-headline sm:text-5xl">My Journey &amp; Philosophy</h1>
+        <h1 className="text-4xl font-bold tracking-tight font-headline sm:text-5xl">My Journey & Philosophy</h1>
         <p className="mt-4 max-w-3xl mx-auto text-lg text-muted-foreground">
           From a curious beginner to a funded proprietary trader.
         </p>
