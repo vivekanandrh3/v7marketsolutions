@@ -1,11 +1,9 @@
 'use client';
 
 import Image from 'next/image';
-import { useState, useRef } from 'react';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
 import { Card, CardContent } from '@/components/ui/card';
-import { CheckCircle, Upload } from 'lucide-react';
-import { Button } from '@/components/ui/button';
+import { CheckCircle } from 'lucide-react';
 
 const defaultAboutImage = PlaceHolderImages.find((p) => p.id === 'about-me');
 
@@ -18,21 +16,7 @@ const philosophyPoints = [
 ];
 
 export default function AboutPage() {
-  const [uploadedImage, setUploadedImage] = useState<string | null>(null);
-  const fileInputRef = useRef<HTMLInputElement>(null);
-
-  const handleImageUpload = (event: React.ChangeEvent<HTMLInputElement>) => {
-    const file = event.target.files?.[0];
-    if (file) {
-      const reader = new FileReader();
-      reader.onloadend = () => {
-        setUploadedImage(reader.result as string);
-      };
-      reader.readAsDataURL(file);
-    }
-  };
-
-  const imageUrl = uploadedImage || defaultAboutImage?.imageUrl;
+  const imageUrl = defaultAboutImage?.imageUrl;
 
   return (
     <div className="container py-16 md:py-24">
@@ -65,25 +49,13 @@ export default function AboutPage() {
                 <div className="aspect-square relative mb-6">
                   <Image
                     src={imageUrl}
-                    alt={defaultAboutImage?.description || 'Uploaded profile picture'}
+                    alt={defaultAboutImage?.description || 'Profile picture'}
                     fill
                     className="rounded-md object-cover"
                     data-ai-hint={defaultAboutImage?.imageHint}
                   />
                 </div>
               )}
-              <input
-                type="file"
-                ref={fileInputRef}
-                onChange={handleImageUpload}
-                accept="image/*"
-                className="hidden"
-                id="image-upload"
-              />
-              <Button onClick={() => fileInputRef.current?.click()} className="w-full mb-6">
-                <Upload className="mr-2 h-4 w-4" />
-                Upload Your Image
-              </Button>
               <h3 className="text-xl font-bold font-headline mb-4">Core Philosophy</h3>
               <ul className="space-y-3">
                 {philosophyPoints.map((point, index) => (
