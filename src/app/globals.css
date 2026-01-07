@@ -4,24 +4,24 @@
 
 @layer base {
   :root {
-    --background: 240 40% 15%; /* Deep navy blue */
-    --foreground: 240 10% 95%;
-    --card: 240 40% 18%;
-    --card-foreground: 240 10% 95%;
-    --popover: 240 40% 15%;
-    --popover-foreground: 240 10% 95%;
+    --background: 0 72% 51%; /* Red */
+    --foreground: 0 0% 98%;
+    --card: 0 72% 45%;
+    --card-foreground: 0 0% 98%;
+    --popover: 0 72% 51%;
+    --popover-foreground: 0 0% 98%;
     --primary: 45 90% 60%; /* Vibrant gold/yellow */
     --primary-foreground: 45 90% 10%;
-    --secondary: 240 30% 25%;
-    --secondary-foreground: 240 10% 95%;
-    --muted: 240 30% 25%;
-    --muted-foreground: 240 10% 70%;
-    --accent: 240 30% 28%;
-    --accent-foreground: 240 10% 98%;
+    --secondary: 0 72% 35%;
+    --secondary-foreground: 0 0% 98%;
+    --muted: 0 72% 35%;
+    --muted-foreground: 0 0% 80%;
+    --accent: 0 72% 40%;
+    --accent-foreground: 0 0% 98%;
     --destructive: 0 63% 31%;
     --destructive-foreground: 0 0% 98%;
-    --border: 240 40% 25%;
-    --input: 240 30% 25%;
+    --border: 0 72% 40%;
+    --input: 0 72% 35%;
     --ring: 45 90% 65%;
     --chart-1: 45 90% 60%;
     --chart-2: 160 60% 45%;
