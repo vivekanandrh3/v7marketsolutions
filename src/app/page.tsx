@@ -8,19 +8,23 @@ import { markets, type Market } from '@/lib/data';
 const heroImage = PlaceHolderImages.find((img) => img.id === 'hero');
 
 function MarketCard({ market }: { market: Market }) {
-  const marketImage = PlaceHolderImages.find((img) => img.id === market.imageId);
   return (
-    <Card className="flex flex-col overflow-hidden transition-all duration-300 transform hover:-translate-y-2 hover:scale-110 bg-card/50">
-      <CardHeader className="flex flex-row items-center gap-4">
-        <market.icon className="w-8 h-8 text-primary" />
-        <CardTitle className="font-headline text-xl">{market.name}</CardTitle>
-      </CardHeader>
-      <CardContent className="flex-grow">
-        <p className="text-muted-foreground">{market.description}</p>
-      </CardContent>
-    </Card>
+    <div className="flip-card h-52">
+      <div className="flip-card-inner">
+        <div className="flip-card-front flex flex-col justify-center items-center p-6">
+          <CardHeader className="flex flex-row items-center gap-4 pb-2">
+            <market.icon className="w-8 h-8 text-primary" />
+            <CardTitle className="font-headline text-xl text-center">{market.name}</CardTitle>
+          </CardHeader>
+        </div>
+        <div className="flip-card-back flex flex-col justify-center items-center p-6">
+          <p className="text-muted-foreground text-center">{market.description}</p>
+        </div>
+      </div>
+    </div>
   );
 }
+
 
 export default function Home() {
   return (
