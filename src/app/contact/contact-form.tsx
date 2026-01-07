@@ -1,8 +1,7 @@
 'use client';
 
-import { useActionState } from 'react';
+import { useActionState, useEffect, useRef } from 'react';
 import { useFormStatus } from 'react-dom';
-import { useEffect, useRef } from 'react';
 import { useToast } from "@/hooks/use-toast";
 import { submitContactForm, type ContactFormState } from '@/app/actions/contact';
 import { Label } from '@/components/ui/label';
@@ -58,13 +57,19 @@ export function ContactForm() {
       </CardHeader>
       <CardContent>
         <form ref={formRef} action={formAction} className="space-y-6">
-          <div className="space-y-2">
-            <Label htmlFor="name">Full Name</Label>
-            <Input id="name" name="name" placeholder="John Doe" required />
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+            <div className="space-y-2">
+              <Label htmlFor="name">Full Name</Label>
+              <Input id="name" name="name" placeholder="John Doe" required />
+            </div>
+            <div className="space-y-2">
+              <Label htmlFor="email">Email Address</Label>
+              <Input id="email" name="email" type="email" placeholder="you@example.com" required />
+            </div>
           </div>
           <div className="space-y-2">
-            <Label htmlFor="email">Email Address</Label>
-            <Input id="email" name="email" type="email" placeholder="you@example.com" required />
+            <Label htmlFor="phone">Phone Number (Optional)</Label>
+            <Input id="phone" name="phone" type="tel" placeholder="+1 (555) 123-4567" />
           </div>
           <div className="space-y-2">
             <Label htmlFor="message">Your Message</Label>
