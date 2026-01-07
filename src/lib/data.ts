@@ -209,31 +209,3 @@ export const insights: InsightPost[] = [
     tags: ['Psychology', 'Behavioral Finance', 'Fear & Greed'],
   }
 ];
-
-export type Resource = {
-  title: string;
-  description: string;
-  imageId: string;
-  fileUrl: string; // Placeholder for a download link
-};
-
-export const resources: Resource[] = [
-  {
-    title: 'Beginner\'s Guide to Price Action',
-    description: 'A comprehensive PDF guide covering the fundamentals of reading candlestick charts and price patterns.',
-    imageId: 'resource-guide',
-    fileUrl: '#',
-  },
-  {
-    title: 'Risk Management Checklist',
-    description: 'A printable checklist to ensure you follow your risk management rules on every single trade.',
-    imageId: 'resource-guide',
-    fileUrl: '#',
-  },
-  {
-    title: 'Trading Psychology Journal Template',
-    description: 'A template to help you track your emotions, identify biases, and improve your mental game.',
-    imageId: 'resource-guide',
-    fileUrl: '#',
-  }
-];
