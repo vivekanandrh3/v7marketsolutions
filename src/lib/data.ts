@@ -110,50 +110,104 @@ export type InsightPost = {
 
 export const insights: InsightPost[] = [
   {
-    slug: 'interest-rates-and-inflation-101',
-    title: "Interest Rates and Inflation: The Market's Push and Pull",
-    description: "A simple guide to understanding why everyone talks about interest rates and inflation, and how they affect the economy.",
+    slug: 'central-bank-interest-rates',
+    title: 'Central Bank & Interest Rate Topics',
+    description: 'Understand how central banks use interest rates as a primary tool to manage economic growth and control inflation.',
+    date: '2024-07-29',
+    imageId: 'insight-central-bank',
+    content: `
+      <p>Central banks, like the Federal Reserve in the U.S., act as the economy's primary regulator. Their main tool is the 'policy interest rate,' which dictates the cost of borrowing for commercial banks. When they 'hike' rates, borrowing becomes more expensive, slowing down spending and investment to cool off an overheating economy and fight inflation. Conversely, 'cutting' rates makes borrowing cheaper, encouraging economic activity during a slowdown.</p>
+    `,
+    tags: ['Central Banks', 'Interest Rates', 'Monetary Policy'],
+  },
+  {
+    slug: 'inflation-cost-of-living',
+    title: 'Inflation & Cost of Living',
+    description: 'Explore how inflation erodes purchasing power and directly impacts everyday expenses for households.',
+    date: '2024-07-28',
+    imageId: 'insight-inflation',
+    content: `
+      <p>Inflation is the rate at which the general level of prices for goods and services is rising, and subsequently, your money's purchasing power is falling. High inflation means your dollar buys less than it did before, affecting everything from groceries to gas. It's a key indicator of economic health and a major focus for both central banks and consumers.</p>
+    `,
+    tags: ['Inflation', 'Economics', 'Cost of Living'],
+  },
+  {
+    slug: 'employment-economic-health',
+    title: 'Employment & Economic Health',
+    description: 'Learn why low unemployment is a sign of a strong economy, but also how it can signal future inflation.',
+    date: '2024-07-27',
+    imageId: 'insight-employment',
+    content: `
+      <p>Employment data, such as the unemployment rate and job creation numbers, are a direct pulse check on the economy. Low unemployment signifies a strong economy where businesses are hiring and consumers are confident. However, a very tight labor market can lead to wage growth that outpaces productivity, which can in turn fuel inflation, creating a complex challenge for policymakers.</p>
+    `,
+    tags: ['Employment', 'Jobs Report', 'Economic Health'],
+  },
+  {
+    slug: 'war-geopolitics-global-tensions',
+    title: 'War, Geopolitics & Global Tensions',
+    description: 'See how international conflicts and political instability create market uncertainty and trigger risk-off sentiment.',
+    date: '2024-07-26',
+    imageId: 'insight-geopolitics',
+    content: `
+      <p>Financial markets crave stability. Geopolitical events, such as wars or significant political disputes, introduce profound uncertainty. This "geopolitical risk" can disrupt supply chains (e.g., oil), spook investors, and cause a flight to safety. During these times, market participants often sell riskier assets like stocks and flock to 'safe havens' like gold or the U.S. dollar.</p>
+    `,
+    tags: ['Geopolitics', 'Risk', 'Global Markets'],
+  },
+  {
+    slug: 'trade-tariffs-global-politics',
+    title: 'Trade, Tariffs & Global Politics',
+    description: 'Understand how trade policies and tariffs can impact corporate profits and international market dynamics.',
+    date: '2024-07-25',
+    imageId: 'insight-trade',
+    content: `
+      <p>Trade agreements and tariffs (taxes on imported goods) are powerful political tools that have significant economic consequences. Open trade can boost profits for multinational corporations, while trade wars and protectionist tariffs can increase costs, reduce sales, and create volatility. These policies are a key factor in the performance of global stock market indices.</p>
+    `,
+    tags: ['Trade', 'Tariffs', 'Globalization'],
+  },
+  {
+    slug: 'bonds-yields-smart-money',
+    title: 'Bonds, Yields & "Smart Money" Signals',
+    description: 'Discover how the bond market, often called the "smart money," provides clues about future economic health.',
+    date: '2024-07-24',
+    imageId: 'insight-bonds',
+    content: `
+      <p>The bond market is often seen as a leading indicator for the broader economy. Bond yields (the return on a bond) reflect expectations for future interest rates and inflation. A phenomenon known as an 'inverted yield curve,' where short-term bonds yield more than long-term ones, has historically been one of the most reliable predictors of an upcoming recession.</p>
+    `,
+    tags: ['Bonds', 'Yield Curve', 'Smart Money'],
+  },
+  {
+    slug: 'commodities-real-economy',
+    title: 'Commodities & Real Economy',
+    description: 'How prices of raw materials like oil, copper, and lumber reflect the real-world demand and health of the global economy.',
+    date: '2024-07-23',
+    imageId: 'insight-commodities',
+    content: `
+      <p>Commodities are the raw materials that build and power the world. The price of industrial metals like copper (often called Dr. Copper for its economic predictive ability) or energy products like oil reflects global industrial demand. Rising commodity prices can signal a booming economy, but they can also be a major source of inflation for consumers and businesses.</p>
+    `,
+    tags: ['Commodities', 'Oil', 'Real Economy'],
+  },
+  {
+    slug: 'crypto-risk-sentiment',
+    title: 'Crypto & Risk Sentiment',
+    description: 'Explore how the cryptocurrency market often acts as a barometer for overall investor appetite for risk.',
     date: '2024-07-22',
-    imageId: 'interest-rates-inflation-101',
+    imageId: 'insight-crypto',
     content: `
-      <h2 class="text-2xl font-headline font-bold mb-4">What's the Big Deal?</h2>
-      <p class="mb-4">Imagine the economy is a car. Inflation is how fast it's going, and interest rates are the brakes. <strong>Inflation</strong> is the rate at which the general level of prices for goods and services is rising, and subsequently, purchasing power is falling. A little bit is normal, but too much means the car is going too fast and might crash.</p>
-      <p class="mb-4"><strong>Interest rates</strong>, set by central banks (like the Fed in the U.S. or the RBI in India), are the cost of borrowing money. When they 'hike rates', they're hitting the brakes. It becomes more expensive for people and companies to borrow money for big purchases like houses, cars, or new factories. This slows down spending, cools the economy, and helps bring inflation back under control.</p>
-      <h2 class="text-2xl font-headline font-bold mt-6 mb-4">Why Traders Care</h2>
-      <p>When interest rates go up, safer investments like government bonds become more attractive because they pay more. This can pull money out of riskier assets like stocks. When rates go down, it's the opposite: borrowing is cheap, companies can grow faster, and stocks often look more appealing. Watching these two numbers gives traders a clue about which way the economic 'car' is being steered.</p>
+      <p>As one of the most speculative asset classes, the cryptocurrency market is a useful gauge of broad market risk sentiment. When investors feel confident and have a strong appetite for risk (a 'risk-on' environment), money often flows into crypto. Conversely, in a fearful 'risk-off' environment, assets like Bitcoin can see significant sell-offs as investors move to safer assets.</p>
     `,
-    tags: ['Interest Rates', 'Inflation', 'Economics 101'],
+    tags: ['Crypto', 'Risk Sentiment', 'Bitcoin'],
   },
   {
-    slug: 'geopolitics-and-markets',
-    title: 'From Headlines to Your Portfolio: Geopolitics Explained',
-    description: 'How events like wars, trade policies, and global tensions can send shockwaves through financial markets.',
-    date: '2024-07-20',
-    imageId: 'geopolitics-and-markets',
+    slug: 'market-psychology-behavior',
+    title: 'Market Psychology & Behavior',
+    description: 'Delve into how collective emotions of fear and greed drive market bubbles and crashes, often defying logic.',
+    date: '2024-07-21',
+    imageId: 'insight-psychology',
     content: `
-      <h2 class="text-2xl font-headline font-bold mb-4">The World is Connected</h2>
-      <p class="mb-4">Financial markets don't exist in a bubble. Events happening thousands of miles away, like wars, political instability, or new trade tariffs, can have a direct impact. Why? Because these events create <strong>uncertainty</strong>, and markets hate uncertainty. This is often called <strong>Geopolitical Risk</strong>.</p>
-      <p class="mb-4">For example, a conflict in a major oil-producing region can disrupt supply, causing oil prices to skyrocket. This increases costs for everyone, from airlines to shipping companies, and can fuel inflation. Similarly, when two countries start a 'trade war' by imposing <strong>tariffs</strong> (taxes on imported goods), it can make products more expensive and hurt the profits of international companies.</p>
-      <h2 class="text-2xl font-headline font-bold mt-6 mb-4">Risk-On vs. Risk-Off</h2>
-      <p>When global tensions are high, you'll often hear the term <strong>'Risk-Off'</strong>. This means investors get scared and sell risky assets (like stocks) and rush to buy 'safe-haven' assets, such as gold, U.S. dollars, or government bonds. When tensions ease and confidence returns, it's <strong>'Risk-On'</strong>, and money flows back into those riskier assets. Understanding the global mood helps you understand why the market might be moving up or down, even if there's no company-specific news.</p>
+      <p>Markets are driven by people, and people are emotional. The collective psychology of investors creates cycles of fear and greed that can lead to speculative bubbles and panicked crashes. Understanding behavioral finance and recognizing common cognitive biases are crucial skills for navigating markets that often seem irrational. Price action is the ultimate reflection of this mass psychology.</p>
     `,
-    tags: ['Geopolitics', 'Risk', 'Trade Policy'],
-  },
-  {
-    slug: 'bond-yields-unemployment-connection',
-    title: "Bond Yields and Job Reports: The Market's Health Check",
-    description: "Learn what bond yields and unemployment numbers can tell you about the overall health of the economy.",
-    date: '2024-07-18',
-    imageId: 'bond-yields-unemployment',
-    content: `
-      <h2 class="text-2xl font-headline font-bold mb-4">The Economy's Report Card</h2>
-      <p class="mb-4">Two key numbers that act like a health check for the economy are <strong>unemployment rates</strong> and <strong>bond yields</strong>. A low unemployment rate is generally good—it means most people have jobs and are spending money, which drives economic growth. However, if it gets too low, companies may have to pay higher wages to attract workers, which can contribute to inflation.</p>
-      <p class="mb-4">A <strong>bond yield</strong> is the return an investor gets on a government or corporate bond. Think of it as the 'interest rate' on that bond. The yield on government bonds (like the U.S. 10-Year Treasury) is often seen as a benchmark for the entire market. If investors are worried about the economy, they might rush to buy these safe bonds, which pushes the price up and the yield down. A falling yield can be a sign of economic anxiety.</p>
-      <h2 class="text-2xl font-headline font-bold mt-6 mb-4">The Inverted Yield Curve</h2>
-      <p>You might hear about an 'inverted yield curve'. Normally, long-term bonds have higher yields than short-term bonds to compensate for locking up money longer. When short-term yields become higher than long-term yields, the curve 'inverts'. This is a rare event that has historically been a reliable predictor of an upcoming recession, as it suggests investors expect rates to be lower in the future due to a weaker economy.</p>
-    `,
-    tags: ['Bond Yields', 'Unemployment', 'Recession'],
-  },
+    tags: ['Psychology', 'Behavioral Finance', 'Fear & Greed'],
+  }
 ];
 
 export type Resource = {

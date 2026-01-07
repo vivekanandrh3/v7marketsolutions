@@ -49,22 +49,58 @@
       "imageHint": "ebook cover"
     },
     {
-      "id": "interest-rates-inflation-101",
-      "description": "Abstract representation of economic data and charts, with a subtle upward trend.",
-      "imageUrl": "https://images.unsplash.com/photo-1559163229-a1625a652a96?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxlY29ub21pYyUyMGRhdGF8ZW58MHx8fHwxNzY4MTU4NDU1fDA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "economic data"
+      "id": "insight-central-bank",
+      "description": "A grand central bank building with columns.",
+      "imageUrl": "https://images.unsplash.com/photo-1673923926424-fa53f9a32ab8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxiYW5rJTIwYnVpbGRpbmd8ZW58MHx8fHwxNzY3NzcwMjczfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "bank building"
     },
     {
-      "id": "geopolitics-and-markets",
-      "description": "Flags of different nations blurred in the background with a stock chart overlayed in the foreground.",
-      "imageUrl": "https://images.unsplash.com/photo-1579532537598-459ecdaf39cc?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxnbG9iYWwlMjBtYXJrZXRzfGVufDB8fHx8fDE3NjgxNTg0ODJ8MA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "global markets"
+      "id": "insight-inflation",
+      "description": "A shopping cart with groceries.",
+      "imageUrl": "https://images.unsplash.com/photo-1525328437458-0c4d4db7cab4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxzaG9wcGluZyUyMGNhcnR8ZW58MHx8fHwxNzY3NzU1MjQ2fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "shopping cart"
     },
     {
-      "id": "bond-yields-unemployment",
-      "description": "A financial newspaper with headlines about job reports and bond yields.",
-      "imageUrl": "https://images.unsplash.com/photo-1664332988892-355ce55342ab?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxmaW5hbmNpYWwlMjB0cmVuZHN8ZW58MHx8fHwxNzY4MTU4NTA2fDA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "financial newspaper"
+      "id": "insight-employment",
+      "description": "A diverse group of professionals in a meeting.",
+      "imageUrl": "https://images.unsplash.com/photo-1531973576160-7125cd663d86?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxvZmZpY2UlMjB3b3JrZXJzfGVufDB8fHx8MTc2Nzc4MDkxMnww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "office workers"
+    },
+    {
+      "id": "insight-geopolitics",
+      "description": "A world map with chess pieces on it.",
+      "imageUrl": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHx3b3JsZCUyMG1hcHxlbnwwfHx8fDE3Njc3MjE4MjV8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "world map"
+    },
+    {
+      "id": "insight-trade",
+      "description": "Cargo ship with containers at a port.",
+      "imageUrl": "https://images.unsplash.com/photo-1605745341112-85968b19335b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxjYXJnbyUyMHNoaXB8ZW58MHx8fHwxNzY3NzAwMTI2fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "cargo ship"
+    },
+    {
+      "id": "insight-bonds",
+      "description": "A conceptual image of financial bonds or certificates.",
+      "imageUrl": "https://images.unsplash.com/photo-1599387950977-af4e17082ee1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxmaW5hbmNpYWwlMjBjZXJ0aWZpY2F0ZXxlbnwwfHx8fDE3Njc3ODA5MTJ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "financial certificate"
+    },
+    {
+      "id": "insight-commodities",
+      "description": "Barrels of oil and sacks of grain.",
+      "imageUrl": "https://images.unsplash.com/photo-1681088761707-3d15e282c44f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxvaWwlMjBiYXJyZWxzfGVufDB8fHx8MTc2Nzc4MDkxMnww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "oil barrels"
+    },
+    {
+      "id": "insight-crypto",
+      "description": "Digital network with glowing Bitcoin symbol.",
+      "imageUrl": "https://images.unsplash.com/photo-1644325349124-d1756b79dd42?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxkaWdpdGFsJTIwbmV0d29ya3xlbnwwfHx8fDE3Njc3Njg3NTF8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "digital network"
+    },
+    {
+      "id": "insight-psychology",
+      "description": "A silhouette of a head with a brain made of charts and graphs.",
+      "imageUrl": "https://images.unsplash.com/photo-1725399633864-ae5493e9f1bb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxicmFpbiUyMGNoYXJ0fGVufDB8fHx8MTc2Nzc4MDkxMnww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "brain chart"
     }
   ]
 }
