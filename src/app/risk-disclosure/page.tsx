@@ -36,7 +36,7 @@ export default function RiskDisclosurePage() {
       </div>
       <div className="grid md:grid-cols-2 gap-8">
         {principles.map((principle) => (
-          <div key={principle.title} className="bg-card/50 p-6 rounded-lg border">
+          <div key={principle.title} className="bg-card/50 p-6 rounded-lg border transition-transform duration-300 ease-in-out hover:scale-105 hover:shadow-xl hover:shadow-primary/10">
             <h2 className="text-xl font-headline font-semibold text-primary">{principle.title}</h2>
             <p className="mt-2 text-muted-foreground">{principle.description}</p>
           </div>
