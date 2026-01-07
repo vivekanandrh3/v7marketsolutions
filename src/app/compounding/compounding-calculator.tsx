@@ -21,12 +21,21 @@ interface CompoundingData {
 
 type Currency = 'USD' | 'INR';
 
-const USD_TO_INR_RATE = 83.5;
+const USD_TO_INR_RATE = 90;
+
+const monthlyRateOptions = [
+  { label: '1%', value: 0.01 },
+  { label: '2%', value: 0.02 },
+  { label: '3%', value: 0.03 },
+  { label: '4%', value: 0.04 },
+];
+
+const yearOptions = [3, 5, 7, 10, 20];
 
 export function CompoundingCalculator() {
   const [initialInvestment, setInitialInvestment] = useState<number>(10000);
-  const [monthlyRate] = useState<number>(0.02); // 2%
-  const [years] = useState<number>(5);
+  const [monthlyRate, setMonthlyRate] = useState<number>(0.02);
+  const [years, setYears] = useState<number>(5);
   const [currency, setCurrency] = useState<Currency>('USD');
 
   const currencySymbol = currency === 'USD' ? '$' : '₹';
@@ -88,7 +97,7 @@ export function CompoundingCalculator() {
         <CardHeader>
           <CardTitle className="font-headline text-xl">Compounding Parameters</CardTitle>
           <CardDescription>
-            Adjust the initial investment to see the power of compounding over {years} years at a {monthlyRate * 100}% monthly return.
+            Adjust the parameters below to see the power of compounding.
           </CardDescription>
         </CardHeader>
         <CardContent className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -125,6 +134,36 @@ export function CompoundingCalculator() {
                 Using conversion rate: 1 USD = {USD_TO_INR_RATE} INR
             </p>
           </div>
+           <div className="space-y-2">
+            <Label>Monthly Return Rate</Label>
+            <RadioGroup
+              value={String(monthlyRate)}
+              onValueChange={(value) => setMonthlyRate(Number(value))}
+              className="flex flex-wrap items-center gap-x-4 gap-y-2"
+            >
+              {monthlyRateOptions.map(option => (
+                <div key={option.value} className="flex items-center space-x-2">
+                  <RadioGroupItem value={String(option.value)} id={`rate-${option.value}`} />
+                  <Label htmlFor={`rate-${option.value}`} className="font-normal">{option.label}</Label>
+                </div>
+              ))}
+            </RadioGroup>
+          </div>
+           <div className="space-y-2">
+            <Label>Compounding Years</Label>
+            <RadioGroup
+              value={String(years)}
+              onValueChange={(value) => setYears(Number(value))}
+              className="flex flex-wrap items-center gap-x-4 gap-y-2"
+            >
+              {yearOptions.map(option => (
+                <div key={option} className="flex items-center space-x-2">
+                  <RadioGroupItem value={String(option)} id={`years-${option}`} />
+                  <Label htmlFor={`years-${option}`} className="font-normal">{option} Years</Label>
+                </div>
+              ))}
+            </RadioGroup>
+          </div>
         </CardContent>
       </Card>
 
@@ -132,7 +171,7 @@ export function CompoundingCalculator() {
         <CardHeader>
           <CardTitle className="font-headline text-2xl">Growth Over Time</CardTitle>
            <CardDescription>
-            The chart below illustrates the exponential growth of your investment.
+            The chart below illustrates the exponential growth of your investment over {years} years at {monthlyRate * 100}% per month.
           </CardDescription>
         </CardHeader>
         <CardContent>
