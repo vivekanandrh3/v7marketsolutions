@@ -9,16 +9,16 @@ const heroImage = PlaceHolderImages.find((img) => img.id === 'hero');
 
 function MarketCard({ market }: { market: Market }) {
   return (
-    <div className="flip-card h-52">
+    <div className="flip-card h-52 transition-transform duration-300 ease-in-out hover:scale-105">
       <div className="flip-card-inner">
         <div className="flip-card-front flex flex-col justify-center items-center p-6">
           <CardHeader className="flex flex-row items-center gap-4 pb-2">
             <market.icon className="w-8 h-8 text-primary" />
-            <CardTitle className="font-headline text-xl text-center">{market.name}</CardTitle>
+            <CardTitle className="font-headline text-2xl text-center">{market.name}</CardTitle>
           </CardHeader>
         </div>
         <div className="flip-card-back flex flex-col justify-center items-center p-6">
-          <p className="text-muted-foreground text-center">{market.description}</p>
+          <p className="text-muted-foreground text-center text-base">{market.description}</p>
         </div>
       </div>
     </div>
