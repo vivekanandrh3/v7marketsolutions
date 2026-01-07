@@ -15,6 +15,7 @@ const navLinks = [
   { href: '/about', label: 'About' },
   { href: '/insights', label: 'Research & Insights' },
   { href: '/resources', label: 'Free Resources' },
+  { href: '/risk-disclosure', label: 'Risk Disclosure' },
   { href: '/compounding', label: 'Compounding' },
   { href: '/contact', label: 'Contact' },
 ];
