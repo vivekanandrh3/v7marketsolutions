@@ -24,11 +24,11 @@ export default function AboutPage() {
           </p>
            <h2 className="text-2xl font-bold font-headline mt-8">Core Philosophy</h2>
             <ul className="space-y-4 text-muted-foreground">
-                <li className="[text-shadow:0_1px_2px_rgba(0,0,0,0.1)]">Discipline over Emotion: Trading is a mental game. A structured, rule-based approach is non-negotiable.</li>
-                <li className="[text-shadow:0_1px_2px_rgba(0,0,0,0.1)]">Process, Not Profits: Focus on flawless execution of your strategy. The profits will follow as a byproduct.</li>
-                <li className="[text-shadow:0_1px_2px_rgba(0,0,0,0.1)]">Risk Management is Job #1: Capital preservation is the foundation upon which all trading success is built.</li>
-                <li className="[text-shadow:0_1px_2px_rgba(0,0,0,0.1)]">Continuous Learning: The market is a dynamic teacher. Stay humble, stay curious, and never stop learning.</li>
-                <li className="[text-shadow:0_1px_2px_rgba(0,0,0,0.1)]">Simplicity is Key: Complex strategies don't equal better results. I focus on clean price action and market structure.</li>
+                <li className="[text-shadow:0_1px_2px_rgba(0,0,0,0.1)]"><span className="font-semibold text-foreground/90">Discipline over Emotion:</span> Trading is a mental game. A structured, rule-based approach is non-negotiable.</li>
+                <li className="[text-shadow:0_1px_2px_rgba(0,0,0,0.1)]"><span className="font-semibold text-foreground/90">Process, Not Profits:</span> Focus on flawless execution of your strategy. The profits will follow as a byproduct.</li>
+                <li className="[text-shadow:0_1px_2px_rgba(0,0,0,0.1)]"><span className="font-semibold text-foreground/90">Risk Management is Job #1:</span> Capital preservation is the foundation upon which all trading success is built.</li>
+                <li className="[text-shadow:0_1px_2px_rgba(0,0,0,0.1)]"><span className="font-semibold text-foreground/90">Continuous Learning:</span> The market is a dynamic teacher. Stay humble, stay curious, and never stop learning.</li>
+                <li className="[text-shadow:0_1px_2px_rgba(0,0,0,0.1)]"><span className="font-semibold text-foreground/90">Simplicity is Key:</span> Complex strategies don't equal better results. I focus on clean price action and market structure.</li>
             </ul>
         </div>
       </div>
