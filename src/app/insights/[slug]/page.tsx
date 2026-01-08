@@ -25,7 +25,7 @@ export default function InsightPostPage({ params }: { params: { slug: string } }
   const postImage = PlaceHolderImages.find((img) => img.id === post.imageId);
 
   return (
-    <div className="bg-secondary/50">
+    <div className="bg-blue-wash">
       <div className="container max-w-4xl mx-auto py-16 md:py-24">
         <Button asChild variant="ghost" className="mb-8">
           <Link href="/insights"><ArrowLeft className="mr-2 h-4 w-4" />Back to Insights</Link>
