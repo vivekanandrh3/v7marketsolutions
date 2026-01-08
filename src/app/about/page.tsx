@@ -19,7 +19,7 @@ export default function AboutPage() {
             After navigating the retail trading landscape, I set my sights on the proprietary trading world. Becoming a funded prop firm trader was a pivotal moment. It validated my strategies and, more importantly, reinforced the institutional-level discipline required to manage significant capital. This experience taught me to think in terms of probabilities, to manage risk like a business, and to separate my ego from my trading decisions.
           </p>
           <h2 className="text-2xl font-bold font-headline mt-8">Why I Started V7 MARKET SOLUTIONS</h2>
-          <p>
+          <p className="font-bold italic">
             I created V7 MARKET SOLUTIONS to demystify the markets for aspiring traders. There's a sea of misinformation online, often promising easy riches. My goal is to cut through that noise and provide a clear, professional, and realistic perspective on what it takes to succeed. This platform is my way of sharing the hard-won lessons from my journey, focusing on the institutional concepts, psychological fortitude, and robust risk management that form the bedrock of my own trading. This is not about signals or hot tips; it's about empowering you with a durable skillset to navigate the markets on your own terms.
           </p>
            <h2 className="text-2xl font-bold font-headline mt-8">Core Philosophy</h2>
