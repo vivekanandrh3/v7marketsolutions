@@ -47,7 +47,7 @@ function InsightPostCard({ post }: { post: InsightPost }) {
 
 export default function InsightsPage() {
   return (
-    <div className="bg-blue-wash">
+    <div>
       <div className="container py-16 md:py-24">
         <div className="text-center mb-16">
           <h1 className="text-4xl font-bold tracking-tight font-headline sm:text-5xl">Research &amp; Insights</h1>

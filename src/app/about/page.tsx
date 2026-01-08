@@ -1,7 +1,7 @@
 
 export default function AboutPage() {
   return (
-    <div className="bg-cream">
+    <div>
       <div className="container py-16 md:py-24">
         <div className="text-center">
           <h1 className="text-4xl font-bold tracking-tight font-headline sm:text-5xl">My Journey & Philosophy</h1>
