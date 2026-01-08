@@ -12,10 +12,10 @@ export default function AboutPage() {
       <div className="mt-16 max-w-4xl mx-auto">
         <div className="space-y-6 text-foreground/90">
           <h2 className="text-2xl font-bold font-headline">The Path to Consistency</h2>
-          <p>
+          <p className="font-bold">
             My journey into the world of trading wasn't a straight line to success. It was a path forged through years of relentless study, countless hours of screen time, and the painful but necessary lessons that only the market can teach. I started like many, drawn by the allure of financial freedom, but soon discovered that true success in this field is built on a foundation of discipline, process, and an unwavering respect for risk.
           </p>
-          <p>
+          <p className="font-bold">
             After navigating the retail trading landscape, I set my sights on the proprietary trading world. Becoming a funded prop firm trader was a pivotal moment. It validated my strategies and, more importantly, reinforced the institutional-level discipline required to manage significant capital. This experience taught me to think in terms of probabilities, to manage risk like a business, and to separate my ego from my trading decisions.
           </p>
           <h2 className="text-2xl font-bold font-headline mt-8">Why I Started V7 MARKET SOLUTIONS</h2>
