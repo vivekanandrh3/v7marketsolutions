@@ -1,3 +1,4 @@
+
 import { insights, type InsightPost } from '@/lib/data';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from '@/components/ui/card';
@@ -46,18 +47,20 @@ function InsightPostCard({ post }: { post: InsightPost }) {
 
 export default function InsightsPage() {
   return (
-    <div className="container py-16 md:py-24">
-      <div className="text-center mb-16">
-        <h1 className="text-4xl font-bold tracking-tight font-headline sm:text-5xl">Research &amp; Insights</h1>
-        <p className="mt-4 max-w-3xl mx-auto text-lg text-muted-foreground">
-          Deep dives into market context, macro trends, and event breakdowns. All analysis is presented in a neutral, educational tone.
-        </p>
-      </div>
+    <div className="bg-secondary/50">
+      <div className="container py-16 md:py-24">
+        <div className="text-center mb-16">
+          <h1 className="text-4xl font-bold tracking-tight font-headline sm:text-5xl">Research &amp; Insights</h1>
+          <p className="mt-4 max-w-3xl mx-auto text-lg text-muted-foreground">
+            Deep dives into market context, macro trends, and event breakdowns. All analysis is presented in a neutral, educational tone.
+          </p>
+        </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-        {insights.map((post) => (
-          <InsightPostCard key={post.slug} post={post} />
-        ))}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          {insights.map((post) => (
+            <InsightPostCard key={post.slug} post={post} />
+          ))}
+        </div>
       </div>
     </div>
   );
