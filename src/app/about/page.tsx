@@ -23,12 +23,12 @@ export default function AboutPage() {
             I created V7 MARKET SOLUTIONS to demystify the markets for aspiring traders. There's a sea of misinformation online, often promising easy riches. My goal is to cut through that noise and provide a clear, professional, and realistic perspective on what it takes to succeed. This platform is my way of sharing the hard-won lessons from my journey, focusing on the institutional concepts, psychological fortitude, and robust risk management that form the bedrock of my own trading. This is not about signals or hot tips; it's about empowering you with a durable skillset to navigate the markets on your own terms.
           </p>
            <h2 className="text-2xl font-bold font-headline mt-8">Core Philosophy</h2>
-            <ul className="space-y-3 text-muted-foreground">
-                <li>Discipline over Emotion: Trading is a mental game. A structured, rule-based approach is non-negotiable.</li>
-                <li>Process, Not Profits: Focus on flawless execution of your strategy. The profits will follow as a byproduct.</li>
-                <li>Risk Management is Job #1: Capital preservation is the foundation upon which all trading success is built.</li>
-                <li>Continuous Learning: The market is a dynamic teacher. Stay humble, stay curious, and never stop learning.</li>
-                <li>Simplicity is Key: Complex strategies don't equal better results. I focus on clean price action and market structure.</li>
+            <ul className="space-y-4 text-muted-foreground">
+                <li className="[text-shadow:0_1px_2px_rgba(0,0,0,0.1)]">Discipline over Emotion: Trading is a mental game. A structured, rule-based approach is non-negotiable.</li>
+                <li className="[text-shadow:0_1px_2px_rgba(0,0,0,0.1)]">Process, Not Profits: Focus on flawless execution of your strategy. The profits will follow as a byproduct.</li>
+                <li className="[text-shadow:0_1px_2px_rgba(0,0,0,0.1)]">Risk Management is Job #1: Capital preservation is the foundation upon which all trading success is built.</li>
+                <li className="[text-shadow:0_1px_2px_rgba(0,0,0,0.1)]">Continuous Learning: The market is a dynamic teacher. Stay humble, stay curious, and never stop learning.</li>
+                <li className="[text-shadow:0_1px_2px_rgba(0,0,0,0.1)]">Simplicity is Key: Complex strategies don't equal better results. I focus on clean price action and market structure.</li>
             </ul>
         </div>
       </div>
