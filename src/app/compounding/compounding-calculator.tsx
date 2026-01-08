@@ -17,9 +17,11 @@ interface CompoundingData {
   month: number;
   value: number;
   growth: number;
+  totalContributions: number;
 }
 
 type Currency = 'USD' | 'INR';
+type Frequency = 'one-time' | 'monthly' | 'quarterly' | 'yearly';
 
 const USD_TO_INR_RATE = 90;
 
@@ -34,6 +36,8 @@ const yearOptions = [3, 5, 7, 10, 20];
 
 export function CompoundingCalculator() {
   const [initialInvestment, setInitialInvestment] = useState<number>(10000);
+  const [recurringInvestment, setRecurringInvestment] = useState<number>(500);
+  const [investmentFrequency, setInvestmentFrequency] = useState<Frequency>('monthly');
   const [monthlyRate, setMonthlyRate] = useState<number>(0.02);
   const [years, setYears] = useState<number>(5);
   const [currency, setCurrency] = useState<Currency>('USD');
@@ -43,19 +47,35 @@ export function CompoundingCalculator() {
   const compoundingData = useMemo((): CompoundingData[] => {
     const data: CompoundingData[] = [];
     let currentValue = initialInvestment;
+    let totalContributions = initialInvestment;
     const months = years * 12;
 
     for (let i = 1; i <= months; i++) {
+      if (investmentFrequency !== 'one-time') {
+          if (investmentFrequency === 'monthly') {
+            currentValue += recurringInvestment;
+            totalContributions += recurringInvestment;
+          } else if (investmentFrequency === 'quarterly' && i % 3 === 0) {
+            currentValue += recurringInvestment;
+            totalContributions += recurringInvestment;
+          } else if (investmentFrequency === 'yearly' && i % 12 === 0) {
+            currentValue += recurringInvestment;
+            totalContributions += recurringInvestment;
+          }
+      }
+      
       const growth = currentValue * monthlyRate;
       currentValue += growth;
+
       data.push({
         month: i,
         value: parseFloat(currentValue.toFixed(2)),
         growth: parseFloat(growth.toFixed(2)),
+        totalContributions: parseFloat(totalContributions.toFixed(2)),
       });
     }
     return data;
-  }, [initialInvestment, monthlyRate, years]);
+  }, [initialInvestment, monthlyRate, years, recurringInvestment, investmentFrequency]);
 
   const displayData = useMemo(() => {
     if (currency === 'INR') {
@@ -69,6 +89,7 @@ export function CompoundingCalculator() {
   }, [compoundingData, currency]);
   
   const displayInitialInvestment = currency === 'INR' ? initialInvestment * USD_TO_INR_RATE : initialInvestment;
+  const displayRecurringInvestment = currency === 'INR' ? recurringInvestment * USD_TO_INR_RATE : recurringInvestment;
 
   const chartConfig = {
     value: {
@@ -91,6 +112,10 @@ export function CompoundingCalculator() {
     return `${currencySymbol}${value}`;
   }
 
+  const finalValue = displayData.length > 0 ? displayData[displayData.length - 1].value : displayInitialInvestment;
+  const totalContributions = (investmentFrequency === 'one-time' ? initialInvestment : compoundingData[compoundingData.length -1].totalContributions) * (currency === 'INR' ? USD_TO_INR_RATE : 1);
+  const totalGrowth = finalValue - totalContributions;
+
   return (
     <div className="space-y-8">
       <Card className="bg-card/50">
@@ -100,7 +125,7 @@ export function CompoundingCalculator() {
             Adjust the parameters below to see the power of compounding.
           </CardDescription>
         </CardHeader>
-        <CardContent className="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <CardContent className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           <div className="space-y-2">
             <Label htmlFor="initial-investment">Initial Investment ({currency})</Label>
             <Input
@@ -113,6 +138,45 @@ export function CompoundingCalculator() {
              <p className="text-sm text-muted-foreground">
                 Currently showing: {formatCurrency(displayInitialInvestment)}
             </p>
+          </div>
+          <div className="space-y-2">
+            <Label>Recurring Investment ({currency})</Label>
+             <Input
+              id="recurring-investment"
+              type="number"
+              value={recurringInvestment}
+              onChange={(e) => setRecurringInvestment(Number(e.target.value))}
+              placeholder="e.g., 500"
+              disabled={investmentFrequency === 'one-time'}
+            />
+            <p className="text-sm text-muted-foreground">
+                Currently showing: {formatCurrency(displayRecurringInvestment)}
+            </p>
+          </div>
+          <div className="space-y-2">
+            <Label>Investment Frequency</Label>
+            <RadioGroup
+              value={investmentFrequency}
+              onValueChange={(value: Frequency) => setInvestmentFrequency(value)}
+              className="flex items-center space-x-4"
+            >
+              <div className="flex items-center space-x-2">
+                <RadioGroupItem value="monthly" id="monthly" />
+                <Label htmlFor="monthly" className="font-normal">Monthly</Label>
+              </div>
+              <div className="flex items-center space-x-2">
+                <RadioGroupItem value="quarterly" id="quarterly" />
+                <Label htmlFor="quarterly" className="font-normal">Quarterly</Label>
+              </div>
+               <div className="flex items-center space-x-2">
+                <RadioGroupItem value="yearly" id="yearly" />
+                <Label htmlFor="yearly" className="font-normal">Yearly</Label>
+              </div>
+               <div className="flex items-center space-x-2">
+                <RadioGroupItem value="one-time" id="one-time" />
+                <Label htmlFor="one-time" className="font-normal">One-Time</Label>
+              </div>
+            </RadioGroup>
           </div>
           <div className="space-y-2">
             <Label>Currency</Label>
@@ -131,7 +195,7 @@ export function CompoundingCalculator() {
               </div>
             </RadioGroup>
             <p className="text-sm text-muted-foreground">
-                Using conversion rate: 1 USD = {USD_TO_INR_RATE} INR
+                1 USD = {USD_TO_INR_RATE} INR
             </p>
           </div>
            <div className="space-y-2">
@@ -163,6 +227,29 @@ export function CompoundingCalculator() {
                 </div>
               ))}
             </RadioGroup>
+          </div>
+        </CardContent>
+      </Card>
+      
+       <Card>
+        <CardHeader>
+          <CardTitle className="font-headline text-2xl">Projected Growth</CardTitle>
+          <CardDescription>
+            Summary of your investment growth over {years} years.
+          </CardDescription>
+        </CardHeader>
+        <CardContent className="grid grid-cols-1 md:grid-cols-3 gap-4 text-center">
+          <div>
+            <p className="text-sm text-muted-foreground">Final Value</p>
+            <p className="text-2xl font-bold">{formatCurrency(finalValue)}</p>
+          </div>
+          <div>
+            <p className="text-sm text-muted-foreground">Total Contributions</p>
+            <p className="text-2xl font-bold">{formatCurrency(totalContributions)}</p>
+          </div>
+          <div>
+            <p className="text-sm text-muted-foreground">Total Growth</p>
+            <p className="text-2xl font-bold text-green-500">{formatCurrency(totalGrowth)}</p>
           </div>
         </CardContent>
       </Card>
@@ -204,7 +291,12 @@ export function CompoundingCalculator() {
                 content={
                   <ChartTooltipContent 
                     labelFormatter={(label) => `Month ${label}`}
-                    formatter={(value) => formatCurrency(value as number)}
+                    formatter={(value, name) => {
+                      if (name === 'value') {
+                        return formatCurrency(value as number);
+                      }
+                      return value;
+                    }}
                     indicator="dot" 
                   />
                 }
@@ -223,7 +315,7 @@ export function CompoundingCalculator() {
                     />
                   </linearGradient>
                 </defs>
-              <Area type="monotone" dataKey="value" stroke="var(--color-value)" strokeWidth={2} fill="url(#fillValue)" />
+              <Area type="monotone" dataKey="value" name="Portfolio Value" stroke="var(--color-value)" strokeWidth={2} fill="url(#fillValue)" />
             </AreaChart>
           </ChartContainer>
         </CardContent>
@@ -260,7 +352,7 @@ export function CompoundingCalculator() {
                 const endingValue = currency === 'INR' ? baseEndingValue * USD_TO_INR_RATE : baseEndingValue;
                 
                 const yearlyGain = endingValue - startingValue;
-                const totalReturn = (baseEndingValue / initialInvestment - 1) * 100;
+                const totalReturn = (baseEndingValue / compoundingData[endOfMonth].totalContributions - 1) * 100;
                 
                 return (
                   <TableRow key={year}>
@@ -268,7 +360,7 @@ export function CompoundingCalculator() {
                     <TableCell>{formatCurrency(startingValue)}</TableCell>
                     <TableCell>{formatCurrency(endingValue)}</TableCell>
                     <TableCell className="text-right text-green-400">+{formatCurrency(yearlyGain)}</TableCell>
-                    <TableCell className="text-right">{totalReturn.toFixed(2)}%</TableCell>
+                    <TableCell className="text-right">{!isNaN(totalReturn) ? `${totalReturn.toFixed(2)}%` : 'N/A'}</TableCell>
                   </TableRow>
                 )
               })}
@@ -279,3 +371,5 @@ export function CompoundingCalculator() {
     </div>
   );
 }
+
+    
