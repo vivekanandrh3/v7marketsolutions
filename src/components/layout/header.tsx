@@ -8,7 +8,7 @@ import { useState } from 'react';
 import { cn } from '@/lib/utils';
 import { Logo } from '@/components/icons/logo';
 import { Button } from '@/components/ui/button';
-import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
+import { Sheet, SheetContent, SheetHeader, SheetTitle, SheetDescription, SheetTrigger } from '@/components/ui/sheet';
 
 const navLinks = [
   { href: '/', label: 'Home' },
@@ -54,14 +54,18 @@ export function Header() {
                 <span className="sr-only">Open Menu</span>
               </Button>
             </SheetTrigger>
-            <SheetContent side="left">
-              <div className="flex flex-col h-full">
-                <div className="flex items-center justify-between p-4 border-b">
-                   <Link href="/" className="flex items-center space-x-2" onClick={() => setIsMobileMenuOpen(false)}>
+            <SheetContent side="left" className="p-0">
+               <SheetHeader className="p-4 border-b">
+                 <SheetTitle className="sr-only">Mobile Menu</SheetTitle>
+                 <SheetDescription className="sr-only">
+                    Navigation links for V7 MARKET SOLUTIONS.
+                 </SheetDescription>
+                 <Link href="/" className="flex items-center space-x-2" onClick={() => setIsMobileMenuOpen(false)}>
                     <Logo className="h-6 w-6" />
                     <span className="font-bold font-headline">V7 MARKET SOLUTIONS</span>
                   </Link>
-                </div>
+               </SheetHeader>
+              <div className="flex flex-col h-full">
                 <nav className="flex-grow px-4 py-6">
                   <ul className="space-y-4">
                     {navLinks.map((link) => (
