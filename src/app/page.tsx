@@ -45,7 +45,7 @@ export default function Home() {
     {
       icon: MapPin,
       title: "Address",
-      content: "Vijayanagar , Bengaluru - 560040 , India"
+      content: "Vijayanagar, Bengaluru, Karnataka 560040, India"
     }
   ];
 
