@@ -85,12 +85,6 @@ export const markets: Market[] = [
     imageId: 'indices-market',
   },
   {
-    name: 'Polymarkets',
-    description: 'Trade across multiple asset classes including stocks, options, and futures from a single platform.',
-    icon: Layers,
-    imageId: 'indices-market',
-  },
-  {
     name: 'Forex',
     description: 'Trade the world\'s largest financial market, with opportunities in major, minor, and exotic currency pairs.',
     icon: CandlestickChart,
@@ -101,6 +95,12 @@ export const markets: Market[] = [
     description: 'Explore the volatile and innovative world of digital currencies like Bitcoin and Ethereum.',
     icon: Bitcoin,
     imageId: 'crypto-market',
+  },
+  {
+    name: 'Polymarkets',
+    description: 'Polymarket is the world\'s largest prediction market, allowing you to stay informed and profit from your knowledge by betting on future events across various topics like politics, crypto, culture, sports, and global news, using blockchain for transparent, decentralized wagering on outcomes',
+    icon: Layers,
+    imageId: 'indices-market',
   },
 ];
 
