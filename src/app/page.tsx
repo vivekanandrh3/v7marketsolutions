@@ -1,3 +1,4 @@
+
 import Link from 'next/link';
 import Image from 'next/image';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
@@ -44,7 +45,7 @@ export default function Home() {
     {
       icon: MapPin,
       title: "Address",
-      content: "Shivalinga Krupa, 121, 19th cross, 8th main road, M.C.Layout, Vijayanagar, Bengaluru - 560040, India"
+      content: "Vijayanagar , Bengaluru - 560040 , India"
     }
   ];
 

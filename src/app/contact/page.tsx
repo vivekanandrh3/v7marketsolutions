@@ -1,3 +1,4 @@
+
 import { ContactForm } from "./contact-form";
 import { Mail, Phone, MapPin } from 'lucide-react';
 
@@ -18,7 +19,7 @@ export default function ContactPage() {
     {
       icon: MapPin,
       title: "Address",
-      content: "Shivalinga Krupa, 121, 19th cross, 8th main road, M.C.Layout, Vijayanagar, Bengaluru - 560040, India"
+      content: "Vijayanagar , Bengaluru - 560040 , India"
     }
   ];
 
