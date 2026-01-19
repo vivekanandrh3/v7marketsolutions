@@ -31,14 +31,14 @@ export function Header() {
           <span className="hidden font-bold sm:inline-block font-headline">V7 MARKET SOLUTIONS</span>
         </Link>
         
-        <nav className="hidden md:flex flex-1 items-center space-x-6 text-sm font-medium">
+        <nav className="hidden md:flex flex-1 items-center space-x-6 text-base font-semibold">
           {navLinks.map((link) => (
             <Link
               key={link.href}
               href={link.href}
               className={cn(
                 'transition-colors hover:text-primary',
-                pathname === link.href ? 'text-primary font-semibold' : 'text-foreground/60'
+                pathname === link.href ? 'text-primary' : 'text-foreground/60'
               )}
             >
               {link.label}
@@ -73,7 +73,7 @@ export function Header() {
                         <Link
                           href={link.href}
                           className={cn(
-                            'block text-lg font-medium transition-colors hover:text-primary',
+                            'block text-lg font-semibold transition-colors hover:text-primary',
                             pathname === link.href ? 'text-primary' : 'text-foreground/80'
                           )}
                           onClick={() => setIsMobileMenuOpen(false)}
