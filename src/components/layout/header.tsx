@@ -14,6 +14,7 @@ const navLinks = [
   { href: '/', label: 'Home' },
   { href: '/about', label: 'About' },
   { href: '/insights', label: 'Research & Insights' },
+  { href: '/learning-modules', label: 'Learning Modules' },
   { href: '/risk-disclosure', label: 'Risk Disclosure' },
   { href: '/compounding', label: 'Compounding' },
   { href: '/contact', label: 'Contact' },
@@ -31,7 +32,7 @@ export function Header() {
           <span className="hidden font-bold sm:inline-block font-headline">V7 MARKET SOLUTIONS</span>
         </Link>
         
-        <nav className="hidden md:flex flex-1 items-center space-x-6 text-base font-semibold">
+        <nav className="hidden md:flex flex-1 items-center space-x-6 text-sm font-bold">
           {navLinks.map((link) => (
             <Link
               key={link.href}
@@ -56,10 +57,10 @@ export function Header() {
             </SheetTrigger>
             <SheetContent side="left" className="p-0">
                <SheetHeader className="p-4 border-b">
-                 <SheetTitle className="sr-only">Mobile Menu</SheetTitle>
-                 <SheetDescription className="sr-only">
+                  <SheetTitle className="sr-only">Mobile Menu</SheetTitle>
+                  <SheetDescription className="sr-only">
                     Navigation links for V7 MARKET SOLUTIONS.
-                 </SheetDescription>
+                  </SheetDescription>
                  <Link href="/" className="flex items-center space-x-2" onClick={() => setIsMobileMenuOpen(false)}>
                     <Logo className="h-6 w-6" />
                     <span className="font-bold font-headline">V7 MARKET SOLUTIONS</span>
@@ -73,7 +74,7 @@ export function Header() {
                         <Link
                           href={link.href}
                           className={cn(
-                            'block text-lg font-semibold transition-colors hover:text-primary',
+                            'block text-lg font-bold transition-colors hover:text-primary',
                             pathname === link.href ? 'text-primary' : 'text-foreground/80'
                           )}
                           onClick={() => setIsMobileMenuOpen(false)}
