@@ -112,7 +112,7 @@ export default function LearningModulesPage() {
             <AccordionItem 
               key={module.value} 
               value={module.value} 
-              className="border-b-0 rounded-lg bg-card/50 shadow-sm transition-all data-[state=open]:shadow-xl data-[state=open]:shadow-primary/10 data-[state=open]:border-primary/20 border"
+              className="border-b-0 rounded-lg bg-card/50 shadow-sm transition-all data-[state=open]:shadow-xl data-[state=open]:shadow-primary/10 data-[state=open]:border-primary/40 border"
             >
               <AccordionTrigger className="p-6 text-left hover:no-underline group">
                 <div className="flex items-center gap-4">
