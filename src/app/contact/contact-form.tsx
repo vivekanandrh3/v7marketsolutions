@@ -52,7 +52,8 @@ export function ContactForm() {
       <CardHeader>
         <CardTitle className="font-headline text-2xl">Get in Touch</CardTitle>
         <CardDescription>
-          Have questions about the material or feedback for us? Fill out the form below.
+          For inquiries related to educational initiatives, market research, or general information, please use the form below.
+          <p className="mt-2">We aim to respond thoughtfully and responsibly.</p>
         </CardDescription>
       </CardHeader>
       <CardContent>
