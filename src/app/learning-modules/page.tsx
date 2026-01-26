@@ -109,14 +109,14 @@ export default function LearningModulesPage() {
                   {module.topics.map((topic) => (
                     <li key={topic} className="flex items-start gap-3">
                       <CheckCircle className="w-5 h-5 text-primary flex-shrink-0 mt-1" />
-                      <span className="text-muted-foreground">{topic}</span>
+                      <span className="text-muted-foreground font-semibold text-base">{topic}</span>
                     </li>
                   ))}
                 </ul>
 
                 <div className="mt-4">
                   <h3 className="font-semibold text-lg mb-2 text-foreground/90">Target Audience:</h3>
-                  <p className="text-muted-foreground">{module.targetAudience}</p>
+                  <p className="text-muted-foreground font-bold italic">{module.targetAudience}</p>
                 </div>
 
               </AccordionContent>
