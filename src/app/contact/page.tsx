@@ -27,9 +27,10 @@ export default function ContactPage() {
     <div className="container py-16 md:py-24">
        <div className="text-center mb-16">
         <h1 className="text-4xl font-bold tracking-tight font-headline sm:text-5xl">Contact Us</h1>
-        <p className="mt-4 max-w-3xl mx-auto text-lg text-muted-foreground">
-          We're here to help and answer any question you might have.
-        </p>
+        <div className="mt-4 max-w-3xl mx-auto text-lg text-muted-foreground font-bold italic">
+          <p>Whether you’re exploring financial markets or looking for structured learning, feel free to reach out with your questions.</p>
+          <p className="mt-2">Every message is read with care and responded to thoughtfully.</p>
+        </div>
       </div>
       
       <div className="grid md:grid-cols-2 gap-16 items-start">
