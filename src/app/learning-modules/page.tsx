@@ -7,13 +7,22 @@ import {
 } from "@/components/ui/accordion"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
-import { CheckCircle } from "lucide-react"
+import { CheckCircle, Library, GitMerge, Globe, ShieldCheck } from "lucide-react"
+import type { LucideIcon } from "lucide-react"
 import Link from "next/link"
 
-const modules = [
+const modules: {
+  value: string;
+  title: string;
+  description: string;
+  topics: string[];
+  targetAudience: string;
+  icon: LucideIcon;
+}[] = [
   {
     value: "module-1",
     title: "Module 1: Foundations – Stocks, IPOs & Bond Markets",
+    icon: Library,
     description: "This module introduces the core building blocks of financial markets and long-term investing.",
     topics: [
       "What are stocks and shares (Indian & global markets)",
@@ -32,6 +41,7 @@ const modules = [
   {
     value: "module-2",
     title: "Module 2: Intermediate – Futures & Options",
+    icon: GitMerge,
     description: "This module introduces derivative markets and the mechanics behind leverage and hedging.",
     topics: [
       "What are futures contracts",
@@ -50,6 +60,7 @@ const modules = [
   {
     value: "module-3",
     title: "Module 3: Advanced – CFDs, Forex & Crypto",
+    icon: Globe,
     description: "This module focuses on global and high-volatility markets and their unique risks.",
     topics: [
       "What are CFDs",
@@ -68,6 +79,7 @@ const modules = [
     {
     value: "module-4",
     title: "Module 4: Specialized – Polymarkets, Taxation & Market Systems",
+    icon: ShieldCheck,
     description: "This module covers emerging markets, regulatory understanding, and real-world financial responsibility.",
     topics: [
       "Introduction to Polymarkets and prediction markets",
@@ -95,28 +107,39 @@ export default function LearningModulesPage() {
       </div>
 
       <div className="max-w-4xl mx-auto">
-        <Accordion type="single" collapsible className="w-full" defaultValue="module-1">
+        <Accordion type="single" collapsible className="w-full space-y-6" defaultValue="module-1">
           {modules.map((module) => (
-            <AccordionItem key={module.value} value={module.value}>
-              <AccordionTrigger className="text-left hover:no-underline">
-                <div className="text-xl font-headline text-primary">{module.title}</div>
+            <AccordionItem 
+              key={module.value} 
+              value={module.value} 
+              className="border-b-0 rounded-lg bg-card/50 shadow-sm transition-all data-[state=open]:shadow-xl data-[state=open]:shadow-primary/10 data-[state=open]:border-primary/20 border"
+            >
+              <AccordionTrigger className="p-6 text-left hover:no-underline group">
+                <div className="flex items-center gap-4">
+                  <div className="p-3 rounded-full bg-muted transition-colors group-hover:bg-primary/10 group-data-[state=open]:bg-primary/10">
+                     <module.icon className="w-6 h-6 text-primary transition-transform duration-300 group-hover:scale-110" />
+                  </div>
+                  <span className="text-xl font-headline text-primary">{module.title}</span>
+                </div>
               </AccordionTrigger>
-              <AccordionContent className="pt-4">
-                <p className="italic text-muted-foreground mb-6">{module.description}</p>
+              <AccordionContent className="p-6 pt-0">
+                <p className="italic text-muted-foreground mb-6 pl-16">{module.description}</p>
                 
-                <h3 className="font-semibold text-lg mb-3 text-foreground/90">Topics Included:</h3>
-                <ul className="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-2 mb-6">
-                  {module.topics.map((topic) => (
-                    <li key={topic} className="flex items-start gap-3">
-                      <CheckCircle className="w-5 h-5 text-primary flex-shrink-0 mt-1" />
-                      <span className="text-muted-foreground font-semibold text-base">{topic}</span>
-                    </li>
-                  ))}
-                </ul>
+                <div className="pl-16">
+                  <h3 className="font-semibold text-lg mb-3 text-foreground/90">Topics Included:</h3>
+                  <ul className="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-2 mb-6">
+                    {module.topics.map((topic) => (
+                      <li key={topic} className="flex items-start gap-3">
+                        <CheckCircle className="w-5 h-5 text-primary flex-shrink-0 mt-1" />
+                        <span className="text-muted-foreground font-semibold text-base">{topic}</span>
+                      </li>
+                    ))}
+                  </ul>
 
-                <div className="mt-4">
-                  <h3 className="font-semibold text-lg mb-2 text-foreground/90">Target Audience:</h3>
-                  <p className="text-muted-foreground font-bold italic">{module.targetAudience}</p>
+                  <div className="mt-4">
+                    <h3 className="font-semibold text-lg mb-2 text-foreground/90">Target Audience:</h3>
+                    <p className="text-muted-foreground font-bold italic">{module.targetAudience}</p>
+                  </div>
                 </div>
 
               </AccordionContent>
