@@ -128,7 +128,9 @@ export default function PremiumTrainingPage() {
               </CardContent>
               <CardFooter className="flex flex-col items-start gap-4 mt-4">
                 <div className="text-3xl font-bold font-headline">{program.price}</div>
-                <Button className="w-full font-bold">Enroll Now</Button>
+                <Button asChild className="w-full font-bold">
+                  <Link href="/checkout">Enroll Now</Link>
+                </Button>
               </CardFooter>
             </Card>
           ))}
