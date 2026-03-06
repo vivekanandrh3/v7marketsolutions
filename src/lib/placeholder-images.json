@@ -2,9 +2,9 @@
   "placeholderImages": [
     {
       "id": "hero",
-      "description": "Abstract financial chart background with compass and growth patterns",
-      "imageUrl": "https://picsum.photos/seed/candlestick-growth/1920/1080",
-      "imageHint": "candlesticks growth"
+      "description": "Multiple computer screens showing financial stock market charts and data",
+      "imageUrl": "https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?q=80&w=1920&auto=format&fit=crop",
+      "imageHint": "stock charts"
     },
     {
       "id": "about-me",
