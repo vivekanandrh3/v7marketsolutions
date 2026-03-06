@@ -146,20 +146,16 @@ export default function PremiumTrainingPage() {
        <section className="mt-20">
         <Card className="bg-card/50">
           <CardHeader className="text-center">
-            <CardTitle className="font-headline text-3xl">Consultation & WhatsApp Connect</CardTitle>
+            <CardTitle className="font-headline text-3xl">One-on-One Consultation</CardTitle>
             <CardDescription className="max-w-2xl mx-auto">
-              For personalized guidance, portfolio review, or specific trading questions, book a one-on-one consultation. You can also connect directly on WhatsApp for quick inquiries.
+              For personalized guidance, portfolio review, or specific trading questions, book a one-on-one consultation directly via WhatsApp.
             </CardDescription>
           </CardHeader>
-          <CardContent className="flex flex-col sm:flex-row justify-center items-center gap-4">
-            <Button size="lg" variant="outline">
-              <Calendar className="mr-2" />
-              Book Consultation
-            </Button>
+          <CardContent className="flex justify-center">
             <Button asChild size="lg">
-              <Link href="https://wa.me/918317324956" target="_blank" rel="noopener noreferrer">
-                <MessageSquare className="mr-2" />
-                Chat on WhatsApp
+              <Link href="https://wa.me/918317324956?text=I'd%20like%20to%20book%20a%20one-on-one%20consultation." target="_blank" rel="noopener noreferrer">
+                <Calendar className="mr-2" />
+                Book a Consultation
               </Link>
             </Button>
           </CardContent>
