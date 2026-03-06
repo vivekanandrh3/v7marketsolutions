@@ -68,8 +68,6 @@ const programs: {
   },
 ];
 
-const whatsappLink = "https://wa.me/918317324956?text=Hello%2C%20I%20visited%20the%20V7%20Market%20Solutions%20website%20and%20would%20like%20to%20know%20more%20about%20the%20Premium%20Training%20Program.";
-
 
 export default function PremiumTrainingPage() {
   return (
@@ -95,15 +93,9 @@ export default function PremiumTrainingPage() {
               A free roadmap designed to help you build a professional trader's mindset. This session covers essential pillars like advanced risk management, aligning with market structure, and building unshakeable trading confidence.
             </CardDescription>
           </CardHeader>
-          <CardContent className="flex flex-col sm:flex-row justify-center items-center gap-4">
+          <CardContent className="flex justify-center">
             <Button asChild size="lg" className="font-bold">
               <Link href="/contact">Join Free Masterclass</Link>
-            </Button>
-            <Button asChild size="lg">
-              <Link href={whatsappLink} target="_blank" rel="noopener noreferrer">
-                <MessageSquare className="mr-2" />
-                Discuss the Program on WhatsApp
-              </Link>
             </Button>
           </CardContent>
         </Card>
@@ -139,12 +131,6 @@ export default function PremiumTrainingPage() {
                 <Button asChild className="w-full font-bold">
                   <Link href="https://wa.me/918317324956" target="_blank" rel="noopener noreferrer">Enquire and Enroll Now</Link>
                 </Button>
-                <Button asChild className="w-full font-bold">
-                  <Link href={whatsappLink} target="_blank" rel="noopener noreferrer">
-                    <MessageSquare className="mr-2" />
-                    Discuss the Program on WhatsApp
-                  </Link>
-                </Button>
               </CardFooter>
             </Card>
           ))}
@@ -174,16 +160,6 @@ export default function PremiumTrainingPage() {
           </CardContent>
         </Card>
       </section>
-       {/* Bottom WhatsApp Button Section */}
-       <div className="mt-20 text-center">
-        <h3 className="text-2xl font-headline font-semibold mb-4">Have Questions About the Programs?</h3>
-        <Button asChild size="lg">
-            <Link href={whatsappLink} target="_blank" rel="noopener noreferrer">
-                <MessageSquare className="mr-2" />
-                Discuss the Program on WhatsApp
-            </Link>
-        </Button>
-      </div>
     </div>
   );
 }
