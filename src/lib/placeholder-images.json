@@ -33,7 +33,7 @@
     {
       "id": "stocks-market",
       "description": "Graph showing stock price movements",
-      "imageUrl": "https://images.unsplash.com/photo-1638481826540-7710b13f7d53?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxzdG9jayUyMGdyYXBofGVufDB8fHx8MTc2NzYyMzk1MXww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1638481826540-7710d846310a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxzdG9jayUyMGdyYXBofGVufDB8fHx8MTc2NzYyMzk1MXww&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "stock graph"
     },
     {
@@ -95,6 +95,66 @@
       "description": "A silhouette of a head with a brain made of charts and graphs.",
       "imageUrl": "https://images.unsplash.com/photo-1725399633864-ae5493e9f1bb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxicmFpbiUyMGNoYXJ0fGVufDB8fHx8MTc2Nzc4MDkxMnww&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "brain chart"
+    },
+    {
+      "id": "insight-stocks-chart",
+      "description": "A simple line chart showing stock growth.",
+      "imageUrl": "https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wzNDE5ODJ8MHwxfHNlYXJjaHwxfHxzdG9jayUyMGNoYXJ0fGVufDB8fHx8MTc2Nzg2MTAyOHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "stock chart"
+    },
+    {
+      "id": "insight-ipo-flowchart",
+      "description": "Abstract diagram representing a process.",
+      "imageUrl": "https://images.unsplash.com/photo-1543286386-713bdd548da4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wzNDE5ODJ8MHwxfHNlYXJjaHwyfHxmbG93Y2hhcnR8ZW58MHx8fHwxNzY3ODYxMTE1fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "flowchart diagram"
+    },
+    {
+      "id": "insight-compounding-curve",
+      "description": "An exponential curve representing compound growth.",
+      "imageUrl": "https://images.unsplash.com/photo-1639322537228-f710d846310a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wzNDE5ODJ8MHwxfHNlYXJjaHwxfHxncm93dGglMjBjdXJ2ZXxlbnwwfHx8fDE3Njc4NjExNDB8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "growth curve"
+    },
+    {
+      "id": "insight-interest-rates-chart",
+      "description": "A data chart with various graphs and numbers.",
+      "imageUrl": "https://images.unsplash.com/photo-1551288049-bebda4e28f81?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wzNDE5ODJ8MHwxfHNlYXJjaHwxfHxkYXRhJTIwY2hhcnR8ZW58MHx8fHwxNzY3ODYxMTYwfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "data chart"
+    },
+    {
+      "id": "insight-yield-curve",
+      "description": "A 3D visualization of a financial yield curve.",
+      "imageUrl": "https://images.unsplash.com/photo-1664089199348-70725ff242b5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wzNDE5ODJ8MHwxfHNlYXJjaHwxfHx5aWVsZCUyMGN1cnZlfGVufDB8fHx8MTc2Nzg2MTE4NHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "yield curve"
+    },
+    {
+      "id": "insight-volatility-index",
+      "description": "An abstract representation of market volatility.",
+      "imageUrl": "https://images.unsplash.com/photo-1590283603385-17ffb3a7f29f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wzNDE5ODJ8MHwxfHNlYXJjaHw1fHx2b2xhdGlsaXR5fGVufDB8fHx8MTc2Nzg2MTIwN3ww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "market volatility"
+    },
+    {
+      "id": "insight-oil-price-graph",
+      "description": "A graph showing the fluctuation of oil prices.",
+      "imageUrl": "https://images.unsplash.com/photo-1642772585254-add0d753a81a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wzNDE5ODJ8MHwxfHNlYXJjaHwxfHxvaWwlMjBwcmljZSUyMGdyYXBufGVufDB8fHx8MTc2Nzg2MTIyNHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "oil graph"
+    },
+    {
+      "id": "insight-gold-chart",
+      "description": "Chart showing the price of gold.",
+      "imageUrl": "https://images.unsplash.com/photo-1640540794183-837095f34116?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wzNDE5ODJ8MHwxfHNlYXJjaHwxfHxnb2xkJTIwcHJpY2UlMjBjaGFydHxlbnwwfHx8fDE3Njc4NjEyNDB8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "gold chart"
+    },
+    {
+      "id": "insight-polymarket-chart",
+      "description": "An abstract chart for prediction markets.",
+      "imageUrl": "https://images.unsplash.com/photo-1548754594-52371b26490a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wzNDE5ODJ8MHwxfHNlYXJjaHw1fHxwcmVkaWN0aW9uJTIwY2hhcnR8ZW58MHx8fHwxNzY3ODYxMjYxfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "prediction chart"
+    },
+    {
+      "id": "insight-tax-flowchart",
+      "description": "Diagram illustrating tax information flow.",
+      "imageUrl": "https://images.unsplash.com/photo-1563986768711-b3bde3dc821e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wzNDE5ODJ8MHwxfHNlYXJjaHwxfHx0YXglMjBmb3Jtc3xlbnwwfHx8fDE3Njc4NjEyNzl8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "tax forms"
     }
   ]
 }

@@ -39,11 +39,7 @@ export default function InsightPostPage({ params }: { params: { slug: string } }
                 <span>{new Date(post.date).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}</span>
               </div>
               <Separator orientation="vertical" className="h-4" />
-              <div className="flex flex-wrap gap-2">
-                {post.tags.map(tag => (
-                  <Badge key={tag} variant="secondary">{tag}</Badge>
-                ))}
-              </div>
+              <Badge variant="secondary">{post.category}</Badge>
             </div>
             <h1 className="text-3xl font-extrabold tracking-tight font-headline sm:text-4xl md:text-5xl">{post.title}</h1>
             <p className="mt-4 text-lg text-muted-foreground">{post.description}</p>
@@ -62,7 +58,7 @@ export default function InsightPostPage({ params }: { params: { slug: string } }
           )}
 
           <div
-            className="space-y-6 text-lg text-foreground/90 leading-relaxed"
+            className="prose prose-lg dark:prose-invert max-w-none space-y-6 text-foreground/90 leading-relaxed"
             dangerouslySetInnerHTML={{ __html: post.content }}
           />
         </article>
