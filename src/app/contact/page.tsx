@@ -49,7 +49,12 @@ export default function ContactPage() {
                 <div>
                   <h3 className="font-semibold text-lg">{detail.title}</h3>
                   {detail.href ? (
-                    <a href={detail.href} className="text-muted-foreground hover:text-foreground transition-colors break-words">
+                    <a 
+                      href={detail.href} 
+                      className="text-muted-foreground hover:text-foreground transition-colors break-words"
+                      target={detail.href.startsWith('http') ? "_blank" : undefined}
+                      rel={detail.href.startsWith('http') ? "noopener noreferrer" : undefined}
+                    >
                       {detail.content}
                     </a>
                   ) : (
