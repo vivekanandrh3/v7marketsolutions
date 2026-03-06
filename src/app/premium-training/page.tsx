@@ -11,6 +11,7 @@ const programs: {
   description: string;
   price: string;
   topics: string[];
+  whatsappText: string;
 }[] = [
   {
     title: "Market Foundations & Money Management",
@@ -26,6 +27,7 @@ const programs: {
       "Trader's Psychology",
       "Key Economic Indicators",
     ],
+    whatsappText: "I needed to know more about foundations and money management.",
   },
   {
     title: "Precision Trading: Pattern & Candlestick Mastery",
@@ -39,6 +41,7 @@ const programs: {
       "High-Probability Divergence",
       "Multi-Timeframe Analysis",
     ],
+    whatsappText: "I needed to know more about precision trading, patterns, and candlesticks.",
   },
   {
     title: "Futures & Options Strategy: Hedging & Timing",
@@ -52,6 +55,7 @@ const programs: {
       "Trading Volatility Spikes",
       "Decoding Option Greeks (Delta, Gamma, Theta)",
     ],
+    whatsappText: "I needed to know more about futures & options strategy.",
   },
   {
     title: "Elite Global Trading: CFDs, Forex & Elliott Mastery",
@@ -65,6 +69,7 @@ const programs: {
       "Mastering Trading Psychology",
       "Tracking Institutional Order Flow",
     ],
+    whatsappText: "I needed to know more about elite global trading.",
   },
 ];
 
@@ -129,7 +134,7 @@ export default function PremiumTrainingPage() {
               <CardFooter className="flex flex-col items-start gap-4 mt-4">
                 <div className="text-3xl font-bold font-headline">{program.price}</div>
                 <Button asChild className="w-full font-bold">
-                  <Link href={`https://wa.me/918317324956?text=${encodeURIComponent(program.title)}`} target="_blank" rel="noopener noreferrer">Enquire and Enroll Now</Link>
+                  <Link href={`https://wa.me/918317324956?text=${encodeURIComponent(program.whatsappText)}`} target="_blank" rel="noopener noreferrer">Enquire and Enroll Now</Link>
                 </Button>
               </CardFooter>
             </Card>
