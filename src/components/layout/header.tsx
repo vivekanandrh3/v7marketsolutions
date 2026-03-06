@@ -15,7 +15,7 @@ const navLinks = [
   { href: '/', label: 'Home' },
   { href: '/about', label: 'About' },
   { href: '/insights', label: 'Research & Insights' },
-  { href: '/learning-modules', label: 'Learning Modules' },
+  { href: '/learning-modules', label: 'Financial Trading Ladder' },
   { href: '/premium-training', label: 'Premium Training' },
   { href: '/risk-disclosure', label: 'Risk Disclosure' },
   { href: '/compounding', label: 'Compounding' },
