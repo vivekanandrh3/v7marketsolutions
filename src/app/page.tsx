@@ -5,7 +5,7 @@ import { PlaceHolderImages } from '@/lib/placeholder-images';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { markets, type Market } from '@/lib/data';
-import { Mail, Phone, MapPin } from 'lucide-react';
+import { Mail, Phone, MapPin, MessageSquare } from 'lucide-react';
 
 const heroImage = PlaceHolderImages.find((img) => img.id === 'hero');
 
@@ -41,6 +41,12 @@ export default function Home() {
       title: "Email",
       content: "vivek007hiremath@gmail.com",
       href: "mailto:vivek007hiremath@gmail.com"
+    },
+    {
+      icon: MessageSquare,
+      title: "WhatsApp",
+      content: "Chat on WhatsApp",
+      href: "https://wa.me/918317324956"
     },
     {
       icon: MapPin,
@@ -108,7 +114,7 @@ export default function Home() {
               Have questions or want to connect? I'm here to help.
             </p>
           </div>
-          <div className="mt-12 max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+          <div className="mt-12 max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-8 text-center">
              {contactDetails.map((detail) => (
               <div key={detail.title} className="flex flex-col items-center gap-2">
                 <detail.icon className="h-8 w-8 text-primary" />
