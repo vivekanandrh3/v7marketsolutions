@@ -94,8 +94,8 @@ export default function PremiumTrainingPage() {
             </CardDescription>
           </CardHeader>
           <CardContent className="flex justify-center">
-            <Button size="lg" className="font-bold">
-              Join Free Masterclass
+            <Button asChild size="lg" className="font-bold">
+              <Link href="/contact">Join Free Masterclass</Link>
             </Button>
           </CardContent>
         </Card>
