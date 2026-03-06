@@ -129,7 +129,7 @@ export default function PremiumTrainingPage() {
               <CardFooter className="flex flex-col items-start gap-4 mt-4">
                 <div className="text-3xl font-bold font-headline">{program.price}</div>
                 <Button asChild className="w-full font-bold">
-                  <Link href="https://wa.me/918317324956" target="_blank" rel="noopener noreferrer">Enquire and Enroll Now</Link>
+                  <Link href={`https://wa.me/918317324956?text=${encodeURIComponent(program.title)}`} target="_blank" rel="noopener noreferrer">Enquire and Enroll Now</Link>
                 </Button>
               </CardFooter>
             </Card>
