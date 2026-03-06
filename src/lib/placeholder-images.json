@@ -2,9 +2,9 @@
   "placeholderImages": [
     {
       "id": "hero",
-      "description": "Abstract financial chart background",
-      "imageUrl": "https://picsum.photos/seed/hero-bg/1920/1080",
-      "imageHint": "finance chart"
+      "description": "Abstract financial chart background with compass and growth patterns",
+      "imageUrl": "https://picsum.photos/seed/candlestick-growth/1920/1080",
+      "imageHint": "candlesticks growth"
     },
     {
       "id": "about-me",
