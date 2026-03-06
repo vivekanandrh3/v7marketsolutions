@@ -17,7 +17,6 @@ const navLinks = [
   { href: '/insights', label: 'Research & Insights' },
   { href: '/learning-modules', label: 'Learning Modules' },
   { href: '/premium-training', label: 'Premium Training' },
-  { href: '/checkout', label: 'Checkout' },
   { href: '/risk-disclosure', label: 'Risk Disclosure' },
   { href: '/compounding', label: 'Compounding' },
   { href: '/contact', label: 'Contact' },
