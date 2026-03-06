@@ -14,9 +14,9 @@
     },
     {
       "id": "forex-market",
-      "description": "Diagram of forex currency pairs",
-      "imageUrl": "https://picsum.photos/seed/102/1080/608",
-      "imageHint": "currency chart"
+      "description": "Abstract image of global currency exchange",
+      "imageUrl": "https://picsum.photos/seed/202/1080/608",
+      "imageHint": "currency exchange"
     },
     {
       "id": "commodities-market",
@@ -44,117 +44,117 @@
     },
     {
       "id": "insight-central-bank",
-      "description": "A grand central bank building with columns.",
-      "imageUrl": "https://picsum.photos/seed/107/1080/608",
-      "imageHint": "bank building"
+      "description": "A grand government building with columns, representing a central bank.",
+      "imageUrl": "https://picsum.photos/seed/207/1080/608",
+      "imageHint": "government building"
     },
     {
       "id": "insight-inflation",
-      "description": "A shopping cart with groceries.",
-      "imageUrl": "https://picsum.photos/seed/108/1080/608",
+      "description": "A shopping cart with groceries, representing inflation.",
+      "imageUrl": "https://picsum.photos/seed/208/1080/608",
       "imageHint": "shopping cart"
     },
     {
       "id": "insight-employment",
-      "description": "A diverse group of professionals in a meeting.",
-      "imageUrl": "https://picsum.photos/seed/109/1080/608",
-      "imageHint": "office workers"
+      "description": "A diverse group of professionals in a business meeting.",
+      "imageUrl": "https://picsum.photos/seed/209/1080/608",
+      "imageHint": "office meeting"
     },
     {
       "id": "insight-geopolitics",
-      "description": "A world map with chess pieces on it.",
-      "imageUrl": "https://picsum.photos/seed/110/1080/608",
-      "imageHint": "world map"
+      "description": "A world map with chess pieces on it, symbolizing strategic geopolitical moves.",
+      "imageUrl": "https://picsum.photos/seed/210/1080/608",
+      "imageHint": "map chess"
     },
     {
       "id": "insight-trade",
-      "description": "Cargo ship with containers at a port.",
-      "imageUrl": "https://picsum.photos/seed/111/1080/608",
+      "description": "A large cargo ship with containers at a port, representing global trade.",
+      "imageUrl": "https://picsum.photos/seed/211/1080/608",
       "imageHint": "cargo ship"
     },
     {
       "id": "insight-bonds",
-      "description": "A conceptual image of financial bonds or certificates.",
-      "imageUrl": "https://picsum.photos/seed/112/1080/608",
-      "imageHint": "financial certificate"
+      "description": "A conceptual image of a formal financial bond certificate.",
+      "imageUrl": "https://picsum.photos/seed/212/1080/608",
+      "imageHint": "financial document"
     },
     {
       "id": "insight-commodities",
-      "description": "Barrels of oil and sacks of grain.",
-      "imageUrl": "https://picsum.photos/seed/113/1080/608",
-      "imageHint": "oil barrels"
+      "description": "Barrels of oil and sacks of grain to represent commodities.",
+      "imageUrl": "https://picsum.photos/seed/213/1080/608",
+      "imageHint": "oil grain"
     },
     {
       "id": "insight-crypto",
-      "description": "Digital network with glowing Bitcoin symbol.",
-      "imageUrl": "https://picsum.photos/seed/114/1080/608",
-      "imageHint": "digital network"
+      "description": "A digital network with a glowing cryptocurrency symbol.",
+      "imageUrl": "https://picsum.photos/seed/214/1080/608",
+      "imageHint": "digital currency"
     },
     {
       "id": "insight-psychology",
-      "description": "A silhouette of a head with a brain made of charts and graphs.",
-      "imageUrl": "https://picsum.photos/seed/115/1080/608",
-      "imageHint": "brain chart"
+      "description": "A silhouette of a human head with charts and graphs inside the brain.",
+      "imageUrl": "https://picsum.photos/seed/215/1080/608",
+      "imageHint": "brain illustration"
     },
     {
       "id": "insight-stocks-chart",
-      "description": "A simple line chart showing stock growth.",
-      "imageUrl": "https://picsum.photos/seed/116/1080/608",
-      "imageHint": "stock chart"
+      "description": "A simple, clean line chart showing positive stock growth.",
+      "imageUrl": "https://picsum.photos/seed/216/1080/608",
+      "imageHint": "financial graph"
     },
     {
       "id": "insight-ipo-flowchart",
-      "description": "Abstract diagram representing a process.",
-      "imageUrl": "https://picsum.photos/seed/117/1080/608",
-      "imageHint": "flowchart diagram"
+      "description": "An abstract diagram representing a business launch or process.",
+      "imageUrl": "https://picsum.photos/seed/217/1080/608",
+      "imageHint": "business launch"
     },
     {
       "id": "insight-compounding-curve",
-      "description": "An exponential curve representing compound growth.",
-      "imageUrl": "https://picsum.photos/seed/118/1080/608",
+      "description": "An exponential graph showing a compounding growth curve.",
+      "imageUrl": "https://picsum.photos/seed/218/1080/608",
       "imageHint": "growth curve"
     },
     {
       "id": "insight-interest-rates-chart",
-      "description": "A data chart with various graphs and numbers.",
-      "imageUrl": "https://picsum.photos/seed/119/1080/608",
-      "imageHint": "data chart"
+      "description": "A data chart showing the relationship between inflation and interest rates.",
+      "imageUrl": "https://picsum.photos/seed/219/1080/608",
+      "imageHint": "economic chart"
     },
     {
       "id": "insight-yield-curve",
-      "description": "A 3D visualization of a financial yield curve.",
-      "imageUrl": "https://picsum.photos/seed/120/1080/608",
+      "description": "A 3D visualization of an inverted financial yield curve.",
+      "imageUrl": "https://picsum.photos/seed/220/1080/608",
       "imageHint": "yield curve"
     },
     {
       "id": "insight-volatility-index",
-      "description": "An abstract representation of market volatility.",
-      "imageUrl": "https://picsum.photos/seed/121/1080/608",
-      "imageHint": "market volatility"
+      "description": "An abstract representation of an erratic and volatile stock chart.",
+      "imageUrl": "https://picsum.photos/seed/221/1080/608",
+      "imageHint": "volatile graph"
     },
     {
       "id": "insight-oil-price-graph",
-      "description": "A graph showing the fluctuation of oil prices.",
-      "imageUrl": "https://picsum.photos/seed/122/1080/608",
-      "imageHint": "oil graph"
+      "description": "An oil derrick against a sunset, representing the energy sector.",
+      "imageUrl": "https://picsum.photos/seed/222/1080/608",
+      "imageHint": "oil derrick"
     },
     {
       "id": "insight-gold-chart",
-      "description": "Chart showing the price of gold.",
-      "imageUrl": "https://picsum.photos/seed/123/1080/608",
-      "imageHint": "gold chart"
+      "description": "A stack of gleaming gold bars as a safe-haven asset.",
+      "imageUrl": "https://picsum.photos/seed/223/1080/608",
+      "imageHint": "gold bars"
     },
     {
       "id": "insight-polymarket-chart",
-      "description": "An abstract chart for prediction markets.",
-      "imageUrl": "https://picsum.photos/seed/124/1080/608",
-      "imageHint": "prediction chart"
+      "description": "An abstract chart with interconnected nodes for prediction markets.",
+      "imageUrl": "https://picsum.photos/seed/224/1080/608",
+      "imageHint": "network nodes"
     },
     {
       "id": "insight-tax-flowchart",
-      "description": "Diagram illustrating tax information flow.",
-      "imageUrl": "https://picsum.photos/seed/125/1080/608",
-      "imageHint": "tax forms"
+      "description": "Tax forms and a calculator on a desk, representing financial planning.",
+      "imageUrl": "https://picsum.photos/seed/225/1080/608",
+      "imageHint": "tax documents"
     }
   ]
 }
