@@ -2,99 +2,159 @@
   "placeholderImages": [
     {
       "id": "hero",
-      "description": "Abstract financial chart background",
-      "imageUrl": "https://images.unsplash.com/photo-1504607798333-52a30db54a5d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8ZmluYW5jZSUyMGNoYXJ0fGVufDB8fHx8MTc2NzU5NDAzOXww&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "finance chart"
+      "description": "A digital screen showing a bullish stock market chart with a clear upward trend.",
+      "imageUrl": "https://images.unsplash.com/photo-1590283603385-17ffb3a7f29f?q=80&w=1920&auto=format&fit=crop",
+      "imageHint": "bullish chart"
     },
     {
       "id": "about-me",
       "description": "Professional headshot of a trader",
-      "imageUrl": "https://images.unsplash.com/photo-1560250097-0b93528c311a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxwcm9mZXNzaW9uYWwlMjBwb3J0cmFpdHxlbnwwfHx8fDE3NjgxNTg4NjR8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://placehold.co/800x800/161925/99f6e4/png?font=inter&text=Trader+Profile",
       "imageHint": "professional portrait"
     },
     {
       "id": "forex-market",
-      "description": "Diagram of forex currency pairs",
-      "imageUrl": "https://images.unsplash.com/photo-1645226880663-81561dcab0ae?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxjdXJyZW5jeSUyMGNoYXJ0fGVufDB8fHx8MTc2NzY5NDEyOXww&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "currency chart"
+      "description": "Abstract image of global currency exchange",
+      "imageUrl": "https://placehold.co/1080x608/161925/99f6e4/png?font=inter&text=Currency+Exchange",
+      "imageHint": "currency exchange"
     },
     {
       "id": "commodities-market",
       "description": "Image representing gold and oil",
-      "imageUrl": "https://images.unsplash.com/photo-1629261323437-d3369319847a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxnb2xkJTIwb2lsfGVufDB8fHx8MTc2NzY5NDEyOHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://placehold.co/1080x608/161925/99f6e4/png?font=inter&text=Gold+Oil",
       "imageHint": "gold oil"
     },
     {
       "id": "indices-market",
       "description": "Stock market index chart",
-      "imageUrl": "https://images.unsplash.com/photo-1614028674026-a65e31bfd27c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8c3RvY2slMjBjaGFydHxlbnwwfHx8fDE3Njc2OTI3OTR8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://placehold.co/1080x608/161925/99f6e4/png?font=inter&text=Stock+Chart",
       "imageHint": "stock chart"
     },
     {
       "id": "stocks-market",
       "description": "Graph showing stock price movements",
-      "imageUrl": "https://images.unsplash.com/photo-1638481826540-7710b13f7d53?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxzdG9jayUyMGdyYXBofGVufDB8fHx8MTc2NzYyMzk1MXww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://placehold.co/1080x608/161925/99f6e4/png?font=inter&text=Stock+Graph",
       "imageHint": "stock graph"
     },
     {
       "id": "crypto-market",
       "description": "Cryptocurrency coins and charts",
-      "imageUrl": "https://images.unsplash.com/photo-1647511256603-c2655556dcfb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxjcnlwdG9jdXJyZW5jeSUyMGNoYXJ0fGVufDB8fHx8MTc2NzY5NDEyOHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://placehold.co/1080x608/161925/99f6e4/png?font=inter&text=Cryptocurrency",
       "imageHint": "cryptocurrency chart"
     },
     {
       "id": "insight-central-bank",
-      "description": "A grand central bank building with columns.",
-      "imageUrl": "https://images.unsplash.com/photo-1673923926424-fa53f9a32ab8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxiYW5rJTIwYnVpbGRpbmd8ZW58MHx8fHwxNzY3NzcwMjczfDA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "bank building"
+      "description": "A grand government building with columns, representing a central bank.",
+      "imageUrl": "https://placehold.co/1080x608/161925/99f6e4/png?font=inter&text=Central+Banks",
+      "imageHint": "government building"
     },
     {
       "id": "insight-inflation",
-      "description": "A shopping cart with groceries.",
-      "imageUrl": "https://images.unsplash.com/photo-1525328437458-0c4d4db7cab4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxzaG9wcGluZyUyMGNhcnR8ZW58MHx8fHwxNzY3NzU1MjQ2fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "description": "A shopping cart with groceries, representing inflation.",
+      "imageUrl": "https://placehold.co/1080x608/161925/99f6e4/png?font=inter&text=Inflation",
       "imageHint": "shopping cart"
     },
     {
       "id": "insight-employment",
-      "description": "A diverse group of professionals in a meeting.",
-      "imageUrl": "https://images.unsplash.com/photo-1531973576160-7125cd663d86?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxvZmZpY2UlMjB3b3JrZXJzfGVufDB8fHx8MTc2Nzc4MDkxMnww&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "office workers"
+      "description": "A diverse group of professionals in a business meeting.",
+      "imageUrl": "https://placehold.co/1080x608/161925/99f6e4/png?font=inter&text=Jobs+Report",
+      "imageHint": "office meeting"
     },
     {
       "id": "insight-geopolitics",
-      "description": "A world map with chess pieces on it.",
-      "imageUrl": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHx3b3JsZCUyMG1hcHxlbnwwfHx8fDE3Njc3MjE4MjV8MA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "world map"
+      "description": "A world map with chess pieces on it, symbolizing strategic geopolitical moves.",
+      "imageUrl": "https://placehold.co/1080x608/161925/99f6e4/png?font=inter&text=Geopolitics",
+      "imageHint": "map chess"
     },
     {
       "id": "insight-trade",
-      "description": "Cargo ship with containers at a port.",
-      "imageUrl": "https://images.unsplash.com/photo-1605745341112-85968b19335b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxjYXJnbyUyMHNoaXB8ZW58MHx8fHwxNzY3NzAwMTI2fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "description": "A large cargo ship with containers at a port, representing global trade.",
+      "imageUrl": "https://placehold.co/1080x608/161925/99f6e4/png?font=inter&text=Global+Trade",
       "imageHint": "cargo ship"
     },
     {
       "id": "insight-bonds",
-      "description": "A conceptual image of financial bonds or certificates.",
-      "imageUrl": "https://images.unsplash.com/photo-1599387950977-af4e17082ee1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxmaW5hbmNpYWwlMjBjZXJ0aWZpY2F0ZXxlbnwwfHx8fDE3Njc3ODA5MTJ8MA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "financial certificate"
+      "description": "A conceptual image of a formal financial bond certificate.",
+      "imageUrl": "https://placehold.co/1080x608/161925/99f6e4/png?font=inter&text=Bond+Markets",
+      "imageHint": "financial document"
     },
     {
       "id": "insight-commodities",
-      "description": "Barrels of oil and sacks of grain.",
-      "imageUrl": "https://images.unsplash.com/photo-1681088761707-3d15e282c44f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxvaWwlMjBiYXJyZWxzfGVufDB8fHx8MTc2Nzc4MDkxMnww&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "oil barrels"
+      "description": "Barrels of oil and sacks of grain to represent commodities.",
+      "imageUrl": "https://placehold.co/1080x608/161925/99f6e4/png?font=inter&text=Commodities",
+      "imageHint": "oil grain"
     },
     {
       "id": "insight-crypto",
-      "description": "Digital network with glowing Bitcoin symbol.",
-      "imageUrl": "https://images.unsplash.com/photo-1644325349124-d1756b79dd42?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxkaWdpdGFsJTIwbmV0d29ya3xlbnwwfHx8fDE3Njc3Njg3NTF8MA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "digital network"
+      "description": "A digital network with a glowing cryptocurrency symbol.",
+      "imageUrl": "https://placehold.co/1080x608/161925/99f6e4/png?font=inter&text=Digital+Assets",
+      "imageHint": "digital currency"
     },
     {
       "id": "insight-psychology",
-      "description": "A silhouette of a head with a brain made of charts and graphs.",
-      "imageUrl": "https://images.unsplash.com/photo-1725399633864-ae5493e9f1bb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxicmFpbiUyMGNoYXJ0fGVufDB8fHx8MTc2Nzc4MDkxMnww&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "brain chart"
+      "description": "A silhouette of a human head with charts and graphs inside the brain.",
+      "imageUrl": "https://placehold.co/1080x608/161925/99f6e4/png?font=inter&text=Market+Psychology",
+      "imageHint": "brain illustration"
+    },
+    {
+      "id": "insight-stocks-chart",
+      "description": "A simple, clean line chart showing positive stock growth.",
+      "imageUrl": "https://placehold.co/1080x608/161925/99f6e4/png?font=inter&text=Stocks",
+      "imageHint": "financial graph"
+    },
+    {
+      "id": "insight-ipo-flowchart",
+      "description": "An abstract diagram representing a business launch or process.",
+      "imageUrl": "https://placehold.co/1080x608/161925/99f6e4/png?font=inter&text=IPOs",
+      "imageHint": "business launch"
+    },
+    {
+      "id": "insight-compounding-curve",
+      "description": "An exponential graph showing a compounding growth curve.",
+      "imageUrl": "https://placehold.co/1080x608/161925/99f6e4/png?font=inter&text=Compounding",
+      "imageHint": "growth curve"
+    },
+    {
+      "id": "insight-interest-rates-chart",
+      "description": "A data chart showing the relationship between inflation and interest rates.",
+      "imageUrl": "https://placehold.co/1080x608/161925/99f6e4/png?font=inter&text=Interest+Rates",
+      "imageHint": "economic chart"
+    },
+    {
+      "id": "insight-yield-curve",
+      "description": "A 3D visualization of an inverted financial yield curve.",
+      "imageUrl": "https://placehold.co/1080x608/161925/99f6e4/png?font=inter&text=Yield+Curve",
+      "imageHint": "yield curve"
+    },
+    {
+      "id": "insight-volatility-index",
+      "description": "An abstract representation of an erratic and volatile stock chart.",
+      "imageUrl": "https://placehold.co/1080x608/161925/99f6e4/png?font=inter&text=Volatility",
+      "imageHint": "volatile graph"
+    },
+    {
+      "id": "insight-oil-price-graph",
+      "description": "An oil derrick against a sunset, representing the energy sector.",
+      "imageUrl": "https://placehold.co/1080x608/161925/99f6e4/png?font=inter&text=Crude+Oil",
+      "imageHint": "oil derrick"
+    },
+    {
+      "id": "insight-gold-chart",
+      "description": "A stack of gleaming gold bars as a safe-haven asset.",
+      "imageUrl": "https://placehold.co/1080x608/161925/99f6e4/png?font=inter&text=Gold",
+      "imageHint": "gold bars"
+    },
+    {
+      "id": "insight-polymarket-chart",
+      "description": "An abstract chart with interconnected nodes for prediction markets.",
+      "imageUrl": "https://placehold.co/1080x608/161925/99f6e4/png?font=inter&text=Prediction+Markets",
+      "imageHint": "network nodes"
+    },
+    {
+      "id": "insight-tax-flowchart",
+      "description": "Tax forms and a calculator on a desk, representing financial planning.",
+      "imageUrl": "https://placehold.co/1080x608/161925/99f6e4/png?font=inter&text=Taxation",
+      "imageHint": "tax documents"
     }
   ]
 }

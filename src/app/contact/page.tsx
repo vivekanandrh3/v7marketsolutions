@@ -1,6 +1,6 @@
 
 import { ContactForm } from "./contact-form";
-import { Mail, Phone, MapPin } from 'lucide-react';
+import { Mail, Phone, MapPin, MessageSquare } from 'lucide-react';
 
 export default function ContactPage() {
   const contactDetails = [
@@ -15,6 +15,12 @@ export default function ContactPage() {
       title: "Email",
       content: "vivek007hiremath@gmail.com",
       href: "mailto:vivek007hiremath@gmail.com"
+    },
+    {
+      icon: MessageSquare,
+      title: "WhatsApp",
+      content: "Chat on WhatsApp",
+      href: "https://wa.me/918317324956"
     },
     {
       icon: MapPin,
@@ -43,7 +49,12 @@ export default function ContactPage() {
                 <div>
                   <h3 className="font-semibold text-lg">{detail.title}</h3>
                   {detail.href ? (
-                    <a href={detail.href} className="text-muted-foreground hover:text-foreground transition-colors break-words">
+                    <a 
+                      href={detail.href} 
+                      className="text-muted-foreground hover:text-foreground transition-colors break-words"
+                      target={detail.href.startsWith('http') ? "_blank" : undefined}
+                      rel={detail.href.startsWith('http') ? "noopener noreferrer" : undefined}
+                    >
                       {detail.content}
                     </a>
                   ) : (

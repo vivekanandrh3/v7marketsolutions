@@ -111,107 +111,156 @@ export type InsightPost = {
   date: string;
   imageId: string;
   content: string;
-  tags: string[];
+  category: 'Foundations' | 'Market Mechanics' | 'Global Markets' | 'Advanced Systems';
 };
 
 export const insights: InsightPost[] = [
+  // Section 1: Foundations
   {
-    slug: 'central-bank-interest-rates',
-    title: 'Central Bank & Interest Rate Topics',
-    description: 'Understand how central banks use interest rates as a primary tool to manage economic growth and control inflation.',
-    date: '2026-01-15',
-    imageId: 'insight-central-bank',
-    content: `
-      <p>Central banks, like the Federal Reserve in the U.S., act as the economy's primary regulator. Their main tool is the 'policy interest rate,' which dictates the cost of borrowing for commercial banks. When they 'hike' rates, borrowing becomes more expensive, slowing down spending and investment to cool off an overheating economy and fight inflation. Conversely, 'cutting' rates makes borrowing cheaper, encouraging economic activity during a slowdown.</p>
-    `,
-    tags: ['Central Banks', 'Interest Rates', 'Monetary Policy'],
+    slug: 'what-are-stocks',
+    title: 'What Are Stocks and How Do They Work?',
+    description: 'A foundational look at what it means to own a stock and participate in a company\'s growth.',
+    date: '2023-05-10',
+    imageId: 'insight-stocks-chart',
+    content: '<p>Owning a stock, or a share, means you own a small piece of that company. As the company succeeds and grows its profits, the value of your share can increase. This article explains the basics of equity and how stock markets facilitate the buying and selling of these shares.</p>',
+    category: 'Foundations',
   },
   {
-    slug: 'inflation-cost-of-living',
-    title: 'Inflation & Cost of Living',
-    description: 'Explore how inflation erodes purchasing power and directly impacts everyday expenses for households.',
-    date: '2025-11-20',
-    imageId: 'insight-inflation',
-    content: `
-      <p>Inflation is the rate at which the general level of prices for goods and services is rising, and subsequently, your money's purchasing power is falling. High inflation means your dollar buys less than it did before, affecting everything from groceries to gas. It's a key indicator of economic health and a major focus for both central banks and consumers.</p>
-    `,
-    tags: ['Inflation', 'Economics', 'Cost of Living'],
+    slug: 'understanding-ipos',
+    title: 'Understanding IPOs and How Companies Go Public',
+    description: 'An overview of the Initial Public Offering (IPO) process, where a private company first offers its shares to the public.',
+    date: '2023-08-22',
+    imageId: 'insight-ipo-flowchart',
+    content: '<p>An IPO is a major milestone for a company, allowing it to raise significant capital for expansion. We break down the steps involved, from filing with regulators to the first day of trading, and what it means for both the company and new investors.</p>',
+    category: 'Foundations',
   },
   {
-    slug: 'employment-economic-health',
-    title: 'Employment & Economic Health',
-    description: 'Learn why low unemployment is a sign of a strong economy, but also how it can signal future inflation.',
-    date: '2025-09-05',
-    imageId: 'insight-employment',
-    content: `
-      <p>Employment data, such as the unemployment rate and job creation numbers, are a direct pulse check on the economy. Low unemployment signifies a strong economy where businesses are hiring and consumers are confident. However, a very tight labor market can lead to wage growth that outpaces productivity, which can in turn fuel inflation, creating a complex challenge for policymakers.</p>
-    `,
-    tags: ['Employment', 'Jobs Report', 'Economic Health'],
-  },
-  {
-    slug: 'war-geopolitics-global-tensions',
-    title: 'War, Geopolitics & Global Tensions',
-    description: 'See how international conflicts and political instability create market uncertainty and trigger risk-off sentiment.',
-    date: '2025-06-18',
-    imageId: 'insight-geopolitics',
-    content: `
-      <p>Financial markets crave stability. Geopolitical events, such as wars or significant political disputes, introduce profound uncertainty. This "geopolitical risk" can disrupt supply chains (e.g., oil), spook investors, and cause a flight to safety. During these times, market participants often sell riskier assets like stocks and flock to 'safe havens' like gold or the U.S. dollar.</p>
-    `,
-    tags: ['Geopolitics', 'Risk', 'Global Markets'],
-  },
-  {
-    slug: 'trade-tariffs-global-politics',
-    title: 'Trade, Tariffs & Global Politics',
-    description: 'Understand how trade policies and tariffs can impact corporate profits and international market dynamics.',
-    date: '2025-03-22',
-    imageId: 'insight-trade',
-    content: `
-      <p>Trade agreements and tariffs (taxes on imported goods) are powerful political tools that have significant economic consequences. Open trade can boost profits for multinational corporations, while trade wars and protectionist tariffs can increase costs, reduce sales, and create volatility. These policies are a key factor in the performance of global stock market indices.</p>
-    `,
-    tags: ['Trade', 'Tariffs', 'Globalization'],
-  },
-  {
-    slug: 'bonds-yields-smart-money',
-    title: 'Bonds, Yields & "Smart Money" Signals',
-    description: 'Discover how the bond market, often called the "smart money," provides clues about future economic health.',
-    date: '2024-12-10',
+    slug: 'bond-markets-explained',
+    title: 'Bond Markets Explained Simply',
+    description: 'Learn how bonds work as a form of lending to governments and corporations, and their role in a diversified portfolio.',
+    date: '2022-11-15',
     imageId: 'insight-bonds',
-    content: `
-      <p>The bond market is often seen as a leading indicator for the broader economy. Bond yields (the return on a bond) reflect expectations for future interest rates and inflation. A phenomenon known as an 'inverted yield curve,' where short-term bonds yield more than long-term ones, has historically been one of the most reliable predictors of an upcoming recession.</p>
-    `,
-    tags: ['Bonds', 'Yield Curve', 'Smart Money'],
+    content: '<p>Unlike stocks, which represent ownership, bonds are essentially loans. Investors who buy bonds receive periodic interest payments and get their principal back at maturity. They are generally considered less risky than stocks and provide a stable income stream.</p>',
+    category: 'Foundations',
   },
   {
-    slug: 'commodities-real-economy',
-    title: 'Commodities & Real Economy',
-    description: 'How prices of raw materials like oil, copper, and lumber reflect the real-world demand and health of the global economy.',
-    date: '2024-10-30',
-    imageId: 'insight-commodities',
-    content: `
-      <p>Commodities are the raw materials that build and power the world. The price of industrial metals like copper (often called Dr. Copper for its economic predictive ability) or energy products like oil reflects global industrial demand. Rising commodity prices can signal a booming economy, but they can also be a major source of inflation for consumers and businesses.</p>
-    `,
-    tags: ['Commodities', 'Oil', 'Real Economy'],
+    slug: 'power-of-compounding',
+    title: 'The Power of Compounding in Long-Term Investing',
+    description: 'A demonstration of how reinvesting your earnings can lead to exponential growth over time.',
+    date: '2024-02-28',
+    imageId: 'insight-compounding-curve',
+    content: '<p>Often called the "eighth wonder of the world," compounding is the process of generating earnings on an asset\'s reinvested earnings. This article uses simple examples to show how consistent investment and patience can build substantial wealth over the long term.</p>',
+    category: 'Foundations',
+  },
+  // Section 2: Market Mechanics
+  {
+    slug: 'how-interest-rates-influence-stocks',
+    title: 'How Interest Rates Influence Stock Markets',
+    description: 'Explore the inverse relationship between interest rates set by central banks and the valuation of the stock market.',
+    date: '2023-01-25',
+    imageId: 'insight-interest-rates-chart',
+    content: '<p>When central banks raise interest rates to fight inflation, borrowing becomes more expensive for companies and consumers, which can slow down economic growth and hurt corporate profits. This often leads to lower stock prices. Conversely, lower rates can stimulate the economy and boost the market.</p>',
+    category: 'Market Mechanics',
   },
   {
-    slug: 'crypto-risk-sentiment',
-    title: 'Crypto & Risk Sentiment',
-    description: 'Explore how the cryptocurrency market often acts as a barometer for overall investor appetite for risk.',
-    date: '2024-09-12',
+    slug: 'what-bond-yields-tell-us',
+    title: 'What Bond Yields Tell Us About the Economy',
+    description: 'An analysis of the bond market as a forward-looking indicator for economic health, focusing on the yield curve.',
+    date: '2023-10-03',
+    imageId: 'insight-yield-curve',
+    content: '<p>The bond market is often called the "smart money." The yield curve—a graph of bond yields across different maturities—provides powerful clues. An inverted yield curve, where short-term bonds yield more than long-term ones, has historically been a reliable predictor of recessions.</p>',
+    category: 'Market Mechanics',
+  },
+    {
+    slug: 'central-bank-decisions',
+    title: 'How Central Bank Decisions Move Markets',
+    description: 'An inside look at how monetary policy announcements from institutions like the Federal Reserve create market volatility.',
+    date: '2025-03-20',
+    imageId: 'insight-central-bank',
+    content: '<p>Central banks hold immense power over financial markets. Their decisions on interest rates and quantitative easing send powerful signals to investors. This article explains how traders anticipate these decisions and why the accompanying statements can cause significant price swings in stocks, bonds, and currencies.</p>',
+    category: 'Market Mechanics',
+  },
+  {
+    slug: 'market-volatility-explained',
+    title: 'Market Volatility Explained',
+    description: 'A look at what causes market volatility, how it\'s measured (e.g., VIX), and how it impacts trading strategies.',
+    date: '2025-01-15',
+    imageId: 'insight-volatility-index',
+    content: '<p>Volatility refers to the magnitude and speed of price changes in a market. While often seen as a sign of risk, it also creates opportunities for traders. We explore the factors that drive volatility, from economic data releases to geopolitical events, and how traders can adapt.</p>',
+    category: 'Market Mechanics',
+  },
+  // Section 3: Global Markets
+  {
+    slug: 'geopolitical-tensions-affect-markets',
+    title: 'How Wars and Geopolitical Tensions Affect Markets',
+    description: 'An examination of how global conflicts introduce uncertainty and trigger "risk-off" sentiment among investors.',
+    date: '2022-03-10',
+    imageId: 'insight-geopolitics',
+    content: '<p>Financial markets thrive on stability. Wars, political turmoil, and other geopolitical shocks disrupt this stability, causing investors to sell riskier assets like stocks and flee to "safe havens" such as gold or the U.S. dollar. This article explores the historical market impact of major global events.</p>',
+    category: 'Global Markets',
+  },
+    {
+    slug: 'crude-oil-and-global-tensions',
+    title: 'Global Tensions and Crude Oil Prices',
+    description: 'An analysis of how recent conflicts have disrupted oil supply chains, fueling inflation and impacting global markets.',
+    date: '2025-04-05',
+    imageId: 'insight-oil-price-graph',
+    content: '<p>Crude oil is the lifeblood of the global economy. Recent geopolitical tensions in key oil-producing regions have created significant supply chain disruptions, leading to a sharp increase in energy prices. This surge directly contributes to higher inflation, forcing central banks to consider aggressive rate hikes. As a result, currencies of oil-importing nations weaken, and stock markets face pressure from higher costs and reduced consumer spending power.</p>',
+    category: 'Global Markets',
+  },
+  {
+    slug: 'understanding-forex-markets',
+    title: 'Understanding Forex Markets and Currency Strength',
+    description: 'A primer on the foreign exchange market, the world\'s largest financial market, and what drives currency values.',
+    date: '2023-07-18',
+    imageId: 'forex-market',
+    content: '<p>The Forex market is where currencies are traded. A currency\'s strength is influenced by a country\'s economic health, interest rates, trade balances, and political stability. We explore how these factors create opportunities for traders in this 24/7 market.</p>',
+    category: 'Global Markets',
+  },
+  {
+    slug: 'why-gold-rises-during-uncertainty',
+    title: 'Why Gold Rises During Global Uncertainty',
+    description: 'An exploration of gold\'s historical role as a "safe-haven" asset during times of economic or political turmoil.',
+    date: '2024-01-30',
+    imageId: 'insight-gold-chart',
+    content: '<p>For centuries, gold has been seen as a store of value. Unlike currencies, it cannot be printed and has limited supply. During crises, when investors lose faith in stocks and bonds, they often turn to gold, driving up its price. This article examines the reasons behind this enduring behavior.</p>',
+    category: 'Global Markets',
+  },
+  // Section 4: Advanced Systems
+  {
+    slug: 'prediction-markets-polymarkets',
+    title: 'Prediction Markets and Polymarkets Explained',
+    description: 'An introduction to decentralized platforms where users can bet on the outcomes of real-world events.',
+    date: '2024-10-15',
+    imageId: 'insight-polymarket-chart',
+    content: '<p>Prediction markets like Polymarket leverage the "wisdom of the crowd" to forecast future events, from election results to economic data releases. This article explains how they work, their potential as an information source, and the risks involved.</p>',
+    category: 'Advanced Systems',
+  },
+  {
+    slug: 'rise-of-cryptocurrency-markets',
+    title: 'The Rise of Cryptocurrency Markets',
+    description: 'A look at how cryptocurrencies like Bitcoin act as a barometer for investor risk appetite in the broader market.',
+    date: '2023-04-02',
     imageId: 'insight-crypto',
-    content: `
-      <p>As one of the most speculative asset classes, the cryptocurrency market is a useful gauge of broad market risk sentiment. When investors feel confident and have a strong appetite for risk (a 'risk-on' environment), money often flows into crypto. Conversely, in a fearful 'risk-off' environment, assets like Bitcoin can see significant sell-offs as investors move to safer assets.</p>
-    `,
-    tags: ['Crypto', 'Risk Sentiment', 'Bitcoin'],
+    content: '<p>As a highly speculative asset class, cryptocurrency is often at the forefront of market sentiment shifts. A surge in crypto prices can indicate a "risk-on" environment, while a crash can signal a broader flight to safety. We analyze this relationship and what it tells us about market psychology.</p>',
+    category: 'Advanced Systems',
   },
   {
-    slug: 'market-psychology-behavior',
-    title: 'Market Psychology & Behavior',
-    description: 'Delve into how collective emotions of fear and greed drive market bubbles and crashes, often defying logic.',
-    date: '2024-07-21',
+    slug: 'market-psychology-behavioral-finance',
+    title: 'Market Psychology and Behavioral Finance',
+    description: 'An exploration of how collective emotions of fear and greed drive market bubbles and crashes.',
+    date: '2024-12-30',
     imageId: 'insight-psychology',
-    content: `
-      <p>Markets are driven by people, and people are emotional. The collective psychology of investors creates cycles of fear and greed that can lead to speculative bubbles and panicked crashes. Understanding behavioral finance and recognizing common cognitive biases are crucial skills for navigating markets that often seem irrational. Price action is the ultimate reflection of this mass psychology.</p>
-    `,
-    tags: ['Psychology', 'Behavioral Finance', 'Fear & Greed'],
-  }
+    content: '<p>Markets are not always rational. Behavioral finance studies how psychological biases—such as herd mentality and confirmation bias—affect investor decisions. Understanding these patterns is key to avoiding common mistakes and navigating emotional market swings.</p>',
+    category: 'Advanced Systems',
+  },
+  {
+    slug: 'taxation-basics-for-traders',
+    title: 'Taxation Basics for Stocks, Derivatives, and Crypto',
+    description: 'A general overview of the tax implications for different types of trading and investing activities.',
+    date: '2025-02-14',
+    imageId: 'insight-tax-flowchart',
+    content: '<p>Profit from trading is often taxable income. This article provides a high-level overview of how gains and losses from stocks, options, futures, and crypto are typically treated for tax purposes. Note: This is not financial advice; always consult a qualified professional.</p>',
+    category: 'Advanced Systems',
+  },
 ];

@@ -5,7 +5,7 @@ import { PlaceHolderImages } from '@/lib/placeholder-images';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { markets, type Market } from '@/lib/data';
-import { Mail, Phone, MapPin } from 'lucide-react';
+import { Mail, Phone, MapPin, MessageSquare } from 'lucide-react';
 
 const heroImage = PlaceHolderImages.find((img) => img.id === 'hero');
 
@@ -43,6 +43,12 @@ export default function Home() {
       href: "mailto:vivek007hiremath@gmail.com"
     },
     {
+      icon: MessageSquare,
+      title: "WhatsApp",
+      content: "Chat on WhatsApp",
+      href: "https://wa.me/918317324956"
+    },
+    {
       icon: MapPin,
       title: "Address",
       content: "Vijayanagar, Bengaluru, Karnataka 560040, India"
@@ -66,7 +72,7 @@ export default function Home() {
         <div className="absolute inset-0 bg-background/80" />
         <div className="container relative">
           <h1 className="text-4xl font-extrabold tracking-tight font-headline sm:text-5xl md:text-6xl lg:text-7xl">
-            A trader who teaches people to take informed, risk-aware market decisions.
+            Structured learning and insights for informed risk aware financial market decisions.
           </h1>
           <p className="mt-6 max-w-3xl mx-auto text-lg text-foreground/80 sm:text-xl">
             Insights from a prop firm trader focused on price action, risk management, and trading psychology. Educational content, not financial advice.
@@ -108,13 +114,18 @@ export default function Home() {
               Have questions or want to connect? I'm here to help.
             </p>
           </div>
-          <div className="mt-12 max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+          <div className="mt-12 max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-8 text-center">
              {contactDetails.map((detail) => (
               <div key={detail.title} className="flex flex-col items-center gap-2">
                 <detail.icon className="h-8 w-8 text-primary" />
                 <h3 className="font-semibold text-lg">{detail.title}</h3>
                  {detail.href ? (
-                    <a href={detail.href} className="text-sm text-muted-foreground hover:text-foreground transition-colors break-words">
+                    <a 
+                      href={detail.href} 
+                      className="text-sm text-muted-foreground hover:text-foreground transition-colors break-words"
+                      target={detail.href.startsWith('http') ? "_blank" : undefined}
+                      rel={detail.href.startsWith('http') ? "noopener noreferrer" : undefined}
+                    >
                       {detail.content}
                     </a>
                   ) : (

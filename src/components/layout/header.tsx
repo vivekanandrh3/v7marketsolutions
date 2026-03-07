@@ -1,3 +1,4 @@
+
 'use client';
 
 import Link from 'next/link';
@@ -14,7 +15,8 @@ const navLinks = [
   { href: '/', label: 'Home' },
   { href: '/about', label: 'About' },
   { href: '/insights', label: 'Research & Insights' },
-  { href: '/learning-modules', label: 'Learning Modules' },
+  { href: '/learning-modules', label: 'Financial Trading Ladder' },
+  { href: '/premium-training', label: 'Premium Training' },
   { href: '/risk-disclosure', label: 'Risk Disclosure' },
   { href: '/compounding', label: 'Compounding' },
   { href: '/contact', label: 'Contact' },
@@ -38,7 +40,7 @@ export function Header() {
               key={link.href}
               href={link.href}
               className={cn(
-                'transition-colors hover:text-primary',
+                'transition-colors hover:text-primary text-base font-bold',
                 pathname === link.href ? 'text-primary' : 'text-foreground/60'
               )}
             >
