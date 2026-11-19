@@ -122,3 +122,18 @@ footer { padding-bottom: 4rem; }
 
 article .prose h2, article .prose h3 { font-size: 1.35rem; font-weight: 650; color: hsl(var(--foreground)); }
 @media (prefers-reduced-motion: reduce) { *, *::before, *::after { scroll-behavior: auto !important; transition-duration: .01ms !important; animation-duration: .01ms !important; } }
+
+.reading-intro { max-width: 49rem; margin: 0 0 3rem; }
+.reading-intro h1 { font-size: clamp(2.2rem,5vw,4rem); line-height: 1.05; font-weight: 700; letter-spacing: -.035em; }
+.reading-intro p,.reading-strip p,.pathway-panel p { line-height: 1.7; color: hsl(var(--muted-foreground)); }
+.reading-intro p { margin-top: 1.2rem; font-size: 1.125rem; }
+.reading-strip { padding-block: clamp(2rem,4vw,3.8rem); border-bottom: 1px solid hsl(var(--border)); }
+.reading-strip h2,.pathway-panel h2 { font-size: clamp(1.45rem,2.5vw,2rem); font-weight: 650; line-height: 1.2; }
+.reading-strip > * + * { margin-top: 1.2rem; }
+.reading-strip p { max-width: 72ch; }
+.reading-strip a,.pathway-panel p a { color: hsl(var(--primary)); text-decoration: underline; text-underline-offset: .2em; }
+.pathway-panel,.reading-strip .pathway-link { background: hsl(var(--card)); border: 1px solid hsl(var(--border)); border-radius: var(--radius); padding: clamp(1.25rem,3vw,2rem); }
+.pathway-panel { display:flex; flex-direction:column; gap:.85rem; scroll-margin-top: 6rem; }
+.pathway-panel h3 { font-weight: 650; padding-top: .6rem; }
+.reading-strip .pathway-link { display:grid; gap:.55rem; text-decoration:none; }
+.pathway-link span { color:hsl(var(--muted-foreground)); font-size:.94rem; }
