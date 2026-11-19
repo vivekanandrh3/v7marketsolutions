@@ -270,5 +270,112 @@
     ],
     "url": "https://www.incometax.gov.in/iec/foportal/help/all-topics/e-filing-services/ais%20-%20annual%20information%20statement-faqs",
     "label": "Income Tax Department guide to AIS"
+  },
+  "vwap-intraday-context": {
+    "caption": "Contracts traded at each fictional price",
+    "points": [
+      {
+        "label": "Price 100",
+        "value": 10
+      },
+      {
+        "label": "Price 102",
+        "value": 30
+      },
+      {
+        "label": "Price 101",
+        "value": 20
+      }
+    ],
+    "url": "https://www.tradingview.com/support/solutions/43000502018-volume-weighted-average-price-vwap/",
+    "label": "TradingView · VWAP calculation and bands"
+  },
+  "order-flow-delta-and-feed-limits": {
+    "caption": "Fictional classified contracts in two intervals",
+    "points": [
+      {
+        "label": "A · at ask",
+        "value": 70
+      },
+      {
+        "label": "A · at bid",
+        "value": 30
+      },
+      {
+        "label": "B · at ask",
+        "value": 25
+      },
+      {
+        "label": "B · at bid",
+        "value": 55
+      }
+    ],
+    "url": "https://www.tradingview.com/support/solutions/43000725057-volume-delta/",
+    "label": "TradingView · delta classification methods"
+  },
+  "liquidity-sweeps-and-invalidation": {
+    "caption": "Path in ticks above a fictional reference of 98",
+    "points": [
+      {
+        "label": "Prior range high",
+        "value": 4
+      },
+      {
+        "label": "Next bar high",
+        "value": 6
+      },
+      {
+        "label": "Next bar close",
+        "value": 2
+      },
+      {
+        "label": "Alternative close",
+        "value": 7
+      }
+    ],
+    "url": "https://www.cmegroup.com/education/courses/introduction-to-futures/what-is-volume",
+    "label": "CME Group · what executed volume counts"
+  },
+  "risk-and-position-sizing": {
+    "caption": "Hypothetical loss budget and modelled losses in dollars",
+    "points": [
+      {
+        "label": "Budget",
+        "value": 100
+      },
+      {
+        "label": "One contract incl. costs",
+        "value": 32
+      },
+      {
+        "label": "Three contracts",
+        "value": 96
+      },
+      {
+        "label": "Four contracts",
+        "value": 128
+      }
+    ],
+    "url": "https://www.cmegroup.com/education/courses/things-to-know-before-trading-cme-futures/position-and-risk-management",
+    "label": "CME Group · position and risk management"
+  },
+  "economic-events-rates-and-currencies": {
+    "caption": "Hypothetical policy rates in percent",
+    "points": [
+      {
+        "label": "Before meeting",
+        "value": 4
+      },
+      {
+        "label": "Market expectation",
+        "value": 4.5
+      },
+      {
+        "label": "Actual decision",
+        "value": 4.25
+      }
+    ],
+    "url": "https://www.rbi.org.in/Scripts/BS_ViewBulletin.aspx?Id=22929",
+    "label": "RBI Bulletin · monetary policy transmission"
   }
 }
