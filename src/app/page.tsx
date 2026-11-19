@@ -1,5 +1,5 @@
 import { pageMeta, pages } from '@/lib/site-meta';
-export const metadata = pageMeta('/', pages['/'][0], pages['/'][1]);
+export const metadata = pageMeta('/', pages['/'][0]+' | V7 Market Solutions', pages['/'][1]);
 
 import { pathways } from '@/lib/pathways';
 import Link from 'next/link';
