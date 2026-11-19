@@ -16,7 +16,7 @@ const programs: {
   {
     title: "Market Foundations & Money Management",
     icon: Target,
-    description: "Build a rock-solid trading foundation with core market principles and disciplined capital protection.",
+    description: "If you are opening a chart for the first time, start with one stock. Mark where buyers stepped in, explain what would change your view, and work out how much a mistaken idea could cost.",
     price: "₹5,999",
     topics: [
       "Demand/Supply Dynamics",
@@ -32,7 +32,7 @@ const programs: {
   {
     title: "Precision Trading: Pattern & Candlestick Mastery",
     icon: Zap,
-    description: "Master the art of reading charts with advanced pattern recognition and candlestick analysis for precise entries.",
+    description: "If you can name a candle but hesitate at the right edge of a chart, practise reading it in context. Compare the same engulfing pattern at a range boundary and in the middle of a range.",
     price: "₹11,999",
     topics: [
       "Advanced Candlestick Indicators",
@@ -46,7 +46,7 @@ const programs: {
   {
     title: "Futures & Options Strategy: Hedging & Timing",
     icon: TrendingUp,
-    description: "Learn to leverage derivatives for hedging, income generation, and strategic market timing in all conditions.",
+    description: "If you already follow the cash market, explore what changes when a contract has an expiry. Sketch a hedge and trace how time, volatility and the underlying price affect it.",
     price: "₹19,999",
     topics: [
       "When to choose F&O",
@@ -60,7 +60,7 @@ const programs: {
   {
     title: "Elite Global Trading: CFDs, Forex & Elliott Mastery",
     icon: Globe,
-    description: "Trade global markets like a professional with institutional strategies, advanced wave theory, and a prop firm mindset.",
+    description: "If you already keep a trading journal, use it to compare two readings of the same forex move. Map an Elliott wave count, record an alternative, and review the evidence for each.",
     price: "₹29,999",
     topics: [
       "Advanced CFD & Forex Strategy",
@@ -80,7 +80,7 @@ export default function PremiumTrainingPage() {
       <div className="text-center mb-16">
         <h1 className="text-4xl font-bold tracking-tight font-headline sm:text-5xl">Masterclass & Professional Trading Programs</h1>
         <p className="mt-4 max-w-3xl mx-auto text-lg text-muted-foreground">
-          Structured learning paths designed to elevate your trading from foundational knowledge to professional execution.
+          Choose a program by the question you are working on. Each outline shows what you will study and the full course fee.
         </p>
       </div>
 
@@ -95,7 +95,7 @@ export default function PremiumTrainingPage() {
             </div>
             <CardTitle className="font-headline text-3xl">Free Masterclass: The Trader's Mindset</CardTitle>
             <CardDescription className="max-w-2xl mx-auto text-base">
-              A free roadmap designed to help you build a professional trader's mindset. This session covers essential pillars like advanced risk management, aligning with market structure, and building unshakeable trading confidence.
+              Bring one trade you found difficult to explain. Use the session to connect your market read, your risk limit and the decision you made under pressure.
             </CardDescription>
           </CardHeader>
           <CardContent className="flex justify-center">

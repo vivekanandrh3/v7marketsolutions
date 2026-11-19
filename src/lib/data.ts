@@ -122,7 +122,7 @@ export const insights: InsightPost[] = [
     description: 'A foundational look at what it means to own a stock and participate in a company\'s growth.',
     date: '2023-05-10',
     imageId: 'insight-stocks-chart',
-    content: '<p>Owning a stock, or a share, means you own a small piece of that company. As the company succeeds and grows its profits, the value of your share can increase. This article explains the basics of equity and how stock markets facilitate the buying and selling of these shares.</p>',
+    content: "<h2>Follow one share</h2><p>Imagine a company with 1,000 equal ordinary shares. Ten shares represent 1% ownership. If other investors later trade those ten shares at a higher price, the quoted value of your holding rises. The company receives no cash from that secondary-market trade.</p><h3>Try it yourself</h3><p>On paper, buy ten shares at ₹100 and sell at ₹95 after receiving ₹2 per share in dividends. Before costs, the price loss is ₹50 and the dividend is ₹20. Your net result is a ₹30 loss.</p>",
     category: 'Foundations',
   },
   {
@@ -131,7 +131,7 @@ export const insights: InsightPost[] = [
     description: 'An overview of the Initial Public Offering (IPO) process, where a private company first offers its shares to the public.',
     date: '2023-08-22',
     imageId: 'insight-ipo-flowchart',
-    content: '<p>An IPO is a major milestone for a company, allowing it to raise significant capital for expansion. We break down the steps involved, from filing with regulators to the first day of trading, and what it means for both the company and new investors.</p>',
+    content: "<h2>Where does the money go?</h2><p>An IPO can include newly issued shares and shares sold by existing owners. The proceeds of the first portion go to the company. The second portion pays the selling owners. The split matters when reading a headline about how much a company raised.</p><h3>Try it yourself</h3><p>Find the use-of-proceeds section in a prospectus. For a hypothetical ₹100 crore issue with ₹40 crore of fresh shares, identify who receives the other ₹60 crore before expenses.</p>",
     category: 'Foundations',
   },
   {
@@ -140,7 +140,7 @@ export const insights: InsightPost[] = [
     description: 'Learn how bonds work as a form of lending to governments and corporations, and their role in a diversified portfolio.',
     date: '2022-11-15',
     imageId: 'insight-bonds',
-    content: '<p>Unlike stocks, which represent ownership, bonds are essentially loans. Investors who buy bonds receive periodic interest payments and get their principal back at maturity. They are generally considered less risky than stocks and provide a stable income stream.</p>',
+    content: "<h2>Separate coupon from price</h2><p>A hypothetical ₹1,000 face-value bond with a fixed 6% annual coupon promises ₹60 a year. If it trades at ₹950, the coupon remains ₹60. That payment is about 6.32% of the purchase price. This current yield leaves out any gain or loss at redemption.</p><h3>Try it yourself</h3><p>Write down the coupon, maturity date and issuer for one example. Then consider two different risks, selling before maturity at a lower price and the issuer missing a payment.</p>",
     category: 'Foundations',
   },
   {
@@ -149,7 +149,7 @@ export const insights: InsightPost[] = [
     description: 'A demonstration of how reinvesting your earnings can lead to exponential growth over time.',
     date: '2024-02-28',
     imageId: 'insight-compounding-curve',
-    content: '<p>Often called the "eighth wonder of the world," compounding is the process of generating earnings on an asset\'s reinvested earnings. This article uses simple examples to show how consistent investment and patience can build substantial wealth over the long term.</p>',
+    content: "<h2>Compare two balances</h2><p>Start with a hypothetical ₹10,000 earning a fixed 5% annually. Reinvesting gives ₹10,500 after year one and ₹11,025 after year two. The extra ₹25 is the return earned on the first year’s ₹500.</p><h3>Try it yourself</h3><p>Run the same calculation while withdrawing ₹500 each year. Compare total cash plus ending balance. Then change the second year to a loss and see how the next year starts from a smaller base.</p>",
     category: 'Foundations',
   },
   // Section 2: Market Mechanics
