@@ -1,0 +1,449 @@
+{
+  "results": [
+    {
+      "width": 390,
+      "name": "/",
+      "ok": false,
+      "error": "TimeoutError: locator.waitFor: Timeout 5000ms exceeded.\nCall log:\n  - waiting for locator('h1') to be visible\n    13 × locator resolved to hidden <h1 class=\"text-4xl font-extrabold tracking-tight font-headline sm:text-5xl md:text-6xl lg:text-7xl\">…</h1>\n"
+    },
+    {
+      "width": 390,
+      "name": "/about",
+      "ok": false,
+      "error": "TimeoutError: locator.waitFor: Timeout 5000ms exceeded.\nCall log:\n  - waiting for locator('h1') to be visible\n    14 × locator resolved to hidden <h1 class=\"font-headline text-4xl font-bold\">Why I teach at V7 Market Solutions</h1>\n"
+    },
+    {
+      "width": 390,
+      "name": "/insights",
+      "ok": false,
+      "error": "TimeoutError: locator.waitFor: Timeout 5000ms exceeded.\nCall log:\n  - waiting for locator('h1') to be visible\n    14 × locator resolved to hidden <h1 class=\"text-4xl font-bold tracking-tight font-headline sm:text-5xl\">Research & Insights</h1>\n"
+    },
+    {
+      "width": 390,
+      "name": "/learning-modules",
+      "ok": false,
+      "error": "TimeoutError: locator.waitFor: Timeout 5000ms exceeded.\nCall log:\n  - waiting for locator('h1') to be visible\n    14 × locator resolved to hidden <h1 class=\"text-4xl font-bold tracking-tight font-headline sm:text-5xl\">Financial Trading Ladder</h1>\n"
+    },
+    {
+      "width": 390,
+      "name": "/premium-training",
+      "ok": false,
+      "error": "TimeoutError: locator.waitFor: Timeout 5000ms exceeded.\nCall log:\n  - waiting for locator('h1') to be visible\n    14 × locator resolved to hidden <h1 class=\"text-4xl font-bold tracking-tight font-headline sm:text-5xl\">Masterclass & Professional Trading Programs</h1>\n"
+    },
+    {
+      "width": 390,
+      "name": "/risk-disclosure",
+      "ok": false,
+      "error": "TimeoutError: locator.waitFor: Timeout 5000ms exceeded.\nCall log:\n  - waiting for locator('h1') to be visible\n    14 × locator resolved to hidden <h1 class=\"text-4xl font-bold tracking-tight font-headline sm:text-5xl\">Risk & Transparency</h1>\n"
+    },
+    {
+      "width": 390,
+      "name": "/compounding",
+      "ok": false,
+      "error": "Error: page.goto: Target page, context or browser has been closed\nCall log:\n  - navigating to \"http://localhost:3100/compounding\", waiting until \"domcontentloaded\"\n"
+    },
+    {
+      "width": 390,
+      "name": "/contact",
+      "ok": false,
+      "error": "Error: page.goto: Target page, context or browser has been closed"
+    },
+    {
+      "width": 390,
+      "name": "/disclaimer",
+      "ok": false,
+      "error": "Error: page.goto: Target page, context or browser has been closed"
+    },
+    {
+      "width": 390,
+      "name": "/checkout",
+      "ok": false,
+      "error": "Error: page.goto: Target page, context or browser has been closed"
+    },
+    {
+      "width": 390,
+      "name": "/insights/what-are-stocks",
+      "ok": false,
+      "error": "Error: page.goto: Target page, context or browser has been closed"
+    },
+    {
+      "width": 390,
+      "name": "/insights/understanding-ipos",
+      "ok": false,
+      "error": "Error: page.goto: Target page, context or browser has been closed"
+    },
+    {
+      "width": 390,
+      "name": "/insights/bond-markets-explained",
+      "ok": false,
+      "error": "Error: page.goto: Target page, context or browser has been closed"
+    },
+    {
+      "width": 390,
+      "name": "/insights/power-of-compounding",
+      "ok": false,
+      "error": "Error: page.goto: Target page, context or browser has been closed"
+    },
+    {
+      "width": 390,
+      "name": "/insights/how-interest-rates-influence-stocks",
+      "ok": false,
+      "error": "Error: page.goto: Target page, context or browser has been closed"
+    },
+    {
+      "width": 390,
+      "name": "/insights/what-bond-yields-tell-us",
+      "ok": false,
+      "error": "Error: page.goto: Target page, context or browser has been closed"
+    },
+    {
+      "width": 390,
+      "name": "/insights/central-bank-decisions",
+      "ok": false,
+      "error": "Error: page.goto: Target page, context or browser has been closed"
+    },
+    {
+      "width": 390,
+      "name": "/insights/market-volatility-explained",
+      "ok": false,
+      "error": "Error: page.goto: Target page, context or browser has been closed"
+    },
+    {
+      "width": 390,
+      "name": "/insights/geopolitical-tensions-affect-markets",
+      "ok": false,
+      "error": "Error: page.goto: Target page, context or browser has been closed"
+    },
+    {
+      "width": 390,
+      "name": "/insights/crude-oil-and-global-tensions",
+      "ok": false,
+      "error": "Error: page.goto: Target page, context or browser has been closed"
+    },
+    {
+      "width": 390,
+      "name": "/insights/understanding-forex-markets",
+      "ok": false,
+      "error": "Error: page.goto: Target page, context or browser has been closed"
+    },
+    {
+      "width": 390,
+      "name": "/insights/why-gold-rises-during-uncertainty",
+      "ok": false,
+      "error": "Error: page.goto: Target page, context or browser has been closed"
+    },
+    {
+      "width": 390,
+      "name": "/insights/prediction-markets-polymarkets",
+      "ok": false,
+      "error": "Error: page.goto: Target page, context or browser has been closed"
+    },
+    {
+      "width": 390,
+      "name": "/insights/rise-of-cryptocurrency-markets",
+      "ok": false,
+      "error": "Error: page.goto: Target page, context or browser has been closed"
+    },
+    {
+      "width": 390,
+      "name": "/insights/market-psychology-behavioral-finance",
+      "ok": false,
+      "error": "Error: page.goto: Target page, context or browser has been closed"
+    },
+    {
+      "width": 390,
+      "name": "/insights/taxation-basics-for-traders",
+      "ok": false,
+      "error": "Error: page.goto: Target page, context or browser has been closed"
+    },
+    {
+      "width": 390,
+      "name": "navigation and homepage image",
+      "ok": false,
+      "error": "Error: page.goto: Target page, context or browser has been closed"
+    },
+    {
+      "width": 390,
+      "name": "regular fees and all enquiry URLs",
+      "ok": false,
+      "error": "Error: page.goto: Target page, context or browser has been closed"
+    },
+    {
+      "width": 390,
+      "name": "ladder opens linked lesson",
+      "ok": false,
+      "error": "Error: page.goto: Target page, context or browser has been closed"
+    },
+    {
+      "width": 390,
+      "name": "calculator arithmetic and currency",
+      "ok": false,
+      "error": "Error: page.goto: Target page, context or browser has been closed"
+    },
+    {
+      "width": 390,
+      "name": "contact validation, rejection, retry, receipt and spam trap",
+      "ok": false,
+      "error": "Error: page.goto: Target page, context or browser has been closed"
+    },
+    {
+      "width": 390,
+      "name": "axe /",
+      "ok": false,
+      "error": "Error: page.goto: Target page, context or browser has been closed"
+    },
+    {
+      "width": 390,
+      "name": "axe /premium-training",
+      "ok": false,
+      "error": "Error: page.goto: Target page, context or browser has been closed"
+    },
+    {
+      "width": 390,
+      "name": "axe /contact",
+      "ok": false,
+      "error": "Error: page.goto: Target page, context or browser has been closed"
+    },
+    {
+      "width": 390,
+      "name": "axe /compounding",
+      "ok": false,
+      "error": "Error: page.goto: Target page, context or browser has been closed"
+    },
+    {
+      "width": 390,
+      "name": "axe /learning-modules",
+      "ok": false,
+      "error": "Error: page.goto: Target page, context or browser has been closed"
+    },
+    {
+      "width": 390,
+      "name": "axe /insights/what-are-stocks",
+      "ok": false,
+      "error": "Error: page.goto: Target page, context or browser has been closed"
+    },
+    {
+      "width": 1440,
+      "name": "/",
+      "ok": false,
+      "error": "TimeoutError: locator.waitFor: Timeout 5000ms exceeded.\nCall log:\n  - waiting for locator('h1') to be visible\n    12 × locator resolved to hidden <h1 class=\"text-4xl font-extrabold tracking-tight font-headline sm:text-5xl md:text-6xl lg:text-7xl\">…</h1>\n"
+    },
+    {
+      "width": 1440,
+      "name": "/about",
+      "ok": false,
+      "error": "TimeoutError: locator.waitFor: Timeout 5000ms exceeded.\nCall log:\n  - waiting for locator('h1') to be visible\n    14 × locator resolved to hidden <h1 class=\"font-headline text-4xl font-bold\">Why I teach at V7 Market Solutions</h1>\n"
+    },
+    {
+      "width": 1440,
+      "name": "/insights",
+      "ok": false,
+      "error": "TimeoutError: locator.waitFor: Timeout 5000ms exceeded.\nCall log:\n  - waiting for locator('h1') to be visible\n    14 × locator resolved to hidden <h1 class=\"text-4xl font-bold tracking-tight font-headline sm:text-5xl\">Research & Insights</h1>\n"
+    },
+    {
+      "width": 1440,
+      "name": "/learning-modules",
+      "ok": false,
+      "error": "TimeoutError: locator.waitFor: Timeout 5000ms exceeded.\nCall log:\n  - waiting for locator('h1') to be visible\n    13 × locator resolved to hidden <h1 class=\"text-4xl font-bold tracking-tight font-headline sm:text-5xl\">Financial Trading Ladder</h1>\n"
+    },
+    {
+      "width": 1440,
+      "name": "/premium-training",
+      "ok": false,
+      "error": "TimeoutError: locator.waitFor: Timeout 5000ms exceeded.\nCall log:\n  - waiting for locator('h1') to be visible\n    13 × locator resolved to hidden <h1 class=\"text-4xl font-bold tracking-tight font-headline sm:text-5xl\">Masterclass & Professional Trading Programs</h1>\n"
+    },
+    {
+      "width": 1440,
+      "name": "/risk-disclosure",
+      "ok": false,
+      "error": "TimeoutError: locator.waitFor: Timeout 5000ms exceeded.\nCall log:\n  - waiting for locator('h1') to be visible\n    13 × locator resolved to hidden <h1 class=\"text-4xl font-bold tracking-tight font-headline sm:text-5xl\">Risk & Transparency</h1>\n"
+    },
+    {
+      "width": 1440,
+      "name": "/compounding",
+      "ok": false,
+      "error": "TimeoutError: locator.waitFor: Timeout 5000ms exceeded.\nCall log:\n  - waiting for locator('h1') to be visible\n    6 × locator resolved to hidden <h1 class=\"text-4xl font-bold tracking-tight font-headline sm:text-5xl\">The Power of Compounding</h1>\n"
+    },
+    {
+      "width": 1440,
+      "name": "/contact",
+      "ok": false,
+      "error": "Error: page.goto: Target page, context or browser has been closed\nCall log:\n  - navigating to \"http://localhost:3100/contact\", waiting until \"domcontentloaded\"\n"
+    },
+    {
+      "width": 1440,
+      "name": "/disclaimer",
+      "ok": false,
+      "error": "Error: page.goto: Target page, context or browser has been closed"
+    },
+    {
+      "width": 1440,
+      "name": "/checkout",
+      "ok": false,
+      "error": "Error: page.goto: Target page, context or browser has been closed"
+    },
+    {
+      "width": 1440,
+      "name": "/insights/what-are-stocks",
+      "ok": false,
+      "error": "Error: page.goto: Target page, context or browser has been closed"
+    },
+    {
+      "width": 1440,
+      "name": "/insights/understanding-ipos",
+      "ok": false,
+      "error": "Error: page.goto: Target page, context or browser has been closed"
+    },
+    {
+      "width": 1440,
+      "name": "/insights/bond-markets-explained",
+      "ok": false,
+      "error": "Error: page.goto: Target page, context or browser has been closed"
+    },
+    {
+      "width": 1440,
+      "name": "/insights/power-of-compounding",
+      "ok": false,
+      "error": "Error: page.goto: Target page, context or browser has been closed"
+    },
+    {
+      "width": 1440,
+      "name": "/insights/how-interest-rates-influence-stocks",
+      "ok": false,
+      "error": "Error: page.goto: Target page, context or browser has been closed"
+    },
+    {
+      "width": 1440,
+      "name": "/insights/what-bond-yields-tell-us",
+      "ok": false,
+      "error": "Error: page.goto: Target page, context or browser has been closed"
+    },
+    {
+      "width": 1440,
+      "name": "/insights/central-bank-decisions",
+      "ok": false,
+      "error": "Error: page.goto: Target page, context or browser has been closed"
+    },
+    {
+      "width": 1440,
+      "name": "/insights/market-volatility-explained",
+      "ok": false,
+      "error": "Error: page.goto: Target page, context or browser has been closed"
+    },
+    {
+      "width": 1440,
+      "name": "/insights/geopolitical-tensions-affect-markets",
+      "ok": false,
+      "error": "Error: page.goto: Target page, context or browser has been closed"
+    },
+    {
+      "width": 1440,
+      "name": "/insights/crude-oil-and-global-tensions",
+      "ok": false,
+      "error": "Error: page.goto: Target page, context or browser has been closed"
+    },
+    {
+      "width": 1440,
+      "name": "/insights/understanding-forex-markets",
+      "ok": false,
+      "error": "Error: page.goto: Target page, context or browser has been closed"
+    },
+    {
+      "width": 1440,
+      "name": "/insights/why-gold-rises-during-uncertainty",
+      "ok": false,
+      "error": "Error: page.goto: Target page, context or browser has been closed"
+    },
+    {
+      "width": 1440,
+      "name": "/insights/prediction-markets-polymarkets",
+      "ok": false,
+      "error": "Error: page.goto: Target page, context or browser has been closed"
+    },
+    {
+      "width": 1440,
+      "name": "/insights/rise-of-cryptocurrency-markets",
+      "ok": false,
+      "error": "Error: page.goto: Target page, context or browser has been closed"
+    },
+    {
+      "width": 1440,
+      "name": "/insights/market-psychology-behavioral-finance",
+      "ok": false,
+      "error": "Error: page.goto: Target page, context or browser has been closed"
+    },
+    {
+      "width": 1440,
+      "name": "/insights/taxation-basics-for-traders",
+      "ok": false,
+      "error": "Error: page.goto: Target page, context or browser has been closed"
+    },
+    {
+      "width": 1440,
+      "name": "navigation and homepage image",
+      "ok": false,
+      "error": "Error: page.goto: Target page, context or browser has been closed"
+    },
+    {
+      "width": 1440,
+      "name": "regular fees and all enquiry URLs",
+      "ok": false,
+      "error": "Error: page.goto: Target page, context or browser has been closed"
+    },
+    {
+      "width": 1440,
+      "name": "ladder opens linked lesson",
+      "ok": false,
+      "error": "Error: page.goto: Target page, context or browser has been closed"
+    },
+    {
+      "width": 1440,
+      "name": "calculator arithmetic and currency",
+      "ok": false,
+      "error": "Error: page.goto: Target page, context or browser has been closed"
+    },
+    {
+      "width": 1440,
+      "name": "contact validation, rejection, retry, receipt and spam trap",
+      "ok": false,
+      "error": "Error: page.goto: Target page, context or browser has been closed"
+    },
+    {
+      "width": 1440,
+      "name": "axe /",
+      "ok": false,
+      "error": "Error: page.goto: Target page, context or browser has been closed"
+    },
+    {
+      "width": 1440,
+      "name": "axe /premium-training",
+      "ok": false,
+      "error": "Error: page.goto: Target page, context or browser has been closed"
+    },
+    {
+      "width": 1440,
+      "name": "axe /contact",
+      "ok": false,
+      "error": "Error: page.goto: Target page, context or browser has been closed"
+    },
+    {
+      "width": 1440,
+      "name": "axe /compounding",
+      "ok": false,
+      "error": "Error: page.goto: Target page, context or browser has been closed"
+    },
+    {
+      "width": 1440,
+      "name": "axe /learning-modules",
+      "ok": false,
+      "error": "Error: page.goto: Target page, context or browser has been closed"
+    },
+    {
+      "width": 1440,
+      "name": "axe /insights/what-are-stocks",
+      "ok": false,
+      "error": "Error: page.goto: Target page, context or browser has been closed"
+    }
+  ],
+  "errors": []
+}
