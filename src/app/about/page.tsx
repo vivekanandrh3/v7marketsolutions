@@ -7,7 +7,7 @@ export default function AboutPage() {
     <h2 className="font-headline text-2xl">How I approach a lesson</h2>
     <p>I start with a question you can test. For example, mark where a price range ends, record what would invalidate your reading, then reveal the next bars. Two people can disagree about the setup and still compare their reasoning.</p>
     <h2 className="font-headline text-2xl">What a consultation covers</h2>
-    <p>I ask about your experience, the concepts you find difficult and the time you can spend practising. That helps me tailor the sequence of lessons. You can discuss a fictional trade without sharing a portfolio or brokerage account.</p>
+    <p>I ask about your experience, the concepts you find difficult and the time you can spend practising. We agree which gap to tackle first and choose examples together. I can change the sequence when an exercise reveals a missing prerequisite. You can discuss a fictional trade without sharing a portfolio or brokerage account.</p>
     <a href="/learning-modules" className="inline-block underline text-primary">Explore the Financial Trading Ladder</a>
   </article>;
 }

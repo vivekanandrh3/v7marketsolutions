@@ -333,8 +333,8 @@
         "value": 7
       }
     ],
-    "url": "https://www.cmegroup.com/education/courses/introduction-to-futures/what-is-volume",
-    "label": "CME Group · what executed volume counts"
+    "url": "https://www.investor.gov/introduction-investing/investing-basics/glossary/stop-order",
+    "label": "Investor.gov · stop triggers and execution prices"
   },
   "risk-and-position-sizing": {
     "caption": "Hypothetical loss budget and modelled losses in dollars",

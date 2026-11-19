@@ -15,10 +15,9 @@ export default function DisclaimerPage() {
           I use my experience and hypothetical examples to teach market concepts. Past performance is not indicative of future results. The strategies and concepts discussed may not be suitable for your personal financial situation, risk tolerance, or investment objectives.
         </p>
         <p>
-          You are solely responsible for your own trading and investment decisions. Before making any financial decisions, you should consult with a qualified, licensed financial advisor who can assess your individual circumstances. I do not accept any liability for any loss or damage which may be incurred directly or indirectly from the use of or reliance on the information provided on this website.
+          I help learners choose educational topics. Questions about specific investments, portfolio allocation, tax treatment or personal eligibility to trade require an appropriately qualified professional. For market advice in India, you can check SEBI’s investor guidance.
         </p>
-        <p>
-          By using this website, you agree that V7 MARKET SOLUTIONS and its owner will not be held responsible for any decisions you make based on the educational content provided.
+        <p><a href="https://investor.sebi.gov.in/investment_advisor.html" className="underline text-primary">SEBI · Understanding investment advisers</a>
         </p>
       </div>
     </div>
