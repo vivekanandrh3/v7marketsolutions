@@ -9,8 +9,15 @@ import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { CheckCircle, Library, GitMerge, Globe, ShieldCheck } from "lucide-react"
 import type { LucideIcon } from "lucide-react"
+import { insights } from '@/lib/data';
 import Link from "next/link"
 
+const stages = [
+  { category: 'Foundations', task: 'Explain how ownership differs from lending. Reproduce the compounding example and identify one assumption.' },
+  { category: 'Market Mechanics', task: 'Sketch two yield curves and calculate the spread. Explain how an expected rate change differs from a surprise.' },
+  { category: 'Global Markets', task: 'Trace one oil supply shock into an importer’s costs. Calculate how a currency move changes a rupee invoice.' },
+  { category: 'Advanced Systems', task: 'Write a binary settlement condition, reconcile a fictional transaction and journal one decision before revealing its outcome.' },
+];
 const steps: {
   value: string;
   title: string;
@@ -89,7 +96,7 @@ export default function LearningModulesPage() {
 
       <div className="max-w-4xl mx-auto">
         <Accordion type="single" collapsible className="w-full space-y-6" defaultValue="step-1">
-          {steps.map((step) => (
+          {steps.map((step, index) => (
             <AccordionItem 
               key={step.value} 
               value={step.value} 
@@ -104,9 +111,9 @@ export default function LearningModulesPage() {
                 </div>
               </AccordionTrigger>
               <AccordionContent className="p-6 pt-0">
-                <p className="italic text-muted-foreground mb-6 pl-16">{step.description}</p>
+                <p className="italic text-muted-foreground mb-6 sm:pl-16">{step.description}</p>
                 
-                <div className="pl-16">
+                <div className="sm:pl-16">
                   <h3 className="font-semibold text-lg mb-3 text-foreground/90">Topics Covered:</h3>
                   <ul className="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-2 mb-6">
                     {step.topics.map((topic) => (
@@ -117,6 +124,12 @@ export default function LearningModulesPage() {
                     ))}
                   </ul>
 
+                  <div className="my-6">
+                    <h3 className="font-semibold">Read and practise</h3>
+                    <ol className="list-decimal pl-5 space-y-2 my-3">{insights.filter(p=>p.category === stages[index].category).map(p=>
+                      <li key={p.slug}><Link className="underline text-primary" href={'/insights/'+p.slug}>{p.title}</Link></li>)}</ol>
+                    <p><strong>Before moving on</strong> · {stages[index].task}</p>
+                  </div>
                   <div className="mt-4">
                     <h3 className="font-semibold text-lg mb-2 text-foreground/90">Target Audience:</h3>
                     <p className="text-muted-foreground font-bold italic">{step.targetAudience}</p>

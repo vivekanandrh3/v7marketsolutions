@@ -119,3 +119,6 @@ footer { padding-bottom: 4rem; }
 .offer-banner a { font-weight: 700; text-decoration: underline; }
 :focus-visible { outline: 2px solid hsl(var(--primary)); outline-offset: 3px; }
 @media (max-width: 639px) { .whatsapp-contact { padding: .8rem; } .whatsapp-contact span { display: none; } }
+
+article .prose h2, article .prose h3 { font-size: 1.35rem; font-weight: 650; color: hsl(var(--foreground)); }
+@media (prefers-reduced-motion: reduce) { *, *::before, *::after { scroll-behavior: auto !important; transition-duration: .01ms !important; animation-duration: .01ms !important; } }

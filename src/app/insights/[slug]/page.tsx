@@ -1,9 +1,9 @@
 
 import { notFound } from 'next/navigation';
-import Image from 'next/image';
+import { LessonChart } from '@/components/lesson-chart';
+import examples from '@/lib/lesson-charts.json';
 import Link from 'next/link';
 import { insights } from '@/lib/data';
-import { PlaceHolderImages } from '@/lib/placeholder-images';
 import { Button } from '@/components/ui/button';
 import { ArrowLeft, Calendar } from 'lucide-react';
 import { Separator } from '@/components/ui/separator';
@@ -15,14 +15,16 @@ export async function generateStaticParams() {
   }));
 }
 
-export default function InsightPostPage({ params }: { params: { slug: string } }) {
-  const post = insights.find((p) => p.slug === params.slug);
+export default async function InsightPostPage({ params }: { params: Promise<{ slug: string }> }) {
+  const {slug} = await params;
+  const post = insights.find((p) => p.slug === slug);
 
   if (!post) {
     notFound();
   }
 
-  const postImage = PlaceHolderImages.find((img) => img.id === post.imageId);
+  const example = examples[slug as keyof typeof examples];
+  const related = insights.find(item => item.category === post.category && item.slug !== slug);
 
   return (
     <div>
@@ -45,22 +47,17 @@ export default function InsightPostPage({ params }: { params: { slug: string } }
             <p className="mt-4 text-lg text-muted-foreground">{post.description}</p>
           </header>
           
-          {postImage && (
-            <div className="relative aspect-video w-full mb-8 rounded-lg overflow-hidden border">
-              <Image
-                src={postImage.imageUrl}
-                alt={postImage.description}
-                fill
-                className="object-cover"
-                data-ai-hint={postImage.imageHint}
-              />
-            </div>
-          )}
+          <LessonChart slug={slug} />
 
           <div
             className="prose prose-lg dark:prose-invert max-w-none space-y-6 text-foreground/90 leading-relaxed"
             dangerouslySetInnerHTML={{ __html: post.content }}
           />
+          <div className="mt-8 border-t pt-5 flex flex-col gap-3">
+            <a className="text-primary underline" href={example.url}>Source · {example.label}</a>
+            {related && <Link className="underline" href={'/insights/'+related.slug}>Related lesson · {related.title}</Link>}
+            <Link className="underline" href="/learning-modules">Return to the learning ladder</Link>
+          </div>
         </article>
       </div>
     </div>

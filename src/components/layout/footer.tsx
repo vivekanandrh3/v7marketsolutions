@@ -8,7 +8,7 @@ export function Footer() {
         <div className="flex flex-col items-center gap-4 px-8 md:flex-row md:gap-2 md:px-0">
           <Logo className="h-6 w-6" />
           <p className="text-center text-sm leading-loose text-muted-foreground md:text-left">
-            Built by an expert trader. All rights reserved &amp;copy; {new Date().getFullYear()} V7 MARKET SOLUTIONS.
+            © {new Date().getFullYear()} V7 Market Solutions. All rights reserved.
           </p>
         </div>
         <div className="flex items-center gap-4 text-sm text-muted-foreground">

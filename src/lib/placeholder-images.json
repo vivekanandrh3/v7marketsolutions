@@ -3,7 +3,7 @@
     {
       "id": "hero",
       "description": "A digital screen showing a bullish stock market chart with a clear upward trend.",
-      "imageUrl": "https://images.unsplash.com/photo-1590283603385-17ffb3a7f29f?q=80&w=1920&auto=format&fit=crop",
+      "imageUrl": "/images/market-screen.jpg",
       "imageHint": "bullish chart"
     },
     {

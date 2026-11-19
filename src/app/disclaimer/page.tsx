@@ -10,10 +10,10 @@ export default function DisclaimerPage() {
           The information and materials presented here are not, and should not be construed as, financial advice, investment advice, a recommendation to buy or sell any security, or an offer to provide investment advisory services. Trading and investing in financial markets, including but not limited to Forex, Commodities, Indices, Stocks, Futures, Options, and Cryptocurrencies, involves substantial risk of loss and is not suitable for every investor.
         </p>
         <p>
-          The owner of this website is an educator sharing personal experiences, strategies, and perspectives on the markets. These are based on their own journey as a trader, including experience in proprietary trading firms. However, past performance is not indicative of future results. The strategies and concepts discussed may not be suitable for your personal financial situation, risk tolerance, or investment objectives.
+          I use my experience and hypothetical examples to teach market concepts. Past performance is not indicative of future results. The strategies and concepts discussed may not be suitable for your personal financial situation, risk tolerance, or investment objectives.
         </p>
         <p>
-          You are solely responsible for your own trading and investment decisions. Before making any financial decisions, you should consult with a qualified, licensed financial advisor who can assess your individual circumstances. We do not accept any liability for any loss or damage which may be incurred directly or indirectly from the use of or reliance on the information provided on this website.
+          You are solely responsible for your own trading and investment decisions. Before making any financial decisions, you should consult with a qualified, licensed financial advisor who can assess your individual circumstances. I do not accept any liability for any loss or damage which may be incurred directly or indirectly from the use of or reliance on the information provided on this website.
         </p>
         <p>
           By using this website, you agree that V7 MARKET SOLUTIONS and its owner will not be held responsible for any decisions you make based on the educational content provided.

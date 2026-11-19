@@ -26,6 +26,8 @@ type Frequency = 'one-time' | 'monthly' | 'quarterly' | 'yearly';
 const USD_TO_INR_RATE = 90;
 
 const monthlyRateOptions = [
+  { label: '−1%', value: -0.01 },
+  { label: '0%', value: 0 },
   { label: '1%', value: 0.01 },
   { label: '2%', value: 0.02 },
   { label: '3%', value: 0.03 },
@@ -38,7 +40,7 @@ export function CompoundingCalculator() {
   const [initialInvestment, setInitialInvestment] = useState<number>(10000);
   const [recurringInvestment, setRecurringInvestment] = useState<number>(500);
   const [investmentFrequency, setInvestmentFrequency] = useState<Frequency>('monthly');
-  const [monthlyRate, setMonthlyRate] = useState<number>(0.02);
+  const [monthlyRate, setMonthlyRate] = useState<number>(0);
   const [years, setYears] = useState<number>(5);
   const [currency, setCurrency] = useState<Currency>('USD');
 
@@ -122,7 +124,7 @@ export function CompoundingCalculator() {
         <CardHeader>
           <CardTitle className="font-headline text-xl">Compounding Parameters</CardTitle>
           <CardDescription>
-            Adjust the parameters below to see the power of compounding.
+            This hypothetical model applies one constant monthly rate. Contributions are added before growth in each scheduled month. Fees, tax, inflation and changing returns are excluded. A 2% monthly assumption compounds to about 26.8% a year.
           </CardDescription>
         </CardHeader>
         <CardContent className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -131,8 +133,8 @@ export function CompoundingCalculator() {
             <Input
               id="initial-investment"
               type="number"
-              value={initialInvestment}
-              onChange={(e) => setInitialInvestment(Number(e.target.value))}
+              min={0} step="any" value={displayInitialInvestment}
+              onChange={(e) => setInitialInvestment(Math.max(0, Number(e.target.value) || 0) / (currency === 'INR' ? USD_TO_INR_RATE : 1))}
               placeholder="e.g., 10000"
             />
              <p className="text-sm text-muted-foreground">
@@ -140,12 +142,12 @@ export function CompoundingCalculator() {
             </p>
           </div>
           <div className="space-y-2">
-            <Label>Recurring Investment ({currency})</Label>
+            <Label htmlFor="recurring-investment">Recurring Investment ({currency})</Label>
              <Input
               id="recurring-investment"
               type="number"
-              value={recurringInvestment}
-              onChange={(e) => setRecurringInvestment(Number(e.target.value))}
+              min={0} step="any" value={displayRecurringInvestment}
+              onChange={(e) => setRecurringInvestment(Math.max(0, Number(e.target.value) || 0) / (currency === 'INR' ? USD_TO_INR_RATE : 1))}
               placeholder="e.g., 500"
               disabled={investmentFrequency === 'one-time'}
             />
@@ -155,10 +157,10 @@ export function CompoundingCalculator() {
           </div>
           <div className="space-y-2">
             <Label>Investment Frequency</Label>
-            <RadioGroup
+            <RadioGroup aria-label="Investment frequency"
               value={investmentFrequency}
               onValueChange={(value: Frequency) => setInvestmentFrequency(value)}
-              className="flex items-center space-x-4"
+              className="flex flex-wrap items-center gap-3"
             >
               <div className="flex items-center space-x-2">
                 <RadioGroupItem value="monthly" id="monthly" />
@@ -180,10 +182,10 @@ export function CompoundingCalculator() {
           </div>
           <div className="space-y-2">
             <Label>Currency</Label>
-            <RadioGroup
+            <RadioGroup aria-label="Currency"
               value={currency}
               onValueChange={(value: Currency) => setCurrency(value)}
-              className="flex items-center space-x-4"
+              className="flex flex-wrap items-center gap-3"
             >
               <div className="flex items-center space-x-2">
                 <RadioGroupItem value="USD" id="usd" />
@@ -195,12 +197,12 @@ export function CompoundingCalculator() {
               </div>
             </RadioGroup>
             <p className="text-sm text-muted-foreground">
-                1 USD = {USD_TO_INR_RATE} INR
+                Illustrative fixed conversion, 1 USD = {USD_TO_INR_RATE} INR
             </p>
           </div>
            <div className="space-y-2">
             <Label>Monthly Return Rate</Label>
-            <RadioGroup
+            <RadioGroup aria-label="Monthly return rate"
               value={String(monthlyRate)}
               onValueChange={(value) => setMonthlyRate(Number(value))}
               className="flex flex-wrap items-center gap-x-4 gap-y-2"
@@ -215,7 +217,7 @@ export function CompoundingCalculator() {
           </div>
            <div className="space-y-2">
             <Label>Compounding Years</Label>
-            <RadioGroup
+            <RadioGroup aria-label="Duration in years"
               value={String(years)}
               onValueChange={(value) => setYears(Number(value))}
               className="flex flex-wrap items-center gap-x-4 gap-y-2"
@@ -315,7 +317,7 @@ export function CompoundingCalculator() {
                     />
                   </linearGradient>
                 </defs>
-              <Area type="monotone" dataKey="value" name="Portfolio Value" stroke="var(--color-value)" strokeWidth={2} fill="url(#fillValue)" />
+              <Area type="monotone" dataKey="value" name="value" stroke="var(--color-value)" strokeWidth={2} fill="url(#fillValue)" />
             </AreaChart>
           </ChartContainer>
         </CardContent>
@@ -336,7 +338,7 @@ export function CompoundingCalculator() {
                 <TableHead>Starting Value</TableHead>
                 <TableHead>Ending Value</TableHead>
                 <TableHead className="text-right">Yearly Gain</TableHead>
-                <TableHead className="text-right">Total Return</TableHead>
+                <TableHead className="text-right">Gain / contributions</TableHead>
               </TableRow>
             </TableHeader>
             <TableBody>
@@ -351,7 +353,9 @@ export function CompoundingCalculator() {
                 const startingValue = currency === 'INR' ? baseStartingValue * USD_TO_INR_RATE : baseStartingValue;
                 const endingValue = currency === 'INR' ? baseEndingValue * USD_TO_INR_RATE : baseEndingValue;
                 
-                const yearlyGain = endingValue - startingValue;
+                const priorPaid = startOfMonth === 0 ? initialInvestment : compoundingData[startOfMonth - 1].totalContributions;
+                const deposits = compoundingData[endOfMonth].totalContributions - priorPaid;
+                const yearlyGain = endingValue - startingValue - deposits * (currency === 'INR' ? USD_TO_INR_RATE : 1);
                 const totalReturn = (baseEndingValue / compoundingData[endOfMonth].totalContributions - 1) * 100;
                 
                 return (
@@ -359,7 +363,7 @@ export function CompoundingCalculator() {
                     <TableCell className="font-medium">{year}</TableCell>
                     <TableCell>{formatCurrency(startingValue)}</TableCell>
                     <TableCell>{formatCurrency(endingValue)}</TableCell>
-                    <TableCell className="text-right text-green-400">+{formatCurrency(yearlyGain)}</TableCell>
+                    <TableCell className="text-right text-green-400">{formatCurrency(yearlyGain)}</TableCell>
                     <TableCell className="text-right">{!isNaN(totalReturn) ? `${totalReturn.toFixed(2)}%` : 'N/A'}</TableCell>
                   </TableRow>
                 )

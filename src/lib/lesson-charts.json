@@ -1,0 +1,274 @@
+{
+  "what-are-stocks": {
+    "caption": "Ten shares, total cash in rupees",
+    "points": [
+      {
+        "label": "Purchase",
+        "value": 1000
+      },
+      {
+        "label": "Sale plus dividends",
+        "value": 970
+      }
+    ],
+    "url": "https://www.investor.gov/introduction-investing",
+    "label": "Understanding shares"
+  },
+  "understanding-ipos": {
+    "caption": "Destination of issue proceeds, ₹ crore",
+    "points": [
+      {
+        "label": "New shares",
+        "value": 40
+      },
+      {
+        "label": "Existing owners",
+        "value": 60
+      }
+    ],
+    "url": "https://www.investor.gov/sites/default/files/ipo-investorbulletin.pdf",
+    "label": "SEC investor bulletin on IPOs"
+  },
+  "bond-markets-explained": {
+    "caption": "One annual coupon, different prices in rupees",
+    "points": [
+      {
+        "label": "Face value",
+        "value": 1000
+      },
+      {
+        "label": "Purchase price",
+        "value": 950
+      }
+    ],
+    "url": "https://www.investor.gov/introduction-investing/investing-basics/investment-products/bonds-or-fixed-income-products/bonds",
+    "label": "Investor.gov bond guide"
+  },
+  "power-of-compounding": {
+    "caption": "Balance with reinvestment, rupees",
+    "points": [
+      {
+        "label": "Start",
+        "value": 10000
+      },
+      {
+        "label": "Year one",
+        "value": 10500
+      },
+      {
+        "label": "Year two",
+        "value": 11025
+      }
+    ],
+    "url": "https://www.investor.gov/introduction-investing/investing-basics/glossary/compound-interest",
+    "label": "Compound interest"
+  },
+  "how-interest-rates-influence-stocks": {
+    "caption": "Present value of ₹110 due in one year",
+    "points": [
+      {
+        "label": "At 5%",
+        "value": 104.76
+      },
+      {
+        "label": "At 10%",
+        "value": 100
+      }
+    ],
+    "url": "https://www.rbi.org.in/Scripts/BS_ViewBulletin.aspx?Id=22929",
+    "label": "RBI on monetary transmission"
+  },
+  "what-bond-yields-tell-us": {
+    "caption": "Illustrative yields by maturity, percent",
+    "points": [
+      {
+        "label": "Two years",
+        "value": 5
+      },
+      {
+        "label": "Ten years",
+        "value": 4.5
+      }
+    ],
+    "url": "https://www.investor.gov/introduction-investing/investing-basics/investment-products/bonds-or-fixed-income-products/bonds",
+    "label": "Bond terms and interest"
+  },
+  "central-bank-decisions": {
+    "caption": "Hypothetical policy rates, percent",
+    "points": [
+      {
+        "label": "Before meeting",
+        "value": 5
+      },
+      {
+        "label": "Expected",
+        "value": 5.25
+      },
+      {
+        "label": "Announced",
+        "value": 5.25
+      }
+    ],
+    "url": "https://www.rbi.org.in/Scripts/BS_ViewBulletin.aspx?Id=22929",
+    "label": "RBI on policy transmission"
+  },
+  "market-volatility-explained": {
+    "caption": "Two paths with the same finish, index points",
+    "points": [
+      {
+        "label": "Start",
+        "value": 100
+      },
+      {
+        "label": "Quiet midpoint",
+        "value": 101
+      },
+      {
+        "label": "Uneven midpoint",
+        "value": 110
+      },
+      {
+        "label": "Finish",
+        "value": 102
+      }
+    ],
+    "url": "https://www.cboe.com/tradable_products/vix/vix_options/specifications",
+    "label": "Cboe on the VIX"
+  },
+  "geopolitical-tensions-affect-markets": {
+    "caption": "Illustrative delivery times, days",
+    "points": [
+      {
+        "label": "Usual route",
+        "value": 12
+      },
+      {
+        "label": "Detour",
+        "value": 18
+      }
+    ],
+    "url": "https://www.eia.gov/energyexplained/oil-and-petroleum-products/prices-and-outlook.php",
+    "label": "EIA on supply and demand"
+  },
+  "crude-oil-and-global-tensions": {
+    "caption": "Illustrative inventory, million barrels",
+    "points": [
+      {
+        "label": "Opening",
+        "value": 50
+      },
+      {
+        "label": "After one week",
+        "value": 48
+      },
+      {
+        "label": "After two weeks",
+        "value": 46
+      }
+    ],
+    "url": "https://www.eia.gov/finance/markets/crudeoil/balance.php",
+    "label": "EIA on oil inventories"
+  },
+  "understanding-forex-markets": {
+    "caption": "Cost of a hypothetical US$100 invoice, rupees",
+    "points": [
+      {
+        "label": "At ₹80 per dollar",
+        "value": 8000
+      },
+      {
+        "label": "At ₹82 per dollar",
+        "value": 8200
+      }
+    ],
+    "url": "https://www.rbi.org.in/Scripts/BS_ViewBulletin.aspx?Id=22929",
+    "label": "RBI on rates and exchange rates"
+  },
+  "why-gold-rises-during-uncertainty": {
+    "caption": "Local value of one hypothetical gold unit, rupees",
+    "points": [
+      {
+        "label": "US$100 × ₹80",
+        "value": 8000
+      },
+      {
+        "label": "US$100 × ₹82",
+        "value": 8200
+      }
+    ],
+    "url": "https://www.gold.org/goldhub/research/gold-deposit-rates-guidance-paper",
+    "label": "World Gold Council on opportunity cost"
+  },
+  "prediction-markets-polymarkets": {
+    "caption": "Hypothetical binary contract, settlement units",
+    "points": [
+      {
+        "label": "Quoted cost",
+        "value": 0.6
+      },
+      {
+        "label": "Yes payout",
+        "value": 1
+      },
+      {
+        "label": "No payout",
+        "value": 0
+      }
+    ],
+    "url": "https://www.cftc.gov/LearnandProtect/PredictionMarkets",
+    "label": "CFTC overview of event contracts"
+  },
+  "rise-of-cryptocurrency-markets": {
+    "caption": "Illustrative token prices, units",
+    "points": [
+      {
+        "label": "Before",
+        "value": 100
+      },
+      {
+        "label": "After decline",
+        "value": 60
+      },
+      {
+        "label": "After 40% rebound",
+        "value": 84
+      }
+    ],
+    "url": "https://www.investor.gov/introduction-investing/general-resources/news-alerts/alerts-bulletins/investor-alerts/crypto-asset-securities",
+    "label": "Investor.gov on crypto asset risks"
+  },
+  "market-psychology-behavioral-finance": {
+    "caption": "Two paper exits, units of original risk",
+    "points": [
+      {
+        "label": "Planned target",
+        "value": 3
+      },
+      {
+        "label": "Recorded exit",
+        "value": 1
+      }
+    ],
+    "url": "https://www.investor.gov/introduction-investing/general-resources/news-alerts/alerts-bulletins/investor-bulletins-72",
+    "label": "SEC bulletin on behavioural patterns"
+  },
+  "taxation-basics-for-traders": {
+    "caption": "Fictional transaction record, rupees",
+    "points": [
+      {
+        "label": "Purchase",
+        "value": 1000
+      },
+      {
+        "label": "Sale proceeds",
+        "value": 1150
+      },
+      {
+        "label": "Documented charges",
+        "value": 10
+      }
+    ],
+    "url": "https://www.incometax.gov.in/iec/foportal/help/all-topics/e-filing-services/ais%20-%20annual%20information%20statement-faqs",
+    "label": "Income Tax Department guide to AIS"
+  }
+}

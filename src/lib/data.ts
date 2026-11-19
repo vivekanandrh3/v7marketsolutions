@@ -32,7 +32,7 @@ export const markets: Market[] = [
   },
   {
     name: 'Options',
-    description: 'Utilize derivatives to hedge positions, generate income, or speculate on price movements with defined risk.',
+    description: 'Study contracts whose payoff depends on an underlying asset. Risk differs substantially between buyers and sellers.',
     icon: FileText,
     imageId: 'stocks-market',
   },
@@ -98,7 +98,7 @@ export const markets: Market[] = [
   },
   {
     name: 'Polymarkets',
-    description: 'Polymarket is the world\'s largest prediction market, allowing you to stay informed and profit from your knowledge by betting on future events across various topics like politics, crypto, culture, sports, and global news, using blockchain for transparent, decentralized wagering on outcomes',
+    description: 'Study how event contracts express a market price for a precisely defined outcome.',
     icon: Layers,
     imageId: 'indices-market',
   },
@@ -156,10 +156,10 @@ export const insights: InsightPost[] = [
   {
     slug: 'how-interest-rates-influence-stocks',
     title: 'How Interest Rates Influence Stock Markets',
-    description: 'Explore the inverse relationship between interest rates set by central banks and the valuation of the stock market.',
+    description: 'See how discount rates and earnings expectations interact.',
     date: '2023-01-25',
     imageId: 'insight-interest-rates-chart',
-    content: '<p>When central banks raise interest rates to fight inflation, borrowing becomes more expensive for companies and consumers, which can slow down economic growth and hurt corporate profits. This often leads to lower stock prices. Conversely, lower rates can stimulate the economy and boost the market.</p>',
+    content: "<h2>Discounting a future payment</h2><p>If a business pays ₹110 in one year, divide by 1.05 to value it at a hypothetical 5% discount rate. Raise the rate to 10% and the same cash flow is worth ₹100 today. A share includes many uncertain cash flows, so this calculation isolates just one input.</p><h3>Try it yourself</h3><p>Now raise the expected payment to ₹121 at 10%. Can a stronger earnings forecast offset the higher discount rate? Explain why an interest-rate headline alone cannot determine a share price.</p>",
     category: 'Market Mechanics',
   },
   {
@@ -168,7 +168,7 @@ export const insights: InsightPost[] = [
     description: 'An analysis of the bond market as a forward-looking indicator for economic health, focusing on the yield curve.',
     date: '2023-10-03',
     imageId: 'insight-yield-curve',
-    content: '<p>The bond market is often called the "smart money." The yield curve—a graph of bond yields across different maturities—provides powerful clues. An inverted yield curve, where short-term bonds yield more than long-term ones, has historically been a reliable predictor of recessions.</p>',
+    content: "<h2>Read a curve in basis points</h2><p>A yield curve places the same issuer’s borrowing rates side by side across maturities. In this example the ten-year rate minus the two-year rate is −0.50 percentage points, or −50 basis points. Investors may expect lower future short rates. Demand for longer bonds can also affect the spread.</p><h3>Try it yourself</h3><p>Keep the two-year yield at 5% and change the ten-year yield to 5.25%. Calculate the new spread. Label the two curves and write down one question about inflation expectations before interpreting either.</p>",
     category: 'Market Mechanics',
   },
     {
@@ -177,7 +177,7 @@ export const insights: InsightPost[] = [
     description: 'An inside look at how monetary policy announcements from institutions like the Federal Reserve create market volatility.',
     date: '2025-03-20',
     imageId: 'insight-central-bank',
-    content: '<p>Central banks hold immense power over financial markets. Their decisions on interest rates and quantitative easing send powerful signals to investors. This article explains how traders anticipate these decisions and why the accompanying statements can cause significant price swings in stocks, bonds, and currencies.</p>',
+    content: "<h2>Separate a decision from its surprise</h2><p>A move from 5% to 5.25% is a 25-basis-point increase. If markets had already anticipated the full change, the announcement supplies little new information about today’s rate. A statement about future decisions can still change expectations.</p><h3>Try it yourself</h3><p>Compare a second meeting where the expected rate is 5% and the outcome is 5.25%. Record the same actual increase and the two different surprises. Compare short-term yields before attributing a currency move to the announcement.</p>",
     category: 'Market Mechanics',
   },
   {
@@ -186,7 +186,7 @@ export const insights: InsightPost[] = [
     description: 'A look at what causes market volatility, how it\'s measured (e.g., VIX), and how it impacts trading strategies.',
     date: '2025-01-15',
     imageId: 'insight-volatility-index',
-    content: '<p>Volatility refers to the magnitude and speed of price changes in a market. While often seen as a sign of risk, it also creates opportunities for traders. We explore the factors that drive volatility, from economic data releases to geopolitical events, and how traders can adapt.</p>',
+    content: "<h2>Look between the endpoints</h2><p>Two prices can start at 100 and end at 102 while taking very different paths. A detour to 110 creates a larger rise and subsequent fall. Realised volatility looks at a series of returns. The VIX uses option prices to estimate expected S&P 500 volatility over 30 days.</p><h3>Try it yourself</h3><p>Compute the second move on each path as finish divided by midpoint minus one. Which journey had a bigger reversal? A volatility estimate describes possible variation without specifying the sign of the next move.</p>",
     category: 'Market Mechanics',
   },
   // Section 3: Global Markets
@@ -196,7 +196,7 @@ export const insights: InsightPost[] = [
     description: 'An examination of how global conflicts introduce uncertainty and trigger "risk-off" sentiment among investors.',
     date: '2022-03-10',
     imageId: 'insight-geopolitics',
-    content: '<p>Financial markets thrive on stability. Wars, political turmoil, and other geopolitical shocks disrupt this stability, causing investors to sell riskier assets like stocks and flee to "safe havens" such as gold or the U.S. dollar. This article explores the historical market impact of major global events.</p>',
+    content: "<h2>Trace the exposure</h2><p>A route closure can delay deliveries even if production stays constant. A buyer with inventory can wait. A buyer with limited stock may compete for faster delivery. The same event can affect freight, fuel and company margins through different channels.</p><h3>Try it yourself</h3><p>Assume a buyer uses one unit per day and holds 15 units. Would inventory last for each route? Compare that physical shortfall with a headline that reports only a rise in uncertainty.</p>",
     category: 'Global Markets',
   },
     {
@@ -205,7 +205,7 @@ export const insights: InsightPost[] = [
     description: 'An analysis of how recent conflicts have disrupted oil supply chains, fueling inflation and impacting global markets.',
     date: '2025-04-05',
     imageId: 'insight-oil-price-graph',
-    content: '<p>Crude oil is the lifeblood of the global economy. Recent geopolitical tensions in key oil-producing regions have created significant supply chain disruptions, leading to a sharp increase in energy prices. This surge directly contributes to higher inflation, forcing central banks to consider aggressive rate hikes. As a result, currencies of oil-importing nations weaken, and stock markets face pressure from higher costs and reduced consumer spending power.</p>',
+    content: "<h2>Build an inventory balance</h2><p>Suppose deliveries add 8 million barrels a week while users withdraw 10 million. Stocks fall by 2 million each week. This is a possible mechanism behind a tighter market. A price rise alone cannot tell you whether supply fell or demand rose.</p><h3>Try it yourself</h3><p>Starting at 50 million barrels, raise deliveries to 11 million in week two. Recalculate the ending stock. Identify the additional information you would need before connecting the inventory change to inflation.</p>",
     category: 'Global Markets',
   },
   {
@@ -214,16 +214,16 @@ export const insights: InsightPost[] = [
     description: 'A primer on the foreign exchange market, the world\'s largest financial market, and what drives currency values.',
     date: '2023-07-18',
     imageId: 'forex-market',
-    content: '<p>The Forex market is where currencies are traded. A currency\'s strength is influenced by a country\'s economic health, interest rates, trade balances, and political stability. We explore how these factors create opportunities for traders in this 24/7 market.</p>',
+    content: "<h2>Read the units first</h2><p>USD/INR quotes rupees per US dollar. At 80, a US$100 invoice costs ₹8,000. At 82 it costs ₹8,200 before charges. The same move increases the rupee proceeds for someone receiving US dollars.</p><h3>Try it yourself</h3><p>Reverse the perspective. If you hold ₹8,200, divide by each rate to find how many dollars you receive. State which currency strengthened and identify the base currency before describing the move.</p>",
     category: 'Global Markets',
   },
   {
     slug: 'why-gold-rises-during-uncertainty',
-    title: 'Why Gold Rises During Global Uncertainty',
+    title: 'How uncertainty and currency moves affect gold',
     description: 'An exploration of gold\'s historical role as a "safe-haven" asset during times of economic or political turmoil.',
     date: '2024-01-30',
     imageId: 'insight-gold-chart',
-    content: '<p>For centuries, gold has been seen as a store of value. Unlike currencies, it cannot be printed and has limited supply. During crises, when investors lose faith in stocks and bonds, they often turn to gold, driving up its price. This article examines the reasons behind this enduring behavior.</p>',
+    content: "<h2>Separate metal price and currency</h2><p>Gold can attract demand during uncertainty, but it also competes with interest-bearing assets. A change in the exchange rate can move the rupee price even if the dollar gold price stays flat. Local premiums and costs can further change the result.</p><h3>Try it yourself</h3><p>Keep the exchange rate at 82 and reduce the dollar price from 100 to 98. Does the rupee value still exceed the original ₹8,000? Explain which input offset part of the currency move.</p>",
     category: 'Global Markets',
   },
   // Section 4: Advanced Systems
@@ -233,7 +233,7 @@ export const insights: InsightPost[] = [
     description: 'An introduction to decentralized platforms where users can bet on the outcomes of real-world events.',
     date: '2024-10-15',
     imageId: 'insight-polymarket-chart',
-    content: '<p>Prediction markets like Polymarket leverage the "wisdom of the crowd" to forecast future events, from election results to economic data releases. This article explains how they work, their potential as an information source, and the risks involved.</p>',
+    content: "<h2>Read the settlement condition</h2><p>A classroom contract pays one unit if an event occurs and zero otherwise. At a cost of 0.60, the net result is +0.40 or −0.60 before fees. Treating the price as a probability assumes a great deal about liquidity and participants.</p><h3>Try it yourself</h3><p>Write a precise definition of rain tomorrow including station, measurement threshold and observation time. Compare it with an ambiguous definition. Settlement wording can matter even when participants agree on the weather.</p>",
     category: 'Advanced Systems',
   },
   {
@@ -242,7 +242,7 @@ export const insights: InsightPost[] = [
     description: 'A look at how cryptocurrencies like Bitcoin act as a barometer for investor risk appetite in the broader market.',
     date: '2023-04-02',
     imageId: 'insight-crypto',
-    content: '<p>As a highly speculative asset class, cryptocurrency is often at the forefront of market sentiment shifts. A surge in crypto prices can indicate a "risk-on" environment, while a crash can signal a broader flight to safety. We analyze this relationship and what it tells us about market psychology.</p>',
+    content: "<h2>Separate a price loss from custody risk</h2><p>From 100 to 60 is a 40% loss. A subsequent 40% gain applies to 60, producing 84. A further risk is whether the holder can access or transfer the asset. A price chart alone cannot establish access.</p><h3>Try it yourself</h3><p>Calculate the percentage gain needed to return from 60 to 100. In a separate column, list what evidence would establish custody and withdrawal availability. Keep those questions separate from price performance.</p>",
     category: 'Advanced Systems',
   },
   {
@@ -251,7 +251,7 @@ export const insights: InsightPost[] = [
     description: 'An exploration of how collective emotions of fear and greed drive market bubbles and crashes.',
     date: '2024-12-30',
     imageId: 'insight-psychology',
-    content: '<p>Markets are not always rational. Behavioral finance studies how psychological biases—such as herd mentality and confirmation bias—affect investor decisions. Understanding these patterns is key to avoiding common mistakes and navigating emotional market swings.</p>',
+    content: "<h2>Review the decision with the future hidden</h2><p>Suppose a paper trade plans to risk one unit and has a written exit condition. After a one-unit gain, a small pullback triggers an early exit. The next candle cannot tell you whether the exit followed the original rule.</p><h3>Try it yourself</h3><p>Hide the future bars and write the precise exit condition. Reveal them one at a time. Record a rule-following exit separately from a profitable exit, then repeat on a losing example to avoid selecting only memorable winners.</p>",
     category: 'Advanced Systems',
   },
   {
@@ -260,7 +260,7 @@ export const insights: InsightPost[] = [
     description: 'A general overview of the tax implications for different types of trading and investing activities.',
     date: '2025-02-14',
     imageId: 'insight-tax-flowchart',
-    content: '<p>Profit from trading is often taxable income. This article provides a high-level overview of how gains and losses from stocks, options, futures, and crypto are typically treated for tax purposes. Note: This is not financial advice; always consult a qualified professional.</p>',
+    content: "<h2>Reconcile the records first</h2><p>A purchase for ₹1,000 and a sale for ₹1,150 give a ₹150 difference before recorded charges. That arithmetic alone does not establish taxable income. Instrument type, dates, residency and applicable rules can change the treatment.</p><h3>Try it yourself</h3><p>Create a row for transaction date, instrument, quantity, currency, proceeds and charges. Compare records against statements where applicable. Ask a qualified tax professional about classification and deductions before using the figures in a return.</p>",
     category: 'Advanced Systems',
   },
 ];

@@ -1,3 +1,4 @@
+import { redirect } from 'next/navigation';
 export default function CheckoutPage() {
-  return null;
+  redirect('/premium-training');
 }

@@ -1,28 +1,16 @@
 import { insights, type InsightPost } from '@/lib/data';
-import { PlaceHolderImages } from '@/lib/placeholder-images';
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from '@/components/ui/card';
-import Image from 'next/image';
+import { LessonChart } from '@/components/lesson-chart';
 import Link from 'next/link';
 import { Calendar } from 'lucide-react';
 import { Badge } from '@/components/ui/badge';
 
 function InsightPostCard({ post }: { post: InsightPost }) {
-  const postImage = PlaceHolderImages.find((img) => img.id === post.imageId);
+
   return (
     <Link href={`/insights/${post.slug}`} className="group block">
       <Card className="flex flex-col h-full overflow-hidden transition-shadow duration-300 hover:shadow-lg hover:shadow-primary/20 bg-card/50">
-        {postImage && (
-          <div className="overflow-hidden aspect-video relative">
-            <Image
-              src={postImage.imageUrl}
-              alt={postImage.description}
-              fill
-              className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
-              data-ai-hint={postImage.imageHint}
-              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-            />
-          </div>
-        )}
+        <div className="px-4 pt-4"><LessonChart slug={post.slug} /></div>
         <CardHeader>
           <Badge variant="secondary" className="w-fit mb-2">{post.category}</Badge>
           <CardTitle className="font-headline text-xl group-hover:text-primary">{post.title}</CardTitle>
@@ -65,7 +53,7 @@ export default function InsightsPage() {
         <div className="text-center mb-16">
           <h1 className="text-4xl font-bold tracking-tight font-headline sm:text-5xl">Research &amp; Insights</h1>
           <p className="mt-4 max-w-3xl mx-auto text-lg text-muted-foreground">
-            This section shares insights on financial markets, macroeconomic events, and market behavior to help you understand how global developments influence investing and trading.
+            I pair each concept with a worked example, a short exercise and a source you can follow.
           </p>
         </div>
 

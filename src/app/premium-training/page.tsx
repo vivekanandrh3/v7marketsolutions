@@ -2,6 +2,8 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
 import { CheckCircle, Zap, Target, TrendingUp, Globe, MessageSquare, Calendar, Star } from "lucide-react";
+import { CourseEnquiry } from '@/components/course-enquiry';
+import prices from '@/lib/course-prices.json';
 import Link from "next/link";
 import type { LucideIcon } from "lucide-react";
 
@@ -9,7 +11,7 @@ const programs: {
   title: string;
   icon: LucideIcon;
   description: string;
-  price: string;
+  course: keyof typeof prices;
   topics: string[];
   whatsappText: string;
 }[] = [
@@ -17,12 +19,12 @@ const programs: {
     title: "Market Foundations & Money Management",
     icon: Target,
     description: "If you are opening a chart for the first time, start with one stock. Mark where buyers stepped in, explain what would change your view, and work out how much a mistaken idea could cost.",
-    price: "₹5,999",
+    course: "foundations",
     topics: [
       "Demand/Supply Dynamics",
       "Core Price Action",
       "Professional Money Management",
-      "High-Potential Stock Selection",
+      "Comparing Stock Characteristics",
       "Core Market Analysis",
       "Trader's Psychology",
       "Key Economic Indicators",
@@ -33,7 +35,7 @@ const programs: {
     title: "Precision Trading: Pattern & Candlestick Mastery",
     icon: Zap,
     description: "If you can name a candle but hesitate at the right edge of a chart, practise reading it in context. Compare the same engulfing pattern at a range boundary and in the middle of a range.",
-    price: "₹11,999",
+    course: "patterns",
     topics: [
       "Advanced Candlestick Indicators",
       "Dynamic Support/Resistance",
@@ -47,7 +49,7 @@ const programs: {
     title: "Futures & Options Strategy: Hedging & Timing",
     icon: TrendingUp,
     description: "If you already follow the cash market, explore what changes when a contract has an expiry. Sketch a hedge and trace how time, volatility and the underlying price affect it.",
-    price: "₹19,999",
+    course: "derivatives",
     topics: [
       "When to choose F&O",
       "Trend vs. Sideways Markets",
@@ -61,7 +63,7 @@ const programs: {
     title: "Elite Global Trading: CFDs, Forex & Elliott Mastery",
     icon: Globe,
     description: "If you already keep a trading journal, use it to compare two readings of the same forex move. Map an Elliott wave count, record an alternative, and review the evidence for each.",
-    price: "₹29,999",
+    course: "global",
     topics: [
       "Advanced CFD & Forex Strategy",
       "Proprietary Firm Insights",
@@ -80,7 +82,7 @@ export default function PremiumTrainingPage() {
       <div className="text-center mb-16">
         <h1 className="text-4xl font-bold tracking-tight font-headline sm:text-5xl">Masterclass & Professional Trading Programs</h1>
         <p className="mt-4 max-w-3xl mx-auto text-lg text-muted-foreground">
-          Choose a program by the question you are working on. Each outline shows what you will study and the full course fee.
+          Tell me which markets you follow, what you have studied and where you get stuck. In a consultation, I use that conversation to suggest a starting point and tailor examples to your learning goals. Each outline below shows the regular course fee.
         </p>
       </div>
 
@@ -132,10 +134,7 @@ export default function PremiumTrainingPage() {
                 </ul>
               </CardContent>
               <CardFooter className="flex flex-col items-start gap-4 mt-4">
-                <div className="text-3xl font-bold font-headline">{program.price}</div>
-                <Button asChild className="w-full font-bold">
-                  <Link href={`https://wa.me/918317324956?text=${encodeURIComponent(program.whatsappText)}`} target="_blank" rel="noopener noreferrer">Enquire and Enroll Now</Link>
-                </Button>
+                <CourseEnquiry course={program.course} message={program.whatsappText} />
               </CardFooter>
             </Card>
           ))}
@@ -148,7 +147,7 @@ export default function PremiumTrainingPage() {
           <CardHeader className="text-center">
             <CardTitle className="font-headline text-3xl">One-on-One Consultation</CardTitle>
             <CardDescription className="max-w-2xl mx-auto">
-              For personalized guidance, portfolio review, or specific trading questions, book a one-on-one consultation directly via WhatsApp.
+              Tell me which concepts you want to practise and how much time you have. I can help you choose a learning path. Please leave holdings, account details and requests for buy or sell calls out of your enquiry.
             </CardDescription>
           </CardHeader>
           <CardContent className="flex justify-center">
