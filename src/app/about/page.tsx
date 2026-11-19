@@ -1,3 +1,5 @@
+import { pageMeta, pages } from '@/lib/site-meta';
+export const metadata = pageMeta('/about', pages['/about'][0], pages['/about'][1]);
 export default function AboutPage() {
   return <article className="container max-w-3xl py-16 md:py-24 space-y-6 leading-relaxed">
     <h1 className="font-headline text-4xl font-bold">Why I teach at V7 Market Solutions</h1>

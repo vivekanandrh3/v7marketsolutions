@@ -1,3 +1,5 @@
+import { pageMeta, pages } from '@/lib/site-meta';
+export const metadata = pageMeta('/compounding', pages['/compounding'][0], pages['/compounding'][1]);
 import { CompoundingCalculator } from './compounding-calculator';
 
 export default function CompoundingPage() {

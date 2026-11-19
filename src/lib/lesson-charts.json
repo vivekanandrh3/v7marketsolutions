@@ -90,8 +90,8 @@
         "value": 4.5
       }
     ],
-    "url": "https://www.investor.gov/introduction-investing/investing-basics/investment-products/bonds-or-fixed-income-products/bonds",
-    "label": "Bond terms and interest"
+    "url": "https://home.treasury.gov/policy-issues/financing-the-government/interest-rate-statistics/",
+    "label": "US Treasury · yield curves by maturity"
   },
   "central-bank-decisions": {
     "caption": "Hypothetical policy rates, percent",

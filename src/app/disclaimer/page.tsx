@@ -1,3 +1,5 @@
+import { pageMeta, pages } from '@/lib/site-meta';
+export const metadata = pageMeta('/disclaimer', pages['/disclaimer'][0], pages['/disclaimer'][1]);
 export default function DisclaimerPage() {
   return (
     <div className="container max-w-4xl mx-auto py-16 md:py-24">

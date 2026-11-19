@@ -1,3 +1,5 @@
+import { pageMeta, pages } from '@/lib/site-meta';
+export const metadata = pageMeta('/premium-training', pages['/premium-training'][0], pages['/premium-training'][1]);
 import Link from 'next/link';
 import { CourseEnquiry } from '@/components/course-enquiry';
 import { pathways } from '@/lib/pathways';

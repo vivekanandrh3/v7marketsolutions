@@ -1,3 +1,5 @@
+import { pageMeta, pages } from '@/lib/site-meta';
+export const metadata = pageMeta('/contact', pages['/contact'][0], pages['/contact'][1]);
 
 import { ContactForm } from "./contact-form";
 import { Mail, Phone, MessageSquare } from 'lucide-react';

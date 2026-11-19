@@ -1,3 +1,5 @@
+import { pageMeta, pages } from '@/lib/site-meta';
+export const metadata = pageMeta('/insights', pages['/insights'][0], pages['/insights'][1]);
 import { insights, type InsightPost } from '@/lib/data';
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from '@/components/ui/card';
 import { LessonChart } from '@/components/lesson-chart';

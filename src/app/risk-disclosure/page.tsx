@@ -1,3 +1,5 @@
+import { pageMeta, pages } from '@/lib/site-meta';
+export const metadata = pageMeta('/risk-disclosure', pages['/risk-disclosure'][0], pages['/risk-disclosure'][1]);
 export default function RiskDisclosurePage() {
   const principles = [
     {
