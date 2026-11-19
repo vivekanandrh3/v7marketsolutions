@@ -17,6 +17,7 @@ import {
 } from 'lucide-react';
 
 export type Market = {
+  lesson: string;
   name: string;
   description: string;
   icon: LucideIcon;
@@ -27,78 +28,91 @@ export const markets: Market[] = [
   {
     name: 'Stocks (Indian & Global)',
     description: "Ownership shares represent a claim on a company. Compare dividends and changes in the quoted share price.",
+    lesson: "On an exchange, a buyer pays a selling shareholder. Track ten fictional shares through a dividend and a price change to separate cash income from the change in their market value.",
     icon: Briefcase,
     imageId: 'stocks-market',
   },
   {
     name: 'Options',
     description: "Study contracts whose payoff depends on an underlying asset. Risk differs between buyers and sellers.",
+    lesson: "A call gives its buyer the right to buy at the strike price. At expiry, imagine a strike of 100, a premium of 5 and an underlying price of 102. Exercising has value, yet the buyer loses 3 per unit before costs.",
     icon: FileText,
     imageId: 'stocks-market',
   },
   {
     name: 'Futures',
     description: "Study standardised contracts with a multiplier, settlement terms and expiry.",
+    lesson: "An exchange-traded future has a contract size. With a multiplier of 50, a two-point rise adds 100 to a long position before costs. Compare that exposure with the margin posted.",
     icon: Copy,
     imageId: 'commodities-market',
   },
   {
     name: 'CFDs',
     description: "A contract for difference settles a price change under the provider’s terms. Access depends on jurisdiction.",
+    lesson: "A CFD tracks the change between opening and closing prices without transferring the underlying asset. Compare spreads and overnight financing when studying the same price move on two feeds.",
     icon: ReceiptText,
     imageId: 'forex-market',
   },
   {
     name: 'Mutual Funds',
     description: "Compare a pooled portfolio’s holdings, mandate, expenses and valuation.",
+    lesson: "Investors hold units in a pooled portfolio. Divide its assets minus liabilities by units outstanding to find net asset value per unit. Trace how a change in the holdings affects that value.",
     icon: FolderKanban,
     imageId: 'indices-market',
   },
   {
     name: 'ETFs',
     description: "Examine how an exchange-traded fund’s market price relates to the assets it tracks.",
+    lesson: "ETF units trade during the day. Compare a bid of 99 and an ask of 101 with an estimated portfolio value of 100 per unit. The spread matters even if the holdings barely move.",
     icon: FileStack,
     imageId: 'stocks-market',
   },
   {
     name: 'IPOs',
     description: "Distinguish newly issued shares from shares sold by existing holders.",
+    lesson: "An initial public offering can raise new capital or let existing owners sell. In a fictional ₹100 crore offer with ₹40 crore of newly issued shares, trace who receives each part before costs.",
     icon: Building,
     imageId: 'crypto-market',
   },
   {
     name: 'Government Securities',
     description: "Compare coupon, maturity and interest-rate exposure in government debt.",
+    lesson: "Governments borrow through bills and bonds. A bill bought for 98 and redeemed at 100 earns 2 before costs. Compare its time to maturity with a bond that pays interest along the way.",
     icon: Shield,
     imageId: 'commodities-market',
   },
   {
     name: 'Bonds',
     description: "Distinguish promised payments from the issuer’s ability to repay.",
+    lesson: "A bond sets out an issuer’s promised payments. If a fixed coupon stays the same while the price falls, its current yield rises. Consider separately whether the issuer can repay.",
     icon: Landmark,
     imageId: 'forex-market',
   },
   {
     name: 'Corporate Actions & Auctions',
     description: "Study how splits, auctions and mergers change contract or ownership records.",
+    lesson: "A two-for-one split doubles the share count and halves the reference price. Trace the value of the holding. In an opening auction, orders are matched to establish an opening price.",
     icon: Handshake,
     imageId: 'indices-market',
   },
   {
     name: 'Forex',
     description: "Read a currency pair in units of the quote currency per unit of the base currency.",
+    lesson: "In EUR/USD, a quote of 1.10 means one euro costs 1.10 US dollars. Compare prices from two dealers to explore spreads and why one spot-FX feed shows only part of the market.",
     icon: CandlestickChart,
     imageId: 'forex-market',
   },
   {
     name: 'Crypto',
     description: "Separate quoted token prices from custody, liquidity and access risks.",
+    lesson: "Tokens can trade on venues with separate order books. Compare how much a fictional sale moves the price in a shallow book versus a deep one. Custody risk is a separate question.",
     icon: Bitcoin,
     imageId: 'crypto-market',
   },
   {
     name: 'Polymarkets',
     description: "Use fictional event contracts to study probability, wording and settlement.",
+    lesson: "Prediction markets trade contracts tied to an outcome. A fictional Yes share bought for 0.60 that settles at 1 gains 0.40 before costs. Read the resolution rule before interpreting a price as a probability.",
     icon: Layers,
     imageId: 'indices-market',
   },

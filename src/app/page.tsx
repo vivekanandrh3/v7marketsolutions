@@ -6,20 +6,11 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
 import { Button } from '@/components/ui/button';
-import { markets, type Market } from '@/lib/data';
+import { MarketCard } from '@/components/market-card';
+import { markets } from '@/lib/data';
 import { Mail, Phone, MessageSquare } from 'lucide-react';
 
 const heroImage = PlaceHolderImages.find((img) => img.id === 'hero');
-
-function MarketCard({ market }: { market: Market }) {
-  return (
-    <article className="market-panel">
-      <market.icon aria-hidden="true" className="h-6 w-6 text-primary" />
-      <h3 className="font-headline text-xl font-semibold">{market.name}</h3>
-      <p className="text-sm leading-relaxed text-muted-foreground">{market.description}</p>
-    </article>
-  );
-}
 
 
 export default function Home() {
@@ -99,7 +90,10 @@ export default function Home() {
             ['Ownership and lending',[0,4,5,6,7,8,9]],
             ['Contracts and currencies',[1,2,3,10]],
             ['Digital and event markets',[11,12]],
-          ].map(([label, indices])=><section key={String(label)} className="mt-10"><h3 className="mb-4 font-headline text-xl">{label}</h3><div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">{(indices as number[]).map(i=><MarketCard key={markets[i].name} market={markets[i]}/>)}</div></section>)}
+          ].map(([label, indices])=><section key={String(label)} className="mt-10"><h3 className="mb-4 font-headline text-xl">{label}</h3><div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">{(indices as number[]).map(i => {
+              const { name, description, lesson, icon: Icon } = markets[i];
+              return <MarketCard key={name} name={name} description={description} lesson={lesson} icon={<Icon aria-hidden="true" size={28} />} />;
+            })}</div></section>)}
         </div>
       </section>
 
