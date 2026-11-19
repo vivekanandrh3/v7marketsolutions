@@ -7,6 +7,8 @@ import { Textarea } from '@/components/ui/textarea';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 
+import { pathways } from '@/lib/pathways';
+
 const endpoint = 'https://formspree.io/f/mreekydb';
 
 export function ContactForm() {
@@ -19,8 +21,15 @@ export function ContactForm() {
     const form = event.currentTarget;
     const data = new FormData(form);
     if (data.get('_gotcha')) { setFeedback('Unable to submit this form.'); return; }
-    if (String(data.get('message')).trim().length < 10 || !String(data.get('name')).trim()) {
-      setFeedback('Enter your name and a question of at least 10 characters.'); return;
+    if (!String(data.get('name') ?? '').trim()) {
+      setFeedback('Enter your full name.');
+      return;
+    }
+    const phone = String(data.get('phone') ?? '').trim();
+    if (!/^\+?[\d ()-]+$/.test(phone) || !/^\d{7,15}$/.test(phone.replace(/\D/g, ''))) {
+      setFeedback('Enter a contact number with 7 to 15 digits, including the country code if applicable.');
+      form.querySelector<HTMLInputElement>('#phone')?.focus();
+      return;
     }
     busy.current = true;
     setPending(true);
@@ -29,7 +38,7 @@ export function ContactForm() {
       const result = await fetch(endpoint, { method: 'POST', body: data, headers: { Accept:'application/json' }, signal: AbortSignal.timeout(15000) });
       const receipt = await result.json();
       if (!result.ok || receipt.error || receipt.errors?.length) throw new Error();
-      setFeedback('Your enquiry was accepted by the form service.');
+      setFeedback('Your enquiry was accepted by the form service. I’ll contact you to discuss your training plan, fee and manual payment instructions. Your place is confirmed only after I verify bank credit and send your receipt and enrolment confirmation.');
       form.reset();
     } catch {
       setFeedback('Delivery could not be confirmed. Your entries are still here. You can retry or use the WhatsApp contact.');
@@ -38,9 +47,9 @@ export function ContactForm() {
   return (
     <Card className="max-w-xl mx-auto bg-card/50">
       <CardHeader>
-        <CardTitle className="font-headline text-2xl">Get in Touch</CardTitle>
+        <CardTitle className="font-headline text-2xl">Training enquiry</CardTitle>
         <CardDescription>
-          Your name, email, optional phone number and message go to Formspree so I can reply. Please omit account numbers, financial records and identity documents.
+          I use your contact details to reply and arrange a consultation. You can share a topic or learning goal if you wish. Please leave out financial details and identity documents.
         </CardDescription>
       </CardHeader>
       <CardContent>
@@ -57,16 +66,27 @@ export function ContactForm() {
             </div>
           </div>
           <div className="space-y-2">
-            <Label htmlFor="phone">Phone Number (Optional)</Label>
-            <Input id="phone" name="phone" maxLength={30} autoComplete="tel" type="tel" placeholder="+1 (555) 123-4567" />
+            <Label htmlFor="phone">WhatsApp or contact number</Label>
+            <Input id="phone" name="phone" maxLength={30} autoComplete="tel" type="tel" required placeholder="Include your country code" />
           </div>
           <div className="space-y-2">
-            <Label htmlFor="message">Your Message</Label>
-            <Textarea id="message" name="message" placeholder="Your question or feedback..." required maxLength={3000} minLength={10} rows={5} />
+            <Label htmlFor="course">Course interest (optional)</Label>
+            <select className="w-full rounded-md border border-input bg-background p-2" id="course" name="course" defaultValue="">
+              <option value="">I’m still deciding</option>
+              {pathways.map(pathway => <option key={pathway.id} value={pathway.title}>{pathway.title}</option>)}
+            </select>
           </div>
-          <Button type="submit" disabled={pending}>{pending ? 'Sending…' : 'Send Message'}</Button>
+          <div className="space-y-2">
+            <Label htmlFor="message">Previous learning experience and educational goals (optional)</Label>
+            <Textarea id="message" name="message" placeholder="What have you tried, and what would you like to understand?" maxLength={3000} rows={4} />
+          </div>
+          <p className="text-sm" id="privacy-notice">Formspree processes this form and forwards the enquiry to me. I use it to discuss your training request. For questions about your details, use the email on this page. <a className="underline" href="https://formspree.io/legal/privacy-policy/" target="_blank" rel="noreferrer">Read Formspree’s privacy policy (opens a new tab)</a>.</p>
+          <label className="flex items-start gap-3 py-2" htmlFor="privacy">
+            <input className="mt-1 h-5 w-5 shrink-0" id="privacy" name="privacy" type="checkbox" value="acknowledged" required aria-describedby="privacy-notice" />
+            <span>I have read the privacy notice and agree to be contacted about this enquiry.</span>
+          </label>
+          <Button type="submit" disabled={pending}>{pending ? 'Sending…' : 'Send training enquiry'}</Button>
           <p role="status" aria-live="polite">{feedback}</p>
-          <a className="text-sm underline" href="https://formspree.io/legal/privacy-policy/">Formspree privacy policy</a>
         </form>
       </CardContent>
     </Card>

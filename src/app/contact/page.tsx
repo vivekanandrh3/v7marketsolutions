@@ -29,9 +29,9 @@ export default function ContactPage() {
   return (
     <div className="container py-16 md:py-24">
        <div className="text-center mb-16">
-        <h1 className="text-4xl font-bold tracking-tight font-headline sm:text-5xl">Contact V7 Market Solutions</h1>
+        <h1 className="text-4xl font-bold tracking-tight font-headline sm:text-5xl">Request Personalized Training</h1>
         <div className="mt-4 max-w-3xl mx-auto text-lg text-muted-foreground font-bold italic">
-          <p>Tell me what you already know, what you find difficult and what you would like to practise.</p>
+          <p>Send an enquiry or message me on WhatsApp. We’ll discuss what you want to learn and agree on a plan and fee before you decide to pay.</p>
           <p className="mt-2">For a masterclass enquiry, ask about the next available session.</p>
         </div>
       </div>

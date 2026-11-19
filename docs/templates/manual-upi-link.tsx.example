@@ -1,0 +1,14 @@
+/** Future private handoff after consultation. No recipient is configured. */
+export function ManualUpiLink({ verifiedUpiId, verifiedPayeeName }: {
+  verifiedUpiId: string;
+  verifiedPayeeName: string;
+}) {
+  const payee = verifiedPayeeName.trim();
+  if (!payee || !/^[\w.-]+@[\w.-]+$/.test(verifiedUpiId)) return null;
+  const parameters = new URLSearchParams({ pa: verifiedUpiId, pn: payee, cu: 'INR' });
+  return <div>
+    <p>Check the recipient and enter the agreed fee in your UPI app.</p>
+    <a href={`upi://pay?${parameters}`}>Open UPI app</a>
+    <p>I confirm enrolment and issue a receipt after verifying the credit in my bank account.</p>
+  </div>;
+}
