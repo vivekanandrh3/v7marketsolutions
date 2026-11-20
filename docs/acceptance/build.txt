@@ -1,0 +1,45 @@
+
+> nextn@0.1.0 build
+> NODE_ENV=production next build
+
+   ▲ Next.js 15.5.29
+
+   Creating an optimized production build ...
+ ✓ Compiled successfully in 4.4s
+   Skipping linting
+   Checking validity of types ...
+   Collecting page data ...
+   Generating static pages (0/30) ...
+   Generating static pages (7/30) 
+   Generating static pages (14/30) 
+   Generating static pages (22/30) 
+ ✓ Generating static pages (30/30)
+   Finalizing page optimization ...
+   Collecting build traces ...
+
+Route (app)                                 Size  First Load JS
+┌ ○ /                                    5.39 kB         111 kB
+├ ○ /_not-found                            994 B         103 kB
+├ ○ /about                                 133 B         103 kB
+├ ○ /checkout                              133 B         103 kB
+├ ○ /compounding                          112 kB         225 kB
+├ ○ /contact                             4.08 kB         114 kB
+├ ○ /disclaimer                            133 B         103 kB
+├ ○ /insights                              163 B         106 kB
+├ ● /insights/[slug]                     1.48 kB         115 kB
+├   ├ /insights/what-are-stocks
+├   ├ /insights/understanding-ipos
+├   ├ /insights/bond-markets-explained
+├   └ [+13 more paths]
+├ ○ /learning-modules                    2.86 kB         119 kB
+├ ○ /premium-training                    3.46 kB         117 kB
+└ ○ /risk-disclosure                       133 B         103 kB
++ First Load JS shared by all             102 kB
+  ├ chunks/255-d1a5c4d6b601e986.js       46.3 kB
+  ├ chunks/4bd1b696-409494caf8c83275.js  54.2 kB
+  └ other shared chunks (total)          1.98 kB
+
+
+○  (Static)  prerendered as static content
+●  (SSG)     prerendered as static HTML (uses generateStaticParams)
+

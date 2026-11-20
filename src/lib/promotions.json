@@ -1,0 +1,21 @@
+{
+  "enabled": false,
+  "campaigns": [
+    {
+      "code": "FIRST20",
+      "group": "first-time learners",
+      "percent": 20,
+      "enabled": false,
+      "start": "",
+      "end": ""
+    },
+    {
+      "code": "REFER20",
+      "group": "referred learners",
+      "percent": 20,
+      "enabled": false,
+      "start": "",
+      "end": ""
+    }
+  ]
+}

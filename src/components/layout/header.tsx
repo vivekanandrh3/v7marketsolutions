@@ -29,18 +29,18 @@ export function Header() {
   return (
     <header className="sticky top-0 z-50 w-full border-b border-border/40 bg-background/95 backdrop-blur-sm">
       <div className="container flex h-16 items-center">
-        <Link href="/" className="mr-6 flex items-center space-x-2">
+        <Link href="/" aria-label="V7 Market Solutions home" className="mr-6 flex items-center space-x-2">
           <Logo className="h-6 w-6" />
-          <span className="hidden font-bold sm:inline-block font-headline">V7 MARKET SOLUTIONS</span>
+          <span className="font-bold font-headline">V7 MARKET SOLUTIONS</span>
         </Link>
         
-        <nav className="hidden md:flex flex-1 items-center space-x-6 text-sm font-bold">
+        <nav className="hidden xl:flex flex-1 items-center space-x-6 text-sm font-bold">
           {navLinks.map((link) => (
             <Link
               key={link.href}
               href={link.href}
               className={cn(
-                'transition-colors hover:text-primary text-base font-bold',
+                'transition-colors hover:text-primary text-sm font-semibold',
                 pathname === link.href ? 'text-primary' : 'text-foreground/60'
               )}
             >
@@ -49,7 +49,7 @@ export function Header() {
           ))}
         </nav>
 
-        <div className="flex flex-1 items-center justify-end space-x-4 md:hidden">
+        <div className="flex flex-1 items-center justify-end space-x-4 xl:hidden">
           <Sheet open={isMobileMenuOpen} onOpenChange={setIsMobileMenuOpen}>
             <SheetTrigger asChild>
               <Button variant="ghost" size="icon">

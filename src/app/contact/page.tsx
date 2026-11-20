@@ -1,6 +1,8 @@
+import { pageMeta, pages } from '@/lib/site-meta';
+export const metadata = pageMeta('/contact', pages['/contact'][0], pages['/contact'][1]);
 
 import { ContactForm } from "./contact-form";
-import { Mail, Phone, MapPin, MessageSquare } from 'lucide-react';
+import { Mail, Phone, MessageSquare } from 'lucide-react';
 
 export default function ContactPage() {
   const contactDetails = [
@@ -21,21 +23,16 @@ export default function ContactPage() {
       title: "WhatsApp",
       content: "Chat on WhatsApp",
       href: "https://wa.me/918317324956"
-    },
-    {
-      icon: MapPin,
-      title: "Address",
-      content: "Vijayanagar, Bengaluru, Karnataka 560040, India"
     }
   ];
 
   return (
     <div className="container py-16 md:py-24">
        <div className="text-center mb-16">
-        <h1 className="text-4xl font-bold tracking-tight font-headline sm:text-5xl">Contact Us</h1>
+        <h1 className="text-4xl font-bold tracking-tight font-headline sm:text-5xl">Request Personalized Training</h1>
         <div className="mt-4 max-w-3xl mx-auto text-lg text-muted-foreground font-bold italic">
-          <p>Whether you’re exploring financial markets or looking for structured learning, feel free to reach out with your questions.</p>
-          <p className="mt-2">Every message is read with care and responded to thoughtfully.</p>
+          <p>Send an enquiry or message me on WhatsApp. We’ll discuss what you want to learn and agree on a plan and fee before you decide to pay.</p>
+          <p className="mt-2">For a masterclass enquiry, ask about the next available session.</p>
         </div>
       </div>
       

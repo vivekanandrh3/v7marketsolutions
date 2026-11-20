@@ -1,3 +1,5 @@
+import { pageMeta, pages } from '@/lib/site-meta';
+export const metadata = pageMeta('/risk-disclosure', pages['/risk-disclosure'][0], pages['/risk-disclosure'][1]);
 export default function RiskDisclosurePage() {
   const principles = [
     {
@@ -6,23 +8,23 @@ export default function RiskDisclosurePage() {
     },
     {
       title: "Losses Are Part of Markets",
-      description: "Even the most experienced traders have losing trades. Losses are a natural and unavoidable part of the process. The key is to ensure they are managed and kept smaller than the wins."
+      description: "Even the most experienced traders have losing trades. Losses are a natural and unavoidable part of the process. Record the amount at risk before each simulated trade, including the possibility of a worse fill."
     },
     {
       title: "No Guaranteed Returns",
-      description: "We will never promise guaranteed profits. Such claims are unrealistic and misleading. Our focus is on teaching a durable process and a professional mindset."
+      description: "I teach ways to examine a decision. A sound process can still result in a loss."
     },
     {
       title: "Educational Purpose Only",
-      description: "All content, from articles to guides, is for educational and informational purposes. We provide a framework for analysis, not a signal to buy or sell."
+      description: "All content, from articles to guides, is for educational and informational purposes. I provide a framework for analysis, not a signal to buy or sell."
     },
     {
       title: "Not Investment Advice",
-      description: "We are educators, not financial advisors. The information shared is based on our experience and should not be considered personalized investment advice for your specific situation."
+      description: "I teach market concepts using examples. Individual portfolio allocation and security recommendations fall outside these lessons."
     },
     {
-      title: "Returns Require Patience",
-      description: "Meaningful results in trading are not built overnight. They are the product of consistent discipline, continuous learning, and patience over a significant period of time."
+      title: "Practice and outcomes",
+      description: "Practice helps you document decisions. Time spent studying does not guarantee an investment return."
     }
   ];
 
@@ -43,7 +45,7 @@ export default function RiskDisclosurePage() {
         ))}
       </div>
        <div className="mt-12 text-center text-sm text-muted-foreground">
-        <p>Your trading journey is your own. Our goal is to empower you with the skills and mindset to navigate it responsibly.</p>
+        <p>Your trading journey is your own. My goal is to empower you with the skills and mindset to navigate it responsibly.</p>
       </div>
     </div>
   );

@@ -1,150 +1,60 @@
-
-import {
-  Accordion,
-  AccordionContent,
-  AccordionItem,
-  AccordionTrigger,
-} from "@/components/ui/accordion"
-import { Button } from "@/components/ui/button"
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
-import { CheckCircle, Library, GitMerge, Globe, ShieldCheck } from "lucide-react"
-import type { LucideIcon } from "lucide-react"
-import Link from "next/link"
-
-const steps: {
-  value: string;
-  title: string;
-  description: string;
-  topics: string[];
-  targetAudience: string;
-  icon: LucideIcon;
-}[] = [
+import { pageMeta, pages } from '@/lib/site-meta';
+export const metadata = pageMeta('/learning-modules', pages['/learning-modules'][0], pages['/learning-modules'][1]);
+import Link from 'next/link';
+import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion';
+import { insights } from '@/lib/data';
+const stages = [
   {
-    value: "step-1",
-    title: "Step 1: Foundations",
-    icon: Library,
-    description: "Build your base with the essential building blocks of financial markets.",
-    topics: [
-      "Stocks",
-      "IPOs",
-      "Mutual Funds",
-      "ETFs",
-      "Bonds",
-      "Compounding",
-      "Corporate Actions",
-    ],
-    targetAudience: "Beginners and long-term investors starting their journey.",
+    "title": "Financial Market Foundations",
+    "objective": "Start with the unit you hold. An owner, a lender and a fund investor have different claims on cash flows.",
+    "exercise": "Reconcile a share purchase, sale and dividend. Then show how reinvestment changes the next period’s starting balance.",
+    "lessons": [
+      "what-are-stocks",
+      "bond-markets-explained",
+      "power-of-compounding"
+    ]
   },
   {
-    value: "step-2",
-    title: "Step 2: Market Mechanics",
-    icon: GitMerge,
-    description: "Understand the machinery of trading, from derivatives to discipline.",
-    topics: [
-      "Futures",
-      "Options",
-      "Risk management",
-      "Position sizing",
-      "Market psychology",
-    ],
-    targetAudience: "Traders looking to understand leverage, risk, and market psychology.",
+    "title": "Price Action, Risk & Market Mechanics",
+    "objective": "Read a candle in its surrounding range. Separate an observed move from an explanation and translate price distance into modelled loss.",
+    "exercise": "Mark a range on a fictional chart, write two competing interpretations and size one paper scenario including costs.",
+    "lessons": [
+      "liquidity-sweeps-and-invalidation",
+      "risk-and-position-sizing",
+      "market-volatility-explained"
+    ]
   },
   {
-    value: "step-3",
-    title: "Step 3: Global Markets",
-    icon: Globe,
-    description: "Expand your scope to international and high-volatility asset classes.",
-    topics: [
-      "CFDs",
-      "Forex",
-      "Crypto",
-      "Macroeconomics",
-    ],
-    targetAudience: "Investors ready to explore international and high-volatility markets.",
+    "title": "Global Markets, Derivatives & Macro Context",
+    "objective": "Connect a currency quote, a contract multiplier and an economic surprise. Ask which units and expectations changed.",
+    "exercise": "Calculate the rupee cost of a US$100 invoice at two rates. Then compare a fictional ten-unit futures contract with ten units of cash exposure and record what margin and expiry change.",
+    "lessons": [
+      "understanding-forex-markets",
+      "economic-events-rates-and-currencies",
+      "what-bond-yields-tell-us",
+      "crude-oil-and-global-tensions"
+    ]
   },
-    {
-    value: "step-4",
-    title: "Step 4: Advanced Market Systems",
-    icon: ShieldCheck,
-    description: "Engage with modern financial ecosystems, from prediction markets to compliance.",
-    topics: [
-      "Prediction markets (Polymarket)",
-      "Crypto handling",
-      "Taxation",
-      "Market frameworks",
-    ],
-    targetAudience: "Advanced users focusing on modern financial ecosystems and compliance.",
-  },
-]
-
+  {
+    "title": "Advanced Analysis, VWAP, Order Flow & Trading Process",
+    "objective": "Compare the distribution of executed volume across prices with the sequence of signed volume through time. Document the venue and anchor.",
+    "exercise": "Rebuild session VWAP and two intervals of CVD by hand. Hide subsequent prices, record a hypothesis and its invalidation, and score your reasoning after the reveal.",
+    "lessons": [
+      "vwap-intraday-context",
+      "order-flow-delta-and-feed-limits",
+      "market-psychology-behavioral-finance"
+    ]
+  }
+];
+const core = new Set(stages.flatMap(s=>s.lessons));
 export default function LearningModulesPage() {
-  return (
-    <div className="container py-16 md:py-24">
-      <div className="text-center mb-16">
-        <h1 className="text-4xl font-bold tracking-tight font-headline sm:text-5xl">Financial Trading Ladder</h1>
-        <p className="mt-4 max-w-3xl mx-auto text-lg text-muted-foreground">
-          A structured, step-by-step guide to mastering the financial markets, from foundational concepts to advanced systems.
-        </p>
-      </div>
-
-      <div className="max-w-4xl mx-auto">
-        <Accordion type="single" collapsible className="w-full space-y-6" defaultValue="step-1">
-          {steps.map((step) => (
-            <AccordionItem 
-              key={step.value} 
-              value={step.value} 
-              className="border-b-0 rounded-lg bg-card/50 shadow-sm transition-all data-[state=open]:shadow-xl data-[state=open]:shadow-primary/10"
-            >
-              <AccordionTrigger className="p-6 text-left hover:no-underline group">
-                <div className="flex items-center gap-4">
-                  <div className="p-3 rounded-full bg-muted transition-colors group-hover:bg-primary/10 group-data-[state=open]:bg-primary/10">
-                     <step.icon className="w-6 h-6 text-primary transition-transform duration-300 group-hover:scale-110" />
-                  </div>
-                  <span className="text-xl font-headline text-primary">{step.title}</span>
-                </div>
-              </AccordionTrigger>
-              <AccordionContent className="p-6 pt-0">
-                <p className="italic text-muted-foreground mb-6 pl-16">{step.description}</p>
-                
-                <div className="pl-16">
-                  <h3 className="font-semibold text-lg mb-3 text-foreground/90">Topics Covered:</h3>
-                  <ul className="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-2 mb-6">
-                    {step.topics.map((topic) => (
-                      <li key={topic} className="flex items-start gap-3">
-                        <CheckCircle className="w-5 h-5 text-primary flex-shrink-0 mt-1" />
-                        <span className="text-muted-foreground font-semibold text-base">{topic}</span>
-                      </li>
-                    ))}
-                  </ul>
-
-                  <div className="mt-4">
-                    <h3 className="font-semibold text-lg mb-2 text-foreground/90">Target Audience:</h3>
-                    <p className="text-muted-foreground font-bold italic">{step.targetAudience}</p>
-                  </div>
-                </div>
-
-              </AccordionContent>
-            </AccordionItem>
-          ))}
-        </Accordion>
-      </div>
-
-       <div className="max-w-4xl mx-auto mt-20">
-         <Card className="bg-card/50 border-primary/20 shadow-lg shadow-primary/10">
-            <CardHeader className="text-center">
-              <CardTitle className="font-headline text-2xl">Ready to Climb the Ladder?</CardTitle>
-              <CardDescription className="max-w-xl mx-auto">
-                These steps form the basis of our structured learning programs. If you're interested in a guided educational journey, please reach out to learn more.
-              </CardDescription>
-            </CardHeader>
-            <CardContent className="flex justify-center">
-                <Button asChild size="lg">
-                    <Link href="/contact">Contact V7 Market Solutions</Link>
-                </Button>
-            </CardContent>
-         </Card>
-       </div>
-
-    </div>
-  )
+  return <div className="container max-w-4xl py-16 md:py-24"><header className="reading-intro"><h1>Financial Trading Ladder</h1>
+    <p>I use these four stages as a free study guide. Start with a question you cannot yet explain. In a paid consultation-led program, we agree separately on the topics and pace that fit your learning gaps.</p></header>
+    <Accordion type="single" collapsible defaultValue="stage-0">{stages.map((s,i)=><AccordionItem value={'stage-'+i} key={s.title}>
+      <AccordionTrigger className="text-left py-5 text-xl">Step {i+1} · {s.title}</AccordionTrigger><AccordionContent className="space-y-4 text-base">
+      <p>{s.objective}</p><ol className="list-decimal pl-5 space-y-2">{s.lessons.map(slug=><li key={slug}><Link className="text-primary underline" href={'/insights/'+slug}>{insights.find(p=>p.slug===slug)?.title}</Link></li>)}</ol><p><strong>Completion exercise</strong> · {s.exercise}</p>
+    </AccordionContent></AccordionItem>)}</Accordion>
+    <section className="reading-strip"><h2>Optional further reading</h2><p>Choose these when they answer a question you have. You can continue with intraday analysis independently of these topics.</p><ul className="list-disc pl-5 space-y-2">{insights.filter(p=>!core.has(p.slug)).map(p=><li key={p.slug}><Link href={'/insights/'+p.slug}>{p.title}</Link></li>)}</ul></section>
+    <section className="reading-strip"><h2>Plan a learning pathway with me</h2><p>Bring one exercise you found difficult. We can use it to decide where personal tuition would help.</p><Link href="/contact">Ask about a consultation</Link></section>
+  </div>;
 }
